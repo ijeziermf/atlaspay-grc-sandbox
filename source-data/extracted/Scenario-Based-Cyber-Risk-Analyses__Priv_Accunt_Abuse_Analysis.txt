@@ -1,0 +1,106 @@
+SCENARIO-
+BASED CYBER
+RISK ANALYSIS
+PRIVILEGED ACCOUNT ABUSE
+
+
+
+
+   IFEANYI IJEZIE | NIST SP 800-53 | JANUARY 28, 2026
+EXECUTIVE SUMMARY
+        This scenario-based cyber risk analysis evaluates the potential impact of privileged account abuse resulting from
+excessive permissions, inadequate oversight, or credential compromise. The analysis traces how misuse of elevated
+access could lead to unauthorized system changes, data exposure, operational disruption, and regulatory risk. Using a
+NIST-aligned quantitative risk model, the scenario was assessed as high impact with a moderate likelihood, resulting in a
+catastrophic inherent risk rating. The findings highlight weaknesses in access governance, privileged account monitoring,
+and enforcement of least-privilege principles. Based on the analysis, mitigation through strengthened access controls,
+regular access reviews, and enhanced monitoring is recommended to reduce the likelihood and duration of privileged
+account misuse.
+
+
+
+SCENARIO OVERVIEW
+        This scenario evaluates the risk of privileged account misuse resulting from excessive permissions, inadequate
+oversight, or credential compromise. Privileged accounts provide elevated access to critical systems and data, making
+them a high-value target for attackers and a significant internal risk if misused. The objective of this analysis is to assess
+how improper management of privileged access could lead to unauthorized system changes, data exposure, or
+operational disruption. This scenario reflects a realistic threat affecting organizations with complex IT environments and
+limited access governance.
+
+
+
+THREAT PATHWAY
+        A privileged user account is granted broad system access without adequate review or monitoring. Credentials
+for the account are either compromised through credential reuse, malware, or insider misuse. The attacker or insider
+uses the elevated privileges to access sensitive systems, modify configurations, disable logging, or exfiltrate data. Due to
+limited monitoring of privileged activity, the misuse is not immediately detected, increasing the duration and impact of
+the incident.
+ASSETS AND DATA AT RISK
+     • Administrative and privileged user accounts
+     • Core production systems
+     • Sensitive customer and financial data
+     • Security configurations and audit logs
+     • Business-critical applications
+
+(All assets above are foundational to business system confidentiality, integrity, and availability).
+
+
+
+IMPACT ANALYSIS
+                Under the defined impact scale, a rating of 5 (Catastrophic) represents events that cause widespread operational
+disruption, significant financial loss, regulatory exposure, and long-term reputational damage. Abuse of privileged access
+could enable attackers to manipulate systems, disable security controls, access sensitive data, or disrupt critical services
+across the organization. Such an event would likely require extensive remediation efforts and could undermine customer
+and stakeholder trust. Based on these factors, the inherent impact of this scenario is assessed as Catastrophic (5).
+
+
+
+LIKELIHOOD ANALYSIS
+                Likelihood is assessed on a five-point scale ranging from Low (1) to High (5). While privileged account abuse
+occurs less frequently than common threats such as phishing, it remains a credible risk in environments lacking formal
+access reviews, strong privileged access governance, and continuous monitoring. Given the presence of baseline access
+controls but gaps in oversight and detection, the likelihood of this scenario occurring is assessed as Medium (3).
+
+
+
+RISK SCORING (INHERENT)
+                                                             Impact                                   Using the organization defined five-by-five
+                                     5              4            3            2             1         impact and likelihood matrix, the inherent
+                                Catastrophic   Significant    Moderate       Mild     Insignificant   risk score for this scenario was calculated
+                      1             5              4             3            2            1          based on an impact rating of 5 (Catastrophic)
+                     Low         Moderate       Moderate        Low          Low          Low         and a likelihood rating of 3 (Medium).
+                       2            10             8             6            4            2          According to the matrix, this results in an
+
+
+   Likelihood
+                  Low-Medium       High           High        Moderate     Moderate       Low
+                                                                                                      inherent risk score of 15, which is classified
+                      3             15             12            9            6            3          as Catastrophic. This risk level indicates that
+                    Medium      Catastophic       High          High       Moderate       Low
+                                                                                                      privileged account abuse represents a
+                       4            20             16            12           8           4
+                  Medium-High   Catastophic    Catastophic      High         High      Moderate
+                                                                                                      significant threat to the organization and
+                                                                                                      requires prioritization at a senior
+                      5             25             20            15           10          5
+                     High       Catastophic    Catastophic   Catastophic     High      Moderate       management level.
+RISK TREATMENT OPTIONS
+Potential risk treatment options for this scenario include:
+
+    • Implementing least-privilege principles for all privileged accounts
+    • Establishing formal privileged access reviews and approval workflows
+    • Monitoring and alerting on privileged account activity
+    • Implementing multi-factor authentication for privileged access
+    • Accepting residual risk following control implementation
+
+(These options primarily reduce the likelihood of misuse and improve detection capabilities).
+
+
+
+RECOMMENDED DECISION
+        The recommended risk treatment strategy is Mitigation. Enforcing least privilege, conducting regular access
+reviews, and monitoring privileged activity significantly reduce the likelihood and duration of privileged account abuse
+while maintaining operational effectiveness. Residual risk should be monitored through ongoing review of privileged
+access metrics and alerts for anomalous activity. This approach aligns risk reduction efforts with organizational risk
+tolerance and governance expectations.
+

@@ -1,0 +1,114 @@
+Scenario-Based Cyber
+Risk Assessment
+
+Third Party Vendor Breach
+
+
+
+
+                            January 23, 2026
+
+                            Ifeanyi Ijezie
+                            NIST SP 800-53
+Executive Summary
+       This scenario-based cyber risk analysis evaluates the potential impact of a third-
+party vendor breach involving a service provider with access to sensitive organizational
+and customer data. The analysis examines how a security failure at an external vendor
+could lead to data exposure, regulatory scrutiny, operational disruption, and
+reputational damage for the organization. Using a NIST-aligned quantitative risk
+model, the scenario was assessed as catastrophic impact with a medium-high
+likelihood, resulting in a catastrophic inherent risk rating. The findings highlight gaps
+in vendor security oversight, contractual security requirements, and ongoing
+monitoring of third-party risk. Based on the analysis, mitigation through strengthened
+vendor risk management practices, security due diligence, and continuous oversight is
+recommended to reduce organizational exposure.
+Overview
+       This scenario evaluates the risk introduced by a third-party vendor that
+processes, stores, or transmits sensitive organizational data and experiences a
+cybersecurity breach. Third-party vendors often operate outside direct organizational
+control while maintaining trusted system or data access. The objective of this analysis
+is to assess how a vendor-side security incident could translate into direct business,
+regulatory, and operational risk for the organization. This scenario reflects a realistic
+and increasingly common threat in environments with complex vendor ecosystems.
+Threat Pathway
+      A third-party vendor with authorized access to sensitive organizational data
+suffers a cybersecurity breach due to inadequate security controls or misconfiguration
+within its environment. An attacker exploits the vendor’s systems and gains access to
+customer or transactional data associated with the organization. Because the breach
+occurs outside the organization’s direct infrastructure, detection is delayed until the
+vendor discloses the incident or anomalous activity is identified. The delay increases
+the scope of exposure and complicates incident response, regulatory notification, and
+customer communication efforts.
+Assets at Risk
+   •           Customer personal and financial data
+   •           Transaction and payment processing data
+   •           Shared systems or APIs connected to vendor services
+   •           Regulatory compliance posture
+   •           Organizational reputation and customer trust
+
+(All assets above are foundational to business operations, regulatory compliance, and
+stakeholder confidence.)
+Impact Analysis
+      Under the defined impact scale, a rating of 5 (Catastrophic) represents events
+that cause widespread financial loss, regulatory penalties, legal exposure, and long-
+term reputational harm. A third-party vendor breach involving sensitive customer or
+financial data could trigger mandatory breach notifications, regulatory investigations,
+customer attrition, and contractual disputes. The organization may incur significant
+remediation costs despite the breach originating externally. Based on these factors, the
+inherent impact of this scenario is assessed as Catastrophic (5).
+Likelihood Analysis
+      Likelihood is assessed on a five-point scale ranging from Low (1) to High (5).
+Third-party breaches are a frequent source of cybersecurity incidents, particularly
+when vendors lack mature security programs or are not subject to continuous
+oversight. While the organization may conduct initial vendor due diligence, limited
+ongoing monitoring and reliance on vendor attestations increase exposure. Given these
+conditions, the likelihood of this scenario occurring is assessed as Medium-High (4).
+Risk Scoring
+                                                            Impact
+                                    5              4            3            2             1
+                               Catastrophic   Significant    Moderate       Mild     Insignificant
+
+                     1             5              4             3            2            1
+                    Low         Moderate       Moderate        Low          Low          Low
+
+                      2            10             8             6            4            2
+
+
+
+
+  Likelihood
+                 Low-Medium       High           High        Moderate     Moderate       Low
+
+                     3             15             12            9            6            3
+                   Medium      Catastophic       High          High       Moderate       Low
+
+                      4            20             16            12           8           4
+                 Medium-High   Catastophic    Catastophic      High         High      Moderate
+
+                     5             25             20            15           10          5
+                    High       Catastophic    Catastophic   Catastophic     High      Moderate
+       Using the organization-defined five-by-five impact and likelihood matrix, the
+inherent risk score for this scenario was calculated based on an impact rating of 5
+(Catastrophic) and a likelihood rating of 4 (Medium-High). According to the matrix,
+this results in an inherent risk score of 20, which is classified as Catastrophic. This
+rating indicates that third-party vendor breaches represent a critical cyber risk
+requiring executive awareness and prioritized risk treatment.
+Treatment Options
+Potential risk treatment options for this scenario include the following:
+  • Strengthening third-party risk assessment and onboarding requirements
+  • Requiring contractual security controls and breach notification obligations
+  • Conducting periodic vendor security reviews or reassessments
+  • Limiting vendor access to least-necessary data and systems
+  • Accepting residual risk for low-impact vendors following due diligence
+
+(These options primarily reduce likelihood and limit the blast radius of a vendor-side
+incident).
+Recommended Decision
+      The recommended risk treatment strategy is Mitigation. Enhancing third-party
+risk management practices, enforcing contractual security expectations, and limiting
+vendor access significantly reduce the likelihood and impact of vendor-originated
+incidents. Residual risk should be monitored through ongoing review of vendor
+security posture and incident reporting mechanisms. This approach aligns third-party
+risk oversight with organizational risk tolerance, regulatory expectations, and
+governance responsibilities.
+

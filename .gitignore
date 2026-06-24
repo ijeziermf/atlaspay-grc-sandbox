@@ -1,0 +1,40 @@
+# OS noise
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+Thumbs.db
+
+# Editor noise
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PHP/Composer (historical Eramba era)
+vendor/
+composer.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+
+# Virtualenvs
+venv/
+.venv/
+env/
+
+# Local env files with secrets
+.env
+.env.local
+*.env.local
+
+# Large captured traffic dumps
+docs/15-all-traffic.json
+
+# Quarantine files (macOS)
+*.dat

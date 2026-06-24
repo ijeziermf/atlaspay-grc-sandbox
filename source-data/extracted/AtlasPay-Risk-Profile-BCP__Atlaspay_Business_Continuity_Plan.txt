@@ -1,0 +1,619 @@
+Business Continuity Plan
+
+
+
+
+ATLASPAY
+Business Continuity Plan
+
+
+
+
+By: Ifeanyi Ijezie
+
+
+
+
+https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+
+
+
+TABLE OF
+CONTENTS
+1.   Executive Summary ............................................................... 1
+2. Purpose and Objectives ............................................................ 1
+    2.1 Purpose .......................................................................... 1
+     2.2 Objectives ....................................................................... 2
+
+3. Scope and Assumptions ........................................................... 2
+    3.1 Scope ............................................................................. 2
+     3.2 Assumptions ................................................................... 2
+     3.3 Out of Scope ................................................................... 3
+
+4. Business Context..................................................................... 3
+    4.1 Critical Services ............................................................... 3
+     4.2 Key Dependencies ............................................................ 3
+
+5. Business Impact Analysis Summary ........................................... 3
+    5.1 Impact Categories ............................................................ 4
+     5.2 Critical Functions and Prioritization Table............................. 4
+
+6. Continuity Strategies ............................................................... 4
+    6.1 People Workarounds ......................................................... 4
+     6.2 Alternative Processes........................................................ 5
+     6.3 Technology Alternatives .................................................... 5
+     6.4 Third-Party/Vendors ......................................................... 5
+Business Continuity Plan
+
+
+
+
+7. Incident Response vs Business Continuity ................................... 5
+8. Plan Activation and Escalation ................................................... 5
+    8.1 Activation Criteria ............................................................ 5
+     8.2 Severity Levels (Low/Med/High) ......................................... 6
+     8.3 Escalation Path and Decision Authority ................................ 7
+
+9. Communications Plan ............................................................... 7
+    9.1 Internal Communications .................................................. 7
+     9.2 Customer Communications ................................................ 7
+     9.3 Regulatory/Legal Notifications............................................ 7
+     9.4 Vendor Communications ................................................... 8
+
+10. Recovery Procedures .............................................................. 8
+11. Testing and Maintenance ........................................................ 8
+12. Framework Alignment ............................................................ 8
+13. Roles and Responsibilities ....................................................... 9
+Conclusion ................................................................................. 9
+Appendix A: Contact List ............................................................ 10
+Appendix B: Critical Vendor List .................................................. 11
+Glossary .................................................................................. 11
+Business Continuity Plan
+
+Version: 1.0
+
+Effective Date: ___________________
+
+BCP Owner: ___________________
+
+Review Frequency: Annual
+
+Classification: Internal
+
+
+
+1. EXECUTIVE SUMMARY
+
+   This Business Continuity Plan defines how AtlasPay will maintain or
+restore critical business operations during and after disruptive events
+that materially impact normal operations. As a payment processing
+organization handling sensitive financial and customer data, AtlasPay
+faces operational, financial, and regulatory risk from events such as
+cyber incidents, third-party outages, and technology failures.
+
+   Given AtlasPay’s resilience on continuous transaction processing
+and third-party integrations, extended service disruption presents
+immediate financial and customer trust. The purpose of this plan is to
+minimize financial loss, service disruption, and reputational damage by
+prioritizing critical services, establishing recovery objectives, and
+defining escalation and communication processes. This plan supports
+executive decision-making by clearly outlining when continuity actions
+are required and how recovery efforts are coordinated. The BCP is
+designed to function alongside incident response and disaster recovery
+activities as part of AtlasPay’s broader risk management program.
+
+
+2. PURPOSE AND OBJECTIVES
+
+2.1 Purpose
+
+      The purpose of this Business Continuity Plan is to establish a
+structured approach for maintaining or restoring AtlasPay’s critical
+
+
+https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+business functions during disruptive events that cannot be resolved
+through normal operating procedures.
+
+2.2 Objectives
+
+The objectives of this plan are to:
+
+   •   Reduce downtime of critical payment and financial operations.
+   •   Protect revenue, customer trust, and regulatory standing.
+   •   Support timely and informed executive decision-making.
+   •   Ensure coordinated response across business, technology, and
+       vendor teams.
+   •   Enable predictable and prioritized recovery of critical services.
+
+3. SCOPE AND ASSUMPTIONS
+
+3.1 Scope
+
+       This plan applies to business processes, systems, personnel, and
+third-party dependencies that support AtlasPay’s core payment
+processing and financial operations. It includes disruptions caused by
+cyber incidents, technology outages, third-party failures, and other
+events that materially impact service availability.
+
+3.2 Assumptions
+
+   •   Not all disruptions can be prevented, but their impact can be
+       managed
+   •   Some services may operate at reduced capacity during recovery
+   •   Third-party vendors play a critical role in continuity
+   •   Executive leadership is available to make continuity decisions
+       during major disruptions
+
+
+
+
+2 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+3.3 Out of Scope
+
+       This plan does not provide detailed technical recovery
+procedures or system-level restoration steps, which are addressed in
+separate incident response and disaster recovery documentation.
+
+4. BUSINESS CONTEXT
+
+4.1 Critical Services
+
+AtlasPay’s most critical services include:
+
+   •   Payment transaction processing and settlement
+   •   Customer access to payment and account services
+   •   Fraud monitoring and transaction integrity controls
+   •   Financial reporting and reconciliation activities
+   •   Third-party integrations supporting payment operations
+
+4.2 Key Dependencies
+
+Critical dependencies include:
+
+   •   Cloud hosting and identity management providers
+   •   Payment gateways and banking partners
+   •   Third-party service providers supporting monitoring and
+       customer operations
+   •   Secure network connectivity and remote access
+   •   Key personnel within IT, Security, Finance, and Vendor
+       Management
+
+5. BUSINESS IMPACT ANALYSIS SUMMARY
+
+       The Business Impact Analysis identifies and prioritizes functions
+based on their tolerance for disruption.
+
+
+
+
+3 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+5.1 Impact Categories
+
+Disruptions are evaluated based on:
+
+   •    Financial impact (lost revenue, penalties, remediation costs)
+   •    Operational impact (service downtime, processing delays)
+   •    Regulatory impact (compliance violations, reporting obligations)
+   •    Reputational impact (customer trust and market confidence)
+
+5.2 Critical Functions and Prioritization Table
+
+
+                   Maximum
+   Business                                                       Key
+                   Tolerable       RTO         RPO
+   Function                                              Dependencies
+                   Downtime
+
+   Payment                                  Near-real-    Cloud provider,
+                    24 hours      4 hours
+  Processing                                   time      payment gateway
+
+   Customer                                              Identity provider,
+       Account      48 hours      8 hours    24 hours       application
+       Access                                                platform
+
+       Fraud                                Near-real-   Monitoring tools,
+                    24 hours      4 hours
+  Monitoring                                   time      transaction data
+
+   Financial                                             Finance systems,
+                    72 hours     24 hours    24 hours
+   Reporting                                             data warehouse
+
+
+
+
+This prioritization guides recovery sequencing and resource allocation.
+
+6. CONTINUITY STRATEGIES
+
+6.1 People Workarounds
+
+   •    Cross-training and role coverage for critical functions
+
+
+
+4 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+   •   Defined escalation paths for decision authority
+   •   Remote work enablement for continuity scenarios
+
+6.2 Alternative Processes
+
+   •   Manual approval or processing workarounds where feasible
+   •   Prioritization of high-impact customer transactions
+   •   Temporary suspension of non-critical activities
+
+6.3 Technology Alternatives
+
+   •   Use of redundant systems and backups where available
+   •   Controlled restoration of services based on priority
+   •   Coordination with disaster recovery procedures
+
+6.4 Third-Party/Vendors
+
+   •   Engagement of vendors during outages
+   •   Use of contractual escalation and notification requirements
+   •   Assessment of alternate service options where feasible
+
+7. INCIDENT RESPONSE VS BUSINESS CONTINUITY
+
+       Incident Response focuses on identifying, containing, and
+resolving security or operational incidents. Business Continuity is
+activated when the disruption significantly impacts AtlasPay’s ability to
+operate critical business functions beyond normal response
+capabilities. Disaster Recovery supports the technical restoration of
+systems. These activities operate in coordination but serve distinct
+purposes.
+
+8. PLAN ACTIVATION AND ESCALATION
+
+8.1 Activation Criteria
+
+This plan may be activated when:
+
+
+
+5 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+   •    Payment processing is unavailable or severely degraded
+   •    A cyber incident requires system shutdown
+   •    A critical third-party vendor experiences a prolonged outage
+   •    Executive leadership determines continuity actions are required
+
+8.2 Severity Levels (Low/Med/High)
+
+        Severity levels are used to assess the potential business impact
+and urgency of a disruption. Low severity events have minimal
+operational impact and can be managed through standard incident
+response processes. Medium severity events result in partial service
+degradation or elevated risk and may require increased coordination.
+High severity events materially impact critical services, customer
+operations, or regulatory obligations and may warrant activation of
+this Business Continuity Plan.
+
+ Severity
+                        Description               Typical Response
+   Level
+
+                                                    Managed through
+               Minimal operational impact; no
+       Low                                          standard incident
+                 customer-facing disruption
+                                                        response
+
+                                                 Increased coordination
+                Partial service degradation or
+  Medium                                             and leadership
+                  elevated operational risk
+                                                       awareness
+
+                  Material impact to critical    Executive involvement
+       High        services, customers, or          and potential BCP
+                   regulatory obligations              activation
+
+
+
+
+6 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+8.3 Escalation Path and Decision Authority
+
+
+         Role                    Escalation Responsibility
+
+      Information       Identify incident, assess impact, recommend
+       Security                             escalation
+
+      Operations      Assess service impact and operational disruption
+
+ Executive Sponsor     Authorize BCP activation and continuity actions
+
+Legal / Compliance Advise on regulatory and contractual obligations
+
+  Communications         Coordinate internal and external messaging
+
+
+
+
+       Escalation decisions prioritize maintaining customer trust and
+regulatory compliance over rapid restoration when tradeoffs are
+required.
+
+9. COMMUNICATIONS PLAN
+
+9.1 Internal Communications
+
+  •    Executive and leadership briefings
+  •    Employee status updates as appropriate
+
+9.2 Customer Communications
+
+  •    Timely, coordinated messaging for service disruptions
+  •    Clear guidance on service availability and expectations
+
+9.3 Regulatory/Legal Notifications
+
+  •    Notifications coordinated with Legal and Compliance
+  •    Adherence to applicable reporting obligations
+
+
+
+7 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+9.4 Vendor Communications
+
+   •   Engagement with impacted vendors
+   •   Status updates and recovery coordination
+
+10. RECOVERY PROCEDURES
+
+   •   Payment Processing Disruption: Prioritize transaction
+       integrity and controlled service restoration
+   •   Third-Party Vendor Outage: Engage vendor escalation and
+       assess alternate workflows
+   •   Cyber Incident Shutdown: Coordinate IR, DR, and continuity
+       actions
+   •   Loss of Key Personnel: Activate role coverage and leadership
+       escalation
+
+11. TESTING AND MAINTENANCE
+
+   •   Tabletop exercises conducted at least annually
+   •   Updates based on lessons learned and environmental changes
+   •   Documentation of test results and improvement actions
+
+
+
+
+12. FRAMEWORK ALIGNMENT
+
+       This business continuity plan is informed by industry recognized
+risk management and resilience frameworks, including NIST SP 800-53
+Rev. 5 (Contingency Planning and Incident Response), NIST
+Cybersecurity Framework, and ISO/IEC 27001 business continuity
+principles. These frameworks were used to support governance
+alignment, audit readiness, and consistent risk management practices,
+rather than to prescribe control-level implementation. The plan is
+designed to integrate with AtlasPay’s broader risk management,
+incident response, and third-party risk programs.
+
+
+
+
+8 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+
+13. ROLES AND RESPONSIBILITIES
+
+   •   Executive Sponsor: Provides strategic direction and decision
+       authority
+   •   BCP Owner: Maintains the plan and coordinates continuity
+       activities
+   •   Information Security: Supports incident coordination and risk
+       assessment
+   •   Operations: Executes continuity strategies
+   •   Legal and Compliance: Advises on regulatory obligations
+   •   Vendor Management: Coordinates third-party continuity
+       efforts
+
+CONCLUSION
+
+       This Business Continuity Plan provides AtlasPay with a
+structured, risk-based approach to maintaining critical operations
+during disruptive events. By prioritizing essential services, defining
+recovery objectives, and establishing clear governance, AtlasPay
+strengthens its operational resilience and ability to protect revenue,
+customers, and regulatory standing. The plan is intended to evolve as
+the organization grows and as risks, dependencies, and business
+conditions change.
+
+
+
+
+9 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+
+APPENDIX A: CONTACT LIST
+
+      This appendix identifies key personnel and escalation contacts
+required to support business continuity and recovery activities. Contact
+information must be kept current to ensure timely communication
+during disruptive events.
+
+                                        Primary          Secondary
+       Role          Name / Title
+                                        Contact           Contact
+
+Executive Sponsor ____________ ____________             ___________
+
+    BCP Owner       ____________ _____________ _____________
+
+    Information
+                    ____________ _____________ _____________
+   Security Lead
+
+ Operations Lead    ____________ _____________ _____________
+
+      Legal /
+                    ____________ _____________ _____________
+    Compliance
+
+      Vendor
+                    ____________ _____________ _____________
+   Management
+
+Communications /
+                     ___________     ____________      ____________
+        PR
+
+
+
+
+(This contact list shall be reviewed and updated at least annually or
+upon personnel changes to ensure accuracy during continuity events).
+
+
+
+
+10 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+
+APPENDIX B: CRITICAL VENDOR LIST
+
+  Vendor     Vendor        Service                  Primary   Escalation
+                                      Criticality
+ Category     Name       Provided                   Contact     Path
+
+   Cloud
+             ________       IaaS         High       ________ _________
+  Hosting
+
+ Payment                   Payment
+             ________                    High       ________ _________
+ Gateway                 Processing
+
+  Banking                Settlement
+             ________                    High       ________ _________
+  Partner                / Clearing
+
+                         Authentica
+  Identity
+             ________       tion /     Medium       ________ _________
+  Provider
+                           Access
+
+Monitoring               Logging &
+             ________                  Medium       ________ _________
+  / SIEM                 Monitoring
+
+
+
+
+GLOSSARY
+
+BCP (Business Continuity Plan)
+
+A documented strategy outlining how an organization will maintain or
+restore critical business operations during and after a disruptive event.
+
+BIA (Business Impact Analysis)
+
+A structured analysis used to identify critical business functions and
+assess the impact of disruptions over time, supporting prioritization
+and recovery planning.
+
+
+11 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+MTD (Maximum Tolerable Downtime)
+
+The maximum length of time a business function can be unavailable
+before causing unacceptable operational, financial, or regulatory
+impact.
+
+RTO (Recovery Time Objective)
+
+The targeted duration of time within which a business function or
+system must be restored following a disruption.
+
+RPO (Recovery Point Objective)
+
+The maximum acceptable amount of data loss measured in time,
+indicating how far back data restoration must recover.
+
+IR (Incident Response)
+
+The coordinated activities used to identify, contain, investigate, and
+remediate security or operational incidents.
+
+DR (Disaster Recovery)
+
+The technical process of restoring IT systems, infrastructure, and
+applications following a major outage or failure.
+
+SIEM (Security Information and Event Management)
+
+A technology solution used to collect, analyze, and correlate security
+logs and events for monitoring, detection, and response.
+
+IaaS (Infrastructure as a Service)
+
+A cloud computing model that provides virtualized computing
+resources such as servers, storage, and networking.
+
+PR (Public Relations)
+
+The function responsible for managing external communications and
+public messaging during significant events.
+
+
+
+
+12 https://www.linkedin.com/in/ifeanyi-ijezie/
+Business Continuity Plan
+
+Executive Sponsor
+
+A senior leader with decision-making authority responsible for strategic
+oversight and activation of continuity actions.
+
+Critical Function
+
+A business process or service essential to revenue generation,
+customer service, regulatory compliance, or organizational survival.
+
+Third-Party Vendor
+
+An external organization that provides services, systems, or support to
+AtlasPay and may introduce operational or security risk.
+
+Continuity Event
+
+Any disruption that materially impacts normal operations and requires
+activation of business continuity strategies beyond routine incident
+handling.
+
+
+
+
+13 https://www.linkedin.com/in/ifeanyi-ijezie/
+

@@ -1,0 +1,45 @@
+[
+  {
+    "method": "GET",
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "referer": "https://localhost:8443/dashboard",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.7727.15 Safari/537.36",
+      "accept": "application/json",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "type": "response",
+    "method": "GET",
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "status": 200,
+    "body": "{\"success\":true,\"data\":{\"count\":0},\"messages\":[]}"
+  },
+  {
+    "method": "GET",
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "headers": {
+      "sec-ch-ua-platform": "\"macOS\"",
+      "x-xsrf-token": "eyJpdiI6IjlMdGlTaEtEanpYVk11Q3JHMlp6ZlE9PSIsInZhbHVlIjoiS1UyQWZPVEY1cDZ3NDRxZHgwWG83V2hMbWoycjl3RWk3SHBWeW1lWWhHWGZ5U0Jxbk1vTDZ6U2dtMjd2OGlTTTRhVUlmV1pwNi9BNEhpN1RXVFdIdDlETWtZblRjRUROZ1F1N0NoYTJwSTNIa1hQbzRVNzFJMVltbjdweGJyeEQiLCJtYWMiOiIzOWIwZThkN2IxMGUzODBiZjlmNmIxMzUwZTk1YTAzNTY2MTRlNjEyNzA2NjI1NmFmZWQwYmMzN2E0NjFmYWQ2IiwidGFnIjoiIn0=",
+      "referer": "https://localhost:8443/risks/classifications",
+      "sec-ch-ua": "\"HeadlessChrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.7727.15 Safari/537.36",
+      "accept": "application/json"
+    },
+    "post_data": null
+  },
+  {
+    "type": "response",
+    "method": "GET",
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "status": 200,
+    "body": "{\"success\":true,\"data\":{\"count\":0},\"messages\":[]}"
+  }
+]

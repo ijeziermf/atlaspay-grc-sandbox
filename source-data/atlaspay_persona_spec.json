@@ -1,0 +1,70 @@
+{
+  "persona": {
+    "name": "AtlasPay",
+    "legal_name": "AtlasPay Financial Services, Inc.",
+    "industry": "FinTech / Payment Processing",
+    "size": {
+      "employees": 50,
+      "fte_security": 1,
+      "fte_engineering": 18,
+      "customers": "12 SaaS merchants, ~340k end-user payment accounts"
+    },
+    "founded": 2021,
+    "funding_stage": "Series A ($8M raised)",
+    "hosting": "AWS single-region (us-east-1)",
+    "compliance_state": {
+      "soc2_type1": "Issued 2025-04, no exceptions",
+      "soc2_type2": "Observation period 2026-01-01 to 2026-12-31 (in progress)",
+      "pci_dss": "SAQ-D completed Q4 2025",
+      "iso_27001": "Roadmapped for 2027"
+    }
+  },
+  "perimeters": [
+    {
+      "name": "AtlasPay Core Payment System",
+      "description": "Primary payment processing service. Receives payment requests from merchants, tokenizes card data via Stripe, processes through card networks, returns authorization."
+    },
+    {
+      "name": "AtlasPay Internal Infrastructure",
+      "description": "Corporate IT, internal admin tools, AWS account, Okta SSO, GitHub Enterprise."
+    }
+  ],
+  "frameworks_to_load": [
+    {"name": "SOC 2 Type 2 (TSC 2017 rev 2022)", "urn": "urn:intuitem:risk:library:soc2-2017-rev-2022"},
+    {"name": "PCI DSS 4.0", "urn": "urn:intuitem:risk:library:pcidss-4_0"},
+    {"name": "NIST CSF 2.0", "urn": "urn:intuitem:risk:library:nist-csf-2.0"}
+  ],
+  "audit_scope": {
+    "primary": "SOC 2 Type 2 (2026 observation period)",
+    "secondary": "PCI DSS SAQ-D"
+  },
+  "risk_register_seed": [
+    {"id": "R-01", "title": "Phishing Attacks", "inherent": 20, "owner": "CISO"},
+    {"id": "R-02", "title": "Access Control Weakness", "inherent": 12, "owner": "CISO"},
+    {"id": "R-03", "title": "Logging and Monitoring Gaps", "inherent": 9, "owner": "Engineering"},
+    {"id": "R-04", "title": "Incident Response Planning and Testing", "inherent": 12, "owner": "CISO"},
+    {"id": "R-05", "title": "Third-Party and Vendor Risk Management", "inherent": 12, "owner": "CISO"},
+    {"id": "R-06", "title": "Security Awareness and Training", "inherent": 10, "owner": "CISO"}
+  ],
+  "policy_set": [
+    "Access Control & Privileged Access Policy",
+    "Incident Response Policy",
+    "Security Awareness & Acceptable Use Policy",
+    "Third-Party Risk Management Policy"
+  ],
+  "tprm": {
+    "vendor_count_target": 7,
+    "sample_vendors": [
+      {"name": "Amazon Web Services", "tier": "critical_no_baa", "baa_signed": false, "phi_access": false, "service": "Hosting (us-east-1)"},
+      {"name": "Stripe", "tier": "critical_no_baa", "baa_signed": false, "phi_access": false, "service": "Card tokenization and processing"},
+      {"name": "GitHub Enterprise", "tier": "high", "baa_signed": false, "phi_access": false, "service": "Source code hosting, CI/CD"},
+      {"name": "Okta", "tier": "high", "baa_signed": false, "phi_access": false, "service": "Identity provider, SSO"},
+      {"name": "Datadog", "tier": "medium", "baa_signed": false, "phi_access": false, "service": "APM, log aggregation"},
+      {"name": "PagerDuty", "tier": "medium", "baa_signed": false, "phi_access": false, "service": "Incident alerting"},
+      {"name": "Vanta", "tier": "medium", "baa_signed": false, "phi_access": false, "service": "Compliance evidence collection"}
+    ]
+  },
+  "incidents_for_demo": [
+    {"id": "AP-INC-2026-001", "title": "Sample Phishing Incident - Finance Department", "severity": "Medium", "status": "Closed"}
+  ]
+}
