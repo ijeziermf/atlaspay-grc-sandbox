@@ -37,8 +37,8 @@ The final deliverables give AtlasPay's leadership and its future auditor a defen
 | **Tabletop Exercise Scenarios** | Incident response readiness and control validation | Security team, executives |
 | **Risk Posture Documentation** | Pre-audit gap assessment and Q3 2026 hardening roadmap | Board, CISO, auditor |
 
-![AtlasPay final risk register and perimeters view](assets/screenshots/atlaspay-final-perimeters.png)
-*Figure 1: AtlasPay perimeters and risk framework configured inside the GRC platform.*
+![AtlasPay final risk register and perimeters view](assets/screenshots/filtered/atlaspay-folders-scoped.png)
+*Figure 1: AtlasPay folder hierarchy as scoped in CISO Assistant — AtlasPay, Engineering, Operations, Finance, Compliance sub-folders.*
 
 ---
 
@@ -147,7 +147,7 @@ A second example shows how vendor exposure was treated:
 
 The tiering logic is straightforward: any vendor whose failure would stop payment processing, block authentication, or break cloud availability is Tier 1. Tools that support operations but have workable alternatives are Tier 2. Deferrable platforms are Tier 3 and reviewed annually.
 
-![AtlasPay vendor entities after cleanup](assets/screenshots/atlaspay-entities-after-move.png)
+![AtlasPay vendor entities after cleanup](assets/screenshots/filtered/atlaspay-vendors-scoped.png)
 *Figure 4: Seven AtlasPay vendors grouped under the AtlasPay folder after the tiering cleanup.*
 
 ---

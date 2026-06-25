@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CISO Assistant — AtlasPay Risk Scenarios (Filtered)</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 13px;
+  }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 24px; background: #16162a; border-bottom: 1px solid #2a2a3e;
+  }
+  .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; color: #a78bfa; }
+  .brand-logo { width: 24px; height: 24px; background: linear-gradient(135deg,#a78bfa,#ec4899); border-radius: 6px; }
+  .topbar-right { display: flex; align-items: center; gap: 12px; color: #888; font-size: 12px; }
+  .cta { background: #a78bfa; color: #fff; padding: 6px 14px; border-radius: 6px; font-weight: 600; }
+  .layout { display: grid; grid-template-columns: 240px 1fr; min-height: calc(100vh - 56px); }
+  aside {
+    background: #16162a; padding: 16px 0; border-right: 1px solid #2a2a3e;
+  }
+  .nav-group { padding: 8px 16px; font-size: 10px; color: #666; letter-spacing: 1px; text-transform: uppercase; }
+  .nav-item {
+    padding: 8px 16px; display: flex; align-items: center; gap: 10px;
+    color: #a0a0b0; cursor: pointer; font-size: 13px;
+  }
+  .nav-item:hover { background: #1f1f3a; }
+  .nav-item.active { background: #1f1f3a; color: #a78bfa; border-left: 3px solid #a78bfa; padding-left: 13px; }
+  .profile {
+    margin: 16px; padding: 12px; background: #1f1f3a; border-radius: 8px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .avatar { width: 32px; height: 32px; background: #a78bfa; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; }
+  .profile-name { font-size: 12px; font-weight: 600; color: #e0e0e0; }
+  .profile-email { font-size: 11px; color: #888; }
+  main { padding: 24px 32px; }
+  .breadcrumb { color: #888; font-size: 12px; margin-bottom: 8px; }
+  h1 { margin: 0 0 4px 0; font-size: 22px; font-weight: 700; color: #a78bfa; }
+  .subtitle { color: #888; margin-bottom: 24px; }
+  .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .filter-btn {
+    background: #2a1a3a; color: #a78bfa; border: 1px solid #a78bfa;
+    padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .filter-active { background: #a78bfa; color: #fff; }
+  .search { flex: 1; background: #16162a; border: 1px solid #2a2a3e; padding: 6px 12px; border-radius: 6px; color: #e0e0e0; }
+  table { width: 100%; border-collapse: collapse; background: #16162a; border-radius: 8px; overflow: hidden; }
+  th { background: #1f1f3a; color: #888; text-align: left; padding: 10px 12px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 10px 12px; border-top: 1px solid #2a2a3e; font-size: 12px; }
+  tr:hover td { background: #1f1f3a; }
+  .footer { padding: 12px 32px; color: #888; font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand"><div class="brand-logo"></div> CISO Assistant</div>
+    <div class="topbar-right">
+      <span>⌘K</span>
+      <span class="cta">Get Started</span>
+    </div>
+  </div>
+  <div class="layout">
+    <aside>
+      <div class="nav-group">Overview</div>
+      <div class="nav-item">Analytics</div>
+      <div class="nav-group">Risk</div>
+      <div class="nav-item active">Risk scenarios</div>
+      <div class="nav-item">Risk matrices</div>
+      <div class="nav-item">Risk assessments</div>
+      <div class="nav-group">Compliance</div>
+      <div class="nav-item">Frameworks</div>
+      <div class="nav-item">Policies</div>
+      <div class="nav-group">Third Parties</div>
+      <div class="nav-item">Entities</div>
+      <div class="profile">
+        <div class="avatar">A</div>
+        <div>
+          <div class="profile-name">AtlasPay Admin</div>
+          <div class="profile-email">admin@atlaspay.local</div>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="breadcrumb">Home › Risk scenarios</div>
+      <h1>Risk scenarios</h1>
+      <div class="subtitle">Risk register with scenarios and their treatments</div>
+      <div class="toolbar">
+        <div class="filter-btn filter-active">⚡ Filters · 1</div>
+        <div class="filter-btn">+ Add risk</div>
+        <input class="search" placeholder="Search risks..."/>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th></th><th>ID</th><th>Risk name</th><th>Assigned to</th>
+            <th>Inherent</th><th>Controls</th><th>Current</th><th>Tol.</th>
+            <th>Extra</th><th>Residual</th><th>Treatment</th><th>Assessment</th><th></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-01</strong></td>
+          <td>Privileged Account Compromise</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a1f0a;color:#f97316;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">5</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-02</strong></td>
+          <td>Payment Data Exfiltration via API</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a1f0a;color:#f97316;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">5</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-03</strong></td>
+          <td>Ransomware on Production Database Host</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-04</strong></td>
+          <td>Third-Party SaaS Breach (Vendor Compromise)</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-05</strong></td>
+          <td>Insider Threat (Malicious Employee)</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#0a3a1f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">3</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        <tr>
+          <td><input type="checkbox"/></td>
+          <td><strong>R-06</strong></td>
+          <td>Insufficient Audit Logging</td>
+          <td>AtlasPay Admin</td>
+          <td><span style="background:#3a2f0a;color:#eab308;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">4</span></td>
+          <td style="font-size:11px;color:#888">8 controls</td>
+          <td><span style="background:#0a3a3a;color:#2dd4bf;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">2</span></td>
+          <td style="color:#22c55e">●</td>
+          <td style="font-size:11px;color:#888">—</td>
+          <td><span style="background:#0a3a3a;color:#2dd4bf;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600">2</span></td>
+          <td><span style="background:#1a3a2f;color:#22c55e;padding:2px 8px;border-radius:4px;font-size:11px">Mitigated</span></td>
+          <td><span style="background:#2a1a3a;color:#a78bfa;padding:2px 8px;border-radius:4px;font-size:11px">AtlasPay SOC 2</span></td>
+          <td><span style="color:#888">⋯</span></td>
+        </tr>
+        
+        </tbody>
+      </table>
+      <div class="footer">Showing 1 to 6 of 6 entries</div>
+    </main>
+  </div>
+</body>
+</html>
