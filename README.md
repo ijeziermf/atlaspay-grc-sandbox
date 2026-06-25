@@ -52,7 +52,7 @@ The final deliverables give AtlasPay's leadership and its future auditor a defen
 - ✅ Pre-audit gap assessment identifying control areas for Q3 2026 hardening
 - ✅ SOC 2 Type 1 readiness package: executive briefing + board-ready risk register + audit walkthrough findings + remediation roadmap
 
-![Clean folder hierarchy after vendor cleanup](assets/screenshots/atlaspay-folders-after-move.png)
+![Clean folder hierarchy after vendor cleanup](assets/screenshots/filtered/atlaspay-folders-scoped.png)
 *Figure 2: Folder structure after the vendor cleanup, showing AtlasPay and Compliance domains separated.*
 
 ---
@@ -65,8 +65,8 @@ The AtlasPay SOC 2 Type 1 readiness engagement produced a complete package of ar
 
 | Document | Purpose | Audience |
 |---|---|---|
-| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v1.pdf)** (9 pages, 17 KB) | Board-ready executive briefing summarizing the engagement, findings, and recommendations | AtlasPay executive leadership, board of directors |
-| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v1.pdf)** (10 pages, 18 KB) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement | Board Risk Committee, SOC 2 audit team |
+| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v2.pdf)** (9 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations | AtlasPay executive leadership, board of directors |
+| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v2.pdf)** (10 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement | Board Risk Committee, SOC 2 audit team |
 
 ### Engagement Artifacts (Markdown Source)
 
@@ -128,7 +128,7 @@ A second example shows how vendor exposure was treated:
 | **Treatment** | Implement TPRM policy, tier vendors, schedule quarterly Tier 1 reviews |
 | **Residual Risk** | Medium (3×2) post-treatment |
 
-![AtlasPay risk register screenshot](assets/screenshots/atlaspay-final-risks.png)
+![AtlasPay risk register screenshot](assets/screenshots/filtered/atlaspay-risks-scoped.png)
 *Figure 3: The six risk scenarios loaded into the GRC platform risk register.*
 
 ---
