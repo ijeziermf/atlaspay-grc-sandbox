@@ -50,9 +50,55 @@ The final deliverables give AtlasPay's leadership and its future auditor a defen
 - ✅ Tabletop-tested incident response procedures (multiple scenarios)
 - ✅ SOC 2 Trust Services Criteria coverage across Security, Availability, and Confidentiality
 - ✅ Pre-audit gap assessment identifying control areas for Q3 2026 hardening
+- ✅ SOC 2 Type 1 readiness package: executive briefing + board-ready risk register + audit walkthrough findings + remediation roadmap
 
 ![Clean folder hierarchy after vendor cleanup](assets/screenshots/atlaspay-folders-after-move.png)
 *Figure 2: Folder structure after the vendor cleanup, showing AtlasPay and Compliance domains separated.*
+
+---
+
+## SOC 2 Type 1 Readiness Package
+
+The AtlasPay SOC 2 Type 1 readiness engagement produced a complete package of artifacts supporting pre-audit posture assessment and remediation planning. All artifacts are produced as part of a vCISO engagement using CISO Assistant v3.18.3 as the platform of record.
+
+### Primary Deliverables
+
+| Document | Purpose | Audience |
+|---|---|---|
+| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v1.pdf)** (9 pages, 17 KB) | Board-ready executive briefing summarizing the engagement, findings, and recommendations | AtlasPay executive leadership, board of directors |
+| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v1.pdf)** (10 pages, 18 KB) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement | Board Risk Committee, SOC 2 audit team |
+
+### Engagement Artifacts (Markdown Source)
+
+| Document | Location | Purpose |
+|---|---|---|
+| Risk Register (full) | [lab/docs/soc2-risk-register.md](lab/docs/soc2-risk-register.md) | 6 risk scenarios with inherent/current/residual scoring and treatment plans |
+| SOC 2 Control Mapping | [lab/docs/soc2-control-mapping.md](lab/docs/soc2-control-mapping.md) | 38 SOC 2 TSC criteria mapped to policies, risks, and vendors |
+| Gap Assessment | [lab/docs/soc2-gap-assessment.md](lab/docs/soc2-gap-assessment.md) | 13 remediation items with severity, owner, target date |
+| Audit Walkthrough | [lab/docs/soc2-audit-walkthrough.md](lab/docs/soc2-audit-walkthrough.md) | 10 walkthrough questions + 14 findings + management response |
+
+### Engagement Summary
+
+**Scope:** Common Criteria (CC) + Availability (A) + Confidentiality (C). Processing Integrity (PI) and Privacy (P) excluded.
+
+**Risk Register (6 scenarios):**
+- R-01 Privileged Account Compromise: residual Medium
+- R-02 Payment Data Exfiltration via API: residual Medium
+- R-03 Ransomware on Production DB: residual Medium
+- **R-04 Third-Party SaaS Breach: residual High (formally accepted)**
+- R-05 Insider Threat: residual Medium
+- R-06 Insufficient Audit Logging: residual Low
+
+**Audit Walkthrough Findings (14 total):**
+- 0 Critical, 4 High, 7 Medium, 3 Low
+- High findings: AW-02 Background checks, AW-03 Pen test, AW-04 Change mgmt, AW-06 Vuln scans
+- All High findings have remediation targets by 2026-09-30
+
+**Audit Opinion Target:** Unqualified SOC 2 Type 1 opinion in Q4 2026 audit window, contingent on completion of the four High-severity remediation items.
+
+### Lab-Synthetic Disclosure
+
+The risk register values, control mapping status, and audit walkthrough findings reflect a portfolio demonstration engagement. In a real SOC 2 Type 1 readiness engagement, these would be derived from AtlasPay's actual operational state, validated through interviews, observation, and inspection. The engagement methodology, document structure, and audit walkthrough pattern are directly applicable to real client work; the specific AtlasPay findings are illustrative.
 
 ---
 
