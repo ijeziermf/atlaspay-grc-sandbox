@@ -65,8 +65,8 @@ The AtlasPay SOC 2 Type 1 readiness engagement produced a complete package of ar
 
 | Document | Purpose | Audience |
 |---|---|---|
-| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v3.pdf)** (7 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations. Dark cover, white content pages, color-coded severity badges and treatment pills. HTML+CSS rendered via WeasyPrint for clean typography without text-box overflow | AtlasPay executive leadership, board of directors |
-| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v3.pdf)** (8 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement. Same template as the Executive Briefing | Board Risk Committee, SOC 2 audit team |
+| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v4.pdf)** (7 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations. Dark cover, white content pages, color-coded severity badges and treatment pills. HTML+CSS rendered via WeasyPrint for clean typography without text-box overflow. v4 corrects brand to "Ijezie Risk Advisory" and removes all emojis/em-dashes per Ifeanyi directive (2026-06-25) | AtlasPay executive leadership, board of directors |
+| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v4.pdf)** (8 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement. Same template as the Executive Briefing. v4 brand-corrected | Board Risk Committee, SOC 2 audit team |
 
 ### Engagement Artifacts (Markdown Source)
 
