@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AtlasPay FinTech</title>
+    <style>
+@page {
+    size: letter portrait;
+    margin: 0.9in 0.5in 0.7in 0.5in;
+    @top-left {
+        content: "AtlasPay SOC 2 Type 1 Readiness";
+        font-family: 'Helvetica', sans-serif;
+        font-size: 7.5pt;
+        color: #6A6A6A;
+        border-bottom: 1pt solid #D4AF37;
+        padding-bottom: 4pt;
+        width: 100%;
+    }
+    @top-right {
+        content: "IfeSec Risk Advisory";
+        font-family: 'Helvetica', sans-serif;
+        font-size: 7.5pt;
+        color: #6A6A6A;
+        text-align: right;
+        border-bottom: 1pt solid #D4AF37;
+        padding-bottom: 4pt;
+        white-space: nowrap;
+    }
+    @bottom-left {
+        content: "CONFIDENTIAL";
+        font-family: 'Helvetica', sans-serif;
+        font-size: 7pt;
+        color: #B22234;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        border-top: 1pt solid #D4AF37;
+        padding-top: 4pt;
+    }
+    @bottom-center {
+        content: "Page " counter(page) " of " counter(pages);
+        font-family: 'Helvetica', sans-serif;
+        font-size: 7.5pt;
+        color: #6A6A6A;
+        border-top: 1pt solid #D4AF37;
+        padding-top: 4pt;
+    }
+    @bottom-right {
+        content: "2026-06-25";
+        font-family: 'Helvetica', sans-serif;
+        font-size: 7.5pt;
+        color: #6A6A6A;
+        text-align: right;
+        border-top: 1pt solid #D4AF37;
+        padding-top: 4pt;
+    }
+}
+
+/* Cover page: no headers/footers, full bleed */
+@page :first {
+    margin: 0;
+    @top-left { content: none; border: none; }
+    @top-right { content: none; border: none; }
+    @bottom-left { content: none; border: none; }
+    @bottom-center { content: none; border: none; }
+    @bottom-right { content: none; border: none; }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.4;
+    color: #1A1A1A;
+    background: #FFFFFF;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* === Cover page === */
+.cover {
+    width: 8.5in;
+    height: 11in;
+    background: #0F0F10;
+    color: #FFFFFF;
+    padding: 1.5in 0.75in 1in 0.75in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    position: relative;
+}
+
+.cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6pt;
+    background: #D4AF37;
+}
+
+.cover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1in;
+}
+
+.cover-brand {
+    color: #D4AF37;
+    font-size: 14pt;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.cover-version {
+    color: #6A6A6A;
+    font-size: 9pt;
+    border: 1px solid #6A6A6A;
+    padding: 3pt 8pt;
+    border-radius: 2pt;
+}
+
+.cover-title-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cover-title {
+    color: #FFFFFF;
+    font-size: 36pt;
+    font-weight: bold;
+    line-height: 1.15;
+    margin: 0 0 18pt 0;
+}
+
+.cover-subtitle {
+    color: #D4AF37;
+    font-size: 18pt;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 0 0 36pt 0;
+}
+
+.cover-metadata {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24pt;
+    border-top: 2pt solid #D4AF37;
+    padding-top: 18pt;
+    margin-top: 36pt;
+}
+
+.cover-meta-label {
+    color: #6A6A6A;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 4pt;
+}
+
+.cover-meta-value {
+    color: #FFFFFF;
+    font-size: 11pt;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1pt solid #D4AF37;
+    padding-top: 12pt;
+    margin-top: 24pt;
+}
+
+.cover-footer-brand {
+    color: #D4AF37;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.cover-footer-conf {
+    color: #B22234;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: 1pt solid #B22234;
+    padding: 3pt 8pt;
+}
+
+/* === Content pages === */
+.content {
+    page-break-before: always;
+}
+
+h1 {
+    color: #0F0F10;
+    font-size: 22pt;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0 0 12pt 0;
+    padding-bottom: 8pt;
+    border-bottom: 2pt solid #D4AF37;
+}
+
+h2 {
+    color: #B22234;
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 18pt 0 8pt 0;
+    page-break-after: avoid;
+    page-break-before: auto;
+}
+
+h3 {
+    color: #D4AF37;
+    font-size: 13pt;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 14pt 0 6pt 0;
+    page-break-after: avoid;
+    page-break-before: auto;
+}
+
+h4 {
+    color: #4A4A4A;
+    font-size: 11pt;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10pt 0 4pt 0;
+    page-break-after: avoid;
+}
+
+p {
+    margin: 0 0 8pt 0;
+    text-align: left;
+    orphans: 3;
+    widows: 3;
+}
+
+ul, ol {
+    margin: 6pt 0 8pt 0;
+    padding-left: 20pt;
+}
+
+li {
+    margin-bottom: 4pt;
+    line-height: 1.35;
+}
+
+hr {
+    border: none;
+    border-top: 1pt solid #D0D0D0;
+    margin: 14pt 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10pt 0 14pt 0;
+    font-size: 9pt;
+    page-break-inside: auto;
+}
+
+thead {
+    display: table-header-group;
+}
+
+th {
+    background: #2A2A2A;
+    color: #FFFFFF;
+    padding: 6pt 8pt;
+    text-align: left;
+    font-weight: bold;
+    font-size: 8.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid #2A2A2A;
+}
+
+td {
+    padding: 5pt 8pt;
+    border: 1px solid #D0D0D0;
+    vertical-align: top;
+    font-size: 9pt;
+}
+
+tbody tr:nth-child(even) td {
+    background: #FAFAFA;
+}
+
+tbody tr:nth-child(odd) td {
+    background: #FFFFFF;
+}
+
+/* Status badges */
+.status {
+    display: inline-block;
+    padding: 1pt 6pt;
+    border-radius: 3pt;
+    font-size: 8.5pt;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-covered {
+    background: #C8E6C9;
+    color: #1B5E20;
+}
+
+.status-partial {
+    background: #FFE0B2;
+    color: #E65100;
+}
+
+.status-missing {
+    background: #FFCDD2;
+    color: #B71C1C;
+}
+
+/* Treatment badges (for risk register) */
+.treatment-mitigate {
+    display: inline-block;
+    background: #E3F2FD;
+    color: #0D47A1;
+    padding: 1pt 8pt;
+    border-radius: 10pt;
+    font-size: 8.5pt;
+    font-weight: bold;
+}
+
+.treatment-accept {
+    display: inline-block;
+    background: #FFF3E0;
+    color: #E65100;
+    padding: 1pt 8pt;
+    border-radius: 10pt;
+    font-size: 8.5pt;
+    font-weight: bold;
+}
+
+/* Severity level in risk cells */
+.severity-low {
+    background: #C8E6C9 !important;
+    color: #1B5E20;
+    font-weight: bold;
+    text-align: center;
+}
+
+.severity-medium {
+    background: #FFE0B2 !important;
+    color: #E65100;
+    font-weight: bold;
+    text-align: center;
+}
+
+.severity-high {
+    background: #FFCDD2 !important;
+    color: #B71C1C;
+    font-weight: bold;
+    text-align: center;
+}
+
+.severity-very-high {
+    background: #C62828 !important;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.residual-high {
+    font-weight: bold;
+    color: #B71C1C;
+}
+
+.lab-tag {
+    background: #FFF59D;
+    color: #6A1B9A;
+    padding: 0 4pt;
+    border-radius: 2pt;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.matrix-legend {
+    font-size: 8.5pt;
+    color: #6A6A6A;
+    font-style: italic;
+    margin: 6pt 0 12pt 0;
+}
+
+.page-break-before {
+    page-break-before: always;
+}
+
+.avoid-break {
+    page-break-inside: avoid;
+}
+
+/* Matrix table - keep whole on one page */
+table.matrix-table {
+    page-break-inside: avoid;
+    font-size: 8.5pt;
+    margin: 6pt 0;
+}
+
+table.matrix-table th {
+    font-size: 7.5pt;
+    padding: 4pt 6pt;
+}
+
+table.matrix-table td {
+    font-size: 8pt;
+    padding: 4pt 6pt;
+    text-align: center;
+}
+
+table.matrix-table td:first-child {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Code blocks */
+pre {
+    background: #F5F5F5;
+    border: 1pt solid #D0D0D0;
+    border-radius: 2pt;
+    padding: 8pt 10pt;
+    font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+    font-size: 8.5pt;
+    line-height: 1.35;
+    overflow-x: auto;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    background: #F0F0F0;
+    padding: 1pt 4pt;
+    border-radius: 2pt;
+    font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+    font-size: 0.92em;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+/* Severity rows in risk register */
+.severity-high { background: #FFEBEE !important; }
+.severity-medium { background: #FFF8E1 !important; }
+.severity-low { background: #E8F5E9 !important; }
+
+/* Heatmap matrix */
+.matrix-grid {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    gap: 2pt;
+    margin: 12pt 0;
+    font-size: 9pt;
+    text-align: center;
+}
+
+.matrix-header {
+    background: #2A2A2A;
+    color: #FFFFFF;
+    padding: 6pt 4pt;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.matrix-cell {
+    padding: 10pt 4pt;
+    border: 1px solid #D0D0D0;
+    min-height: 36pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.matrix-cell-low { background: #C8E6C9; color: #1B5E20; }
+.matrix-cell-medium { background: #FFE0B2; color: #E65100; }
+.matrix-cell-high { background: #FFCDD2; color: #B71C1C; }
+.matrix-cell-critical { background: #C62828; color: #FFFFFF; }
+.matrix-cell-empty { background: #F5F5F5; color: #6A6A6A; }
+
+/* Inline icons */
+.icon { font-style: normal; }
+</style>
+</head>
+<body>
+    
+<div class="cover">
+    <div class="cover-header">
+        <div class="cover-brand">IfeSec</div>
+        <div class="cover-version">v3.0</div>
+    </div>
+
+    <div class="cover-title-block">
+        <h1 class="cover-title">AtlasPay FinTech</h1>
+        <p class="cover-subtitle">SOC 2 Type 1 Readiness — Risk Register</p>
+    </div>
+
+    <div class="cover-metadata">
+        
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Document ID</div>
+    <div class="cover-meta-value">IFESEC-ATL-SOC2-RR-20260625</div>
+</div>
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Version</div>
+    <div class="cover-meta-value">v3.0</div>
+</div>
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Period</div>
+    <div class="cover-meta-value">FY 2026 Q3 Audit Window</div>
+</div>
+    </div>
+
+    <div class="cover-metadata" style="margin-top: 0; border-top: none; padding-top: 0;">
+        
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Preparer</div>
+    <div class="cover-meta-value">IfeSec — ijezie Risk Advisory</div>
+</div>
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Classification</div>
+    <div class="cover-meta-value">CONFIDENTIAL</div>
+</div>
+<div class="cover-meta-item">
+    <div class="cover-meta-label">Status</div>
+    <div class="cover-meta-value">Draft — Pending Review</div>
+</div>
+    </div>
+
+    <div class="cover-footer">
+        <div class="cover-footer-brand">IfeSec — ijezie Risk Advisory</div>
+        <div class="cover-footer-conf">CONFIDENTIAL</div>
+    </div>
+</div>
+
+    <div class="content">
+        <h1>AtlasPay FinTech — SOC 2 Type 1 Risk Register</h1>
+<p><strong>Engagement:</strong> AtlasPay FinTech SOC 2 Type 1 Readiness Assessment <strong>Period:</strong> FY 2026 Q3 audit window (target) <strong>Source of truth:</strong> CISO Assistant v3.18.3 (live state, folder <code>d272ee78-ef71-4a70-8235-df2335cd0b3c</code>) <strong>Risk Assessment container:</strong> RA-ATLASPAY-SOC2 (AtlasPay SOC 2 Readiness Risk Assessment) <strong>Risk Matrix:</strong> AtlasPay 5x5 (5 probability levels × 5 impact levels)</p>
+<h2>Status Legend</h2>
+<ul>
+<li>✅ <strong>Covered</strong> — Risk is designed and operating; controls in place</li>
+<li>⚠️ <strong>Partial</strong> — Risk treatment in progress; partial mitigation only</li>
+<li>❌ <strong>Missing</strong> — Risk treatment not yet designed</li>
+<li>🟡 <strong>[LAB-SYNTHETIC]</strong> — Risk scenario or evidence is fabricated for portfolio demonstration; clearly marked; do not replicate for real client work without proper authorization</li>
+</ul>
+<hr>
+<h2>Scoring Methodology</h2>
+<p><strong>Probability scale (1-5):</strong></p>
+<ol>
+<li>Unlikely (1-5%)</li>
+<li>Rather unlikely (5-25%)</li>
+<li>Likely (25-50%)</li>
+<li>Very likely (50-80%)</li>
+<li>Almost certain (80%+)</li>
+</ol>
+<p><strong>Impact scale (1-5):</strong></p>
+<ol>
+<li>Minor (negligible consequences)</li>
+<li>Significant (limited consequences)</li>
+<li>Serious (substantial consequences)</li>
+<li>Critical (disastrous consequences)</li>
+<li>Catastrophic (sector or regulatory consequences beyond the organization)</li>
+</ol>
+<p><strong>Risk levels (composite lookup):</strong></p>
+<ul>
+<li>Very Low (1)</li>
+<li>Low (2)</li>
+<li>Medium (3)</li>
+<li>High (4)</li>
+<li>Very High (5)</li>
+</ul>
+<p><strong>Treatment options:</strong> Mitigate, Accept, Transfer, Avoid</p>
+<hr>
+<h2>Risk Register Summary</h2>
+<p>This table summarizes all 6 risk scenarios in scope. Detailed scenarios follow.</p>
+<table>
+<thead><tr>
+<th>ID</th>
+<th>Risk Scenario</th>
+<th>Category</th>
+<th>Inherent</th>
+<th>Residual</th>
+<th>Treatment</th>
+<th>Owner</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>R-01</td>
+<td>Privileged Account Compromise</td>
+<td>Identity &amp; Access</td>
+<td><span class="severity-very-high">Very High (5)</span></td>
+<td><span class="severity-medium">Medium (3)</span></td>
+<td><span class="treatment-mitigate">Mitigate</span></td>
+<td>CISO</td>
+</tr>
+<tr>
+<td>R-02</td>
+<td>Payment Data Exfiltration via API</td>
+<td>Data Security</td>
+<td><span class="severity-very-high">Very High (5)</span></td>
+<td><span class="severity-medium">Medium (3)</span></td>
+<td><span class="treatment-mitigate">Mitigate</span></td>
+<td>CISO + CTO</td>
+</tr>
+<tr>
+<td>R-03</td>
+<td>Ransomware on Production Database</td>
+<td>Availability</td>
+<td><span class="severity-high">High (4)</span></td>
+<td><span class="severity-medium">Medium (3)</span></td>
+<td><span class="treatment-mitigate">Mitigate</span></td>
+<td>CTO + CISO</td>
+</tr>
+<tr>
+<td>R-04</td>
+<td>Third-Party SaaS Breach (Vendor Compromise)</td>
+<td>Third-Party Risk</td>
+<td><span class="severity-high">High (4)</span></td>
+<td><span class="severity-high">High (4)</span></td>
+<td><span class="treatment-accept">Accept</span></td>
+<td>CISO + Vendor Mgmt</td>
+</tr>
+<tr>
+<td>R-05</td>
+<td>Insider Threat (Malicious Employee)</td>
+<td>Human Risk</td>
+<td><span class="severity-high">High (4)</span></td>
+<td><span class="severity-medium">Medium (3)</span></td>
+<td><span class="treatment-mitigate">Mitigate</span></td>
+<td>Head of People + CISO</td>
+</tr>
+<tr>
+<td>R-06</td>
+<td>Insufficient Audit Logging</td>
+<td>Monitoring</td>
+<td><span class="severity-high">High (4)</span></td>
+<td><span class="severity-low">Low (2)</span></td>
+<td><span class="treatment-mitigate">Mitigate</span></td>
+<td>CISO + Engineering</td>
+</tr>
+</tbody></table>
+<p><strong>Key takeaways:</strong></p>
+<ul>
+<li><strong>4 of 6 risks</strong> (R-01, R-02, R-03, R-06) have residual risk reduced to Medium or Low via documented controls</li>
+<li><strong>2 of 6 risks</strong> (R-04, R-05) retain residuals at High or Medium, with treatment plans documented</li>
+<li><strong>R-04 is the only formally accepted residual High</strong> — vendor compromise is endemic in FinTech</li>
+<li><strong>Inherent risk concentration:</strong> 3 of 6 risks start at Very High (5) — typical for FinTech payment data</li>
+</ul>
+<hr>
+<h2>Risk Heat Map (Inherent vs Residual)</h2>
+<table class="matrix-table">
+<thead><tr>
+<th>Likelihood ↓ / Impact →</th>
+<th>Negligible (1)</th>
+<th>Minor (2)</th>
+<th>Significant (3)</th>
+<th>Critical (4)</th>
+<th>Catastrophic (5)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Almost Certain (5)</strong></td>
+<td>—</td>
+<td>R-06 (inh)</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Very Likely (4)</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>R-04 (inh), R-05 (inh)</td>
+<td>R-01 (inh), R-02 (inh)</td>
+</tr>
+<tr>
+<td><strong>Likely (3)</strong></td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>R-03 (inh)</td>
+</tr>
+<tr>
+<td><strong>Rather Unlikely (2)</strong></td>
+<td>—</td>
+<td>—</td>
+<td>R-02 (res), R-03 (res), R-05 (res)</td>
+<td>—</td>
+<td>R-01 (res)</td>
+</tr>
+<tr>
+<td><strong>Unlikely (1)</strong></td>
+<td>—</td>
+<td>R-06 (res)</td>
+<td>—</td>
+<td>R-04 (res)</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p>Notation: (inh) = inherent risk, (res) = residual risk after controls. Empty cells (—) indicate no risks currently at that combination.</p>
+<hr>
+<h2>Treatment Distribution</h2>
+<table>
+<thead><tr>
+<th>Treatment</th>
+<th>Count</th>
+<th>Risks</th>
+<th>Rationale</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><strong>Mitigate</strong></td>
+<td>5</td>
+<td>R-01, R-02, R-03, R-05, R-06</td>
+<td>Controls reduce inherent risk to acceptable levels</td>
+</tr>
+<tr>
+<td><strong>Accept (with mitigation)</strong></td>
+<td>1</td>
+<td>R-04</td>
+<td>Vendor compromise is industry-endemic; mitigation focuses on blast-radius reduction</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Detailed Risk Scenarios</h2>
+<h3>R-01: Privileged Account Compromise</h3>
+<p><strong>Category:</strong> Identity &amp; Access <strong>Owner:</strong> CISO</p>
+<p><strong>Description:</strong> A privileged account (administrator, root, service account) at AtlasPay is compromised through credential theft, phishing, or insider abuse, allowing the attacker to escalate privileges, exfiltrate sensitive data, or disrupt production systems.</p>
+<p><strong>Inherent risk:</strong> Probability 4 (Very likely) × Impact 5 (Catastrophic) = <strong>Very High (5)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>V-03 (Identity Provider) enforces SSO + MFA for all privileged access</li>
+<li>ACC-01 (Access Control Policy) defines privileged account provisioning, review, and revocation</li>
+<li>Privileged Access Management (PAM) tool sessions are recorded for audit</li>
+<li>Quarterly access reviews for all privileged accounts</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 3 (Likely) × Impact 5 (Catastrophic) = High (4)</p>
+<p><strong>Residual risk:</strong> Probability 2 (Rather unlikely) × Impact 5 (Catastrophic) = <strong>Medium (3)</strong></p>
+<p><strong>Treatment:</strong> Mitigate</p>
+<ul>
+<li>Continue PAM tool coverage expansion (currently 85% of privileged accounts)</li>
+<li>Annual red-team exercises targeting privilege escalation paths</li>
+<li>Continuous monitoring for anomalous privileged activity via V-05 (SIEM)</li>
+<li>Move toward just-in-time (JIT) privileged access provisioning (target Q4 2026)</li>
+</ul>
+<p><strong>Rationale for reduction:</strong> Identity provider controls (SSO + MFA) and PAM tooling materially reduce compromise probability. Impact cannot be reduced further without architectural changes (e.g., zero-trust) that exceed engagement scope.</p>
+<hr>
+<h3>R-02: Payment Data Exfiltration via API</h3>
+<p><strong>Category:</strong> Data Security <strong>Owner:</strong> CISO + CTO</p>
+<p><strong>Description:</strong> Payment data (card numbers, transaction history, customer PII) is exfiltrated from AtlasPay's APIs through API key compromise, man-in-the-middle attack, or insider abuse.</p>
+<p><strong>Inherent risk:</strong> Probability 4 (Very likely) × Impact 5 (Catastrophic) = <strong>Very High (5)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>V-02 (Payment Gateway) provides tokenization — no raw card data stored</li>
+<li>API gateway with mTLS for all internal service-to-service communication</li>
+<li>WAF with rate limiting and behavioral analysis</li>
+<li>DLP on egress traffic</li>
+<li>Quarterly penetration testing by external firm</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 3 (Likely) × Impact 5 (Catastrophic) = High (4)</p>
+<p><strong>Residual risk:</strong> Probability 2 (Rather unlikely) × Impact 5 (Catastrophic) = <strong>Medium (3)</strong></p>
+<p><strong>Treatment:</strong> Mitigate</p>
+<ul>
+<li>Continued penetration testing (quarterly)</li>
+<li>API key rotation cadence (90 days)</li>
+<li>Behavioral analytics on API traffic via V-05 (Monitoring Tools)</li>
+</ul>
+<p><strong>Rationale for unchanged residual:</strong> Controls are operating as designed. Additional residual reduction would require architectural changes (e.g., moving to zero-trust network segmentation) that exceed engagement scope.</p>
+<hr>
+<h3>R-03: Ransomware on Production Database Host</h3>
+<p><strong>Category:</strong> Availability <strong>Owner:</strong> CTO + CISO</p>
+<p><strong>Description:</strong> Ransomware encrypts AtlasPay's production database host, rendering the system unavailable and potentially exfiltrating customer data before encryption.</p>
+<p><strong>Inherent risk:</strong> Probability 3 (Likely) × Impact 5 (Catastrophic) = <strong>High (4)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>Immutable backup snapshots stored in isolated V-01 (AWS) account</li>
+<li>EDR (Endpoint Detection and Response) deployed on all production hosts</li>
+<li>Tested restore procedure (quarterly restore-from-backup drill)</li>
+<li>Network segmentation between production and corporate networks</li>
+<li>Principle of least privilege enforced via RBAC</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 3 (Likely) × Impact 4 (Critical) = High (4)</p>
+<p><strong>Residual risk:</strong> Probability 3 (Likely) × Impact 3 (Serious) = <strong>Medium (3)</strong></p>
+<p><strong>Treatment:</strong> Mitigate</p>
+<ul>
+<li>Continue quarterly restore-from-backup tests</li>
+<li>Annual tabletop exercise simulating ransomware scenario</li>
+<li>Continue EDR deployment and tuning</li>
+</ul>
+<p><strong>Rationale for unchanged residual:</strong> Impact was reduced (Critical to Serious) by demonstrating tested recovery capability, but probability remains unchanged because ransomware actors continue to evolve faster than defensive controls.</p>
+<hr>
+<h3>R-04: Third-Party SaaS Breach (Vendor Compromise)</h3>
+<p><strong>Category:</strong> Third-Party Risk <strong>Owner:</strong> CISO + Vendor Management Officer</p>
+<p><strong>Description:</strong> A SaaS vendor in AtlasPay's supply chain (e.g., V-02 Payment Gateway, V-03 Identity Provider) is compromised, exposing AtlasPay customer data or disrupting operations.</p>
+<p><strong>Inherent risk:</strong> Probability 4 (Very likely) × Impact 4 (Critical) = <strong>High (4)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>TPRM-01 (Third-Party Risk Management Policy) with vendor tier classification</li>
+<li>7 vendors under MSA with security addenda</li>
+<li>Annual SOC 2 Type 2 review for Tier-1 vendors</li>
+<li>Contractual breach notification SLAs (72 hours)</li>
+<li>Vendor access segmentation via V-04 (Application Platform) service mesh</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 4 (Very likely) × Impact 4 (Critical) = High (4)</p>
+<p><strong>Residual risk:</strong> Probability 3 (Likely) × Impact 4 (Critical) = <strong>High (4)</strong></p>
+<p><strong>Treatment:</strong> Accept (with mitigation)</p>
+<ul>
+<li>Accept residual high because supply-chain compromise is endemic in FinTech</li>
+<li>Mitigate through blast radius reduction: vendor access segmentation, contractual recovery rights, sub-processor notification clauses</li>
+<li>Quarterly vendor risk review with focus on Tier-1 vendors (V-01, V-02, V-03)</li>
+</ul>
+<p><strong>Rationale for accepted High:</strong> Supply-chain attacks are a top-3 industry threat vector per Verizon DBIR 2025. Architectural controls cannot eliminate the source. Mitigation focuses on reducing blast radius and recovery time, not on preventing the event.</p>
+<hr>
+<h3>R-05: Insider Threat (Malicious Employee)</h3>
+<p><strong>Category:</strong> Human Risk <strong>Owner:</strong> Head of People + CISO</p>
+<p><strong>Description:</strong> A current or former employee with legitimate access misuses that access to exfiltrate data, sabotage systems, or facilitate external attack.</p>
+<p><strong>Inherent risk:</strong> Probability 4 (Very likely) × Impact 4 (Critical) = <strong>High (4)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>Pre-employment background checks for all hires</li>
+<li>Principle of least privilege enforced via RBAC</li>
+<li>DLP on egress traffic</li>
+<li>User behavior analytics (UBA) via V-05 (SIEM)</li>
+<li>Mandatory security awareness training (annual)</li>
+<li>Offboarding procedure revokes access within 4 hours</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 3 (Likely) × Impact 4 (Critical) = High (4)</p>
+<p><strong>Residual risk:</strong> Probability 2 (Rather unlikely) × Impact 4 (Critical) = <strong>Medium (3)</strong></p>
+<p><strong>Treatment:</strong> Mitigate</p>
+<ul>
+<li>Annual security awareness training</li>
+<li>UBA tuning to detect anomalous data access patterns</li>
+<li>Quarterly access reviews by line managers</li>
+<li>Tabletop exercise simulating insider exfiltration scenario</li>
+</ul>
+<p><strong>Rationale for reduction:</strong> UBA and DLP controls have reduced the probability from Likely to Rather Unlikely based on observed false positive reduction over the past 12 months.</p>
+<hr>
+<h3>R-06: Insufficient Audit Logging</h3>
+<p><strong>Category:</strong> Monitoring <strong>Owner:</strong> CISO + Engineering</p>
+<p><strong>Description:</strong> Critical system events are not logged, or logs are incomplete, making it impossible to detect or investigate security incidents effectively.</p>
+<p><strong>Inherent risk:</strong> Probability 5 (Almost certain) × Impact 2 (Significant) = <strong>High (4)</strong></p>
+<p><strong>Existing controls:</strong></p>
+<ul>
+<li>Centralized SIEM (V-05) aggregating logs from all production systems</li>
+<li>90-day hot retention + 6-year cold archive per FFIEC retention pattern</li>
+<li>Log integrity verification via cryptographic hashing</li>
+<li>Alert rules for critical event types (auth failures, privilege escalation, data egress)</li>
+<li>Quarterly log coverage audit (verify all critical systems are logging)</li>
+</ul>
+<p><strong>Current risk:</strong> Probability 2 (Rather unlikely) × Impact 2 (Significant) = Low (2)</p>
+<p><strong>Residual risk:</strong> Probability 1 (Unlikely) × Impact 2 (Significant) = <strong>Low (2)</strong></p>
+<p><strong>Treatment:</strong> Mitigate</p>
+<ul>
+<li>Continue quarterly log coverage audits</li>
+<li>Expand UBA rules to detect sophisticated exfiltration patterns</li>
+<li>Annual tabletop exercise testing incident detection and response</li>
+</ul>
+<p><strong>Rationale for substantial reduction:</strong> SIEM coverage has matured from 60% to 95% over the past 18 months. Remaining 5% gap is non-critical systems.</p>
+<hr>
+<h2>Risk Acceptance Statement</h2>
+<p>The following residual risks are formally accepted by AtlasPay management:</p>
+<table>
+<thead><tr>
+<th>ID</th>
+<th>Risk</th>
+<th>Residual</th>
+<th>Accepted By</th>
+<th>Date</th>
+<th>Review Cadence</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>R-04</td>
+<td>Third-Party SaaS Breach</td>
+<td><span class="severity-high">High (4)</span></td>
+<td>CISO + CEO</td>
+<td>2026-06-25</td>
+<td>Quarterly</td>
+</tr>
+</tbody></table>
+<p><strong>Rationale:</strong> Supply-chain compromise is endemic in the FinTech sector. Architectural controls within engagement scope cannot eliminate the source of risk. Mitigation focuses on blast radius reduction, contractual recovery rights, and sub-processor notification clauses. The CISO and CEO acknowledge the residual High and accept it on behalf of AtlasPay, with quarterly review at Risk Committee meetings.</p>
+<p>All other residual risks (R-01, R-02, R-03, R-05, R-06) are managed within AtlasPay's risk appetite and do not require formal acceptance.</p>
+<hr>
+<h2>Sign-Off</h2>
+<p>This risk register reflects the engagement state as of <strong>2026-06-25</strong>. The data in CISO Assistant v3.18.3 is the authoritative record. Lab-synthetic items are clearly marked and do not represent verified client evidence.</p>
+<p><strong>Prepared by:</strong> IfeSec Risk Advisory <strong>Audience:</strong> AtlasPay Board, CISO, Risk Committee <strong>Next review:</strong> Quarterly Risk Committee meetings (FY 2026 Q3 kickoff)</p>
+    </div>
+</body>
+</html>

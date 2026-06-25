@@ -65,8 +65,8 @@ The AtlasPay SOC 2 Type 1 readiness engagement produced a complete package of ar
 
 | Document | Purpose | Audience |
 |---|---|---|
-| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v2.pdf)** (9 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations | AtlasPay executive leadership, board of directors |
-| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v2.pdf)** (10 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement | Board Risk Committee, SOC 2 audit team |
+| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v3.pdf)** (7 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations. Dark cover, white content pages, color-coded severity badges and treatment pills. HTML+CSS rendered via WeasyPrint for clean typography without text-box overflow | AtlasPay executive leadership, board of directors |
+| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v3.pdf)** (8 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement. Same template as the Executive Briefing | Board Risk Committee, SOC 2 audit team |
 
 ### Engagement Artifacts (Markdown Source)
 
@@ -200,6 +200,42 @@ The result is not perfect security. It is an auditable, risk-informed foundation
 - [Cyber-Security Policy Library](https://github.com/ijeziermf/Cyber-Security-Policy-Library): NIST-aligned policy templates used across sandboxes
 - [Helix Health GRC Sandbox](https://github.com/ijeziermf/helix-health-grc-sandbox): HIPAA + SOC 2 readiness for a HealthTech SaaS
 - [Meridian Bank GRC Sandbox](https://github.com/ijeziermf/meridian-bank-grc-sandbox): Community bank risk and compliance program
+
+## PDF Generation Methodology (v3)
+
+The v3 PDFs were regenerated from markdown source using a custom HTML+CSS pipeline. Source files, intermediate HTML, and the generator script are bundled in `deliverables/v3_sources/` for full reproducibility.
+
+**Why HTML+CSS over reportlab:** reportlab v2 had text-box overflow on long headings, shape overlap on charts, and font clipping in tables. CSS Paged Media (`@page`, margin boxes, page-break-inside) handles all of those natively.
+
+**Pipeline:**
+
+1. Source markdown (e.g., `executive_briefing_v3.md`) → simple parser → HTML body
+2. Cover page (dark theme) + body wrapped in HTML document with embedded CSS
+3. WeasyPrint renders HTML to PDF (8.5x11 letter portrait, 0.5in margins)
+
+**To regenerate locally:**
+
+```bash
+# WeasyPrint required
+brew install weasyprint
+
+# Run from anywhere
+python3 deliverables/v3_sources/generate_pdf_html.py \
+    deliverables/v3_sources/executive_briefing_v3.md \
+    /tmp/executive_briefing.pdf \
+    executive_briefing
+```
+
+**Template features:**
+
+- Dark cover with full metadata grid (black `#0F0F10`, gold `#D4AF37`, crimson `#B22234`)
+- White content pages with dark gray text (`#1A1A1A`) for readability
+- Running header + footer with gold rules via CSS `@page` margin boxes
+- Color-coded severity badges (green Covered, amber Partial, red Missing)
+- Color-coded treatment pills (blue Mitigate, orange Accept)
+- Risk matrix as a styled table with `page-break-inside: avoid` to keep it whole
+- `[LAB-SYNTHETIC]` evidence tags highlighted in yellow
+- Inline code (URNs, file paths) in monospace with light gray background
 
 ---
 
