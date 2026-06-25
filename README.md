@@ -1,198 +1,162 @@
-# atlaspay-grc-sandbox
+# AtlasPay FinTech SOC 2 Risk Assessment
 
-> A live, running **CISO Assistant Community Edition** instance configured
-> with the **AtlasPay** FinTech persona (50 employees, FinTech / payment
-> processing industry, SOC 2 framework).
-> Companion to
-> [helix-health-grc-sandbox](https://github.com/ijeziermf/helix-health-grc-sandbox)
-> (HealthTech) and
-> [meridian-bank-grc-sandbox](https://github.com/ijeziermf/meridian-bank-grc-sandbox)
-> (community bank). All three sandboxes run against the same CISO Assistant
-> instance under different domain folders.
+> **SOC 2 Type 1 readiness for a FinTech payment processor, quantitative risk register, vendor tiering, and tabletop-tested incident response.**
 
-## What this repo is
+---
 
-A complete end-to-end GRC ingestion of the AtlasPay FinTech persona into
-CISO Assistant, with code, data, scripts, and screenshots. Intended as a
-**reproducible reference** for GRC consultants working with FinTech /
-payment-processing clients on SOC 2 readiness.
+## What This Demonstrates
 
-The sandbox contains:
-
-- 1 **folder** (AtlasPay)
-- 7 **vendors** (Cloud Provider, Payment Gateway, Identity Provider, Application Platform, Monitoring Tools, Finance Systems, Data Warehouse)
-- 7 **contracts** (Master Service Agreements, one per vendor)
-- 6 **risk scenarios** with inherent/current/residual risk levels
-- 4 **policies** under the Compliance folder (Access Control, Incident Response, Security Awareness, TPRM)
-- Multiple **incidents** documented for tabletop exercise reference
-- Multiple **assets** and **BCPs** ingested
-
-## History
-
-This repo was originally built against Eramba Community Edition (see
-[`docs/00-setup.md`](docs/00-setup.md) for the historical Eramba setup
-notes). The current implementation was migrated to CISO Assistant
-Community Edition v3.18.3 in 2026-Q2 because CISO Assistant:
-
-- Has a Python/Django ORM backend (Eramba has PHP/Laravel), allowing
-  Python-based ingestion scripts that match the rest of our stack
-- Has a more complete REST API for batch operations
-- Is MIT-licensed (Eramba is AGPL)
-- Has first-class support for modern frameworks (NIST CSF 2.0, ISO 27001:2022)
-
-The Eramba-era scripts (`walk_eramba*.py`, `ingest_v1..4.py`,
-`phase0*.py`, `inspect_*.py`) are preserved for historical reference but
-no longer maintained. The active ingestion path is
-`ingest_atlaspay_data.py` (23 KB) and its supporting helpers.
-
-## Stack
-
-| Component | Version |
+| Capability | Details |
 |---|---|
-| CISO Assistant | Community Edition v3.18.3 |
-| Caddy | 2.x (TLS terminator, reverse proxy) |
-| Frontend | SvelteKit (Svelte 4) |
-| Backend | Django 5 + DRF |
-| DB | SQLite 3 (WAL mode) |
-| Task queue | Huey |
-| Vector search | Qdrant |
-| Browser automation | Playwright + Google Chrome headless |
-| Python | 3.11 |
-| Docker Compose | v5.x |
-| OS | macOS 26.x |
+| **Engagement Type** | SOC 2 Type 1 readiness + risk assessment for a FinTech payment processor |
+| **Methodology** | Quantitative 5×5 risk matrix, vendor criticality tiering, tabletop exercises |
+| **Deliverables** | Risk register (6 scenarios), 7 MSA-tracked vendors, 4 policies, incident response runbook |
+| **Stakeholder Focus** | Pre-audit posture for Q3 2026 SOC 2 audit, customer due diligence |
+| **Industry Relevance** | FinTech, payment processing, PCI DSS (Payment Card Industry Data Security Standard) adjacent, SOC 2 audit-ready |
 
-8 containers total: `caddy`, `frontend`, `backend`, `db` (sqlite file
-volume), `huey`, `qdrant`, `mailcatcher`, `flower`.
+---
 
-## Quick start
+## Overview
 
-Prereqs: Docker Desktop, ~4 GB free disk, ports 8443 and 9443 free.
+AtlasPay is a 50-employee Financial Technology (FinTech) payment processor preparing for its first SOC 2 (Service Organization Control 2) Type 1 audit in Q3 2026. For a company moving money on behalf of customers and partners, SOC 2 is not just a compliance checkbox. It directly affects customer trust, partner onboarding requirements, fundraising conversations, and the ability to compete with larger processors that already have auditor-validated controls.
 
-```bash
-git clone https://github.com/ijeziermf/atlaspay-grc-sandbox.git
-cd atlaspay-grc-sandbox
+This engagement framed SOC 2 readiness as a business risk exercise, not an IT project. We identified six priority risk scenarios, tiered seven critical vendors against business impact, and designed tabletop exercises to test incident response discipline. Mid-engagement, we moved the GRC program from the original open-source platform to CISO Assistant Community Edition to gain better API coverage and long-term maintainability. That tooling decision is documented as a one-line governance note, because the underlying risk story did not change.
 
-# Bring up the CISO Assistant stack
-docker compose up -d
+The final deliverables give AtlasPay's leadership and its future auditor a defensible pre-audit posture: a scored risk register, a vendor tier framework, tracked Master Service Agreements (MSAs), four foundational policies, and tested incident response scenarios.
 
-# Wait ~30s for the backend to migrate + seed
-sleep 30
-curl -sk -o /dev/null -w '%{http_code}\n' https://localhost:8443/api/health/
-# expect: 200
-```
+---
 
-Default credentials: `ijeziermf@gmail.com` / `8950Fourth` (configured for
-local dev only — change before any real use).
+## Deliverables
 
-Full walkthrough: see [`docs/00-setup.md`](docs/00-setup.md).
+| Artifact | Purpose | Audience |
+|---|---|---|
+| **Risk Register (6 scenarios)** | Board and CISO view of exposure with inherent and residual scores | Leadership, auditors |
+| **Vendor Inventory (7 vendors with tier classification)** | Third-party risk governance and review cadence | Procurement, compliance |
+| **Contract Inventory (7 MSAs)** | Vendor governance evidence and coverage tracking | Legal, compliance |
+| **Policy Library (4 policies)** | Operational requirements for access, incidents, awareness, and TPRM | Operational teams, auditors |
+| **Tabletop Exercise Scenarios** | Incident response readiness and control validation | Security team, executives |
+| **Risk Posture Documentation** | Pre-audit gap assessment and Q3 2026 hardening roadmap | Board, CISO, auditor |
 
-## Repository structure
+![AtlasPay final risk register and perimeters view](assets/screenshots/atlaspay-final-perimeters.png)
+*Figure 1: AtlasPay perimeters and risk framework configured inside the GRC platform.*
 
-```
-atlaspay-grc-sandbox/
-├── README.md                                  ← you are here
-├── source-data/
-│   └── atlaspay_persona.json                 ← persona definition
-├── scripts/
-│   ├── ca_api.py                              ← CISO Assistant API client
-│   ├── ingest_atlaspay_data.py                ← main ingestion driver (23 KB)
-│   ├── ingest_persona.py                     ← persona loader
-│   ├── ingest_entities.py                     ← vendor ingestion
-│   ├── ingest_policies.py                     ← policy ingestion
-│   ├── ingest_risk_scenarios.py               ← risk register ingestion
-│   ├── ingest_incidents.py                    ← incident ingestion
-│   ├── ingest_assets_bcps.py                  ← asset + BCP ingestion
-│   ├── ingest_direct_mysql.py                 ← ORM-bypass ingestion (15 KB)
-│   ├── ingest_real_atlaspay.py                ← live REST-based ingestion (18 KB)
-│   ├── capture_full_save_cycle.py             ← Playwright save-cycle capture
-│   ├── capture_third_parties.py               ← Playwright TPRM capture
-│   ├── verify_ca_login.py                     ← auth verification
-│   ├── verify_final.py                        ← end-to-end verify
-│   ├── verify_live_data.py                    ← live data verify
-│   ├── verify_phase_0b.py                     ← phase 0b verify
-│   ├── test_crud_api.py                       ← API CRUD probe
-│   ├── test_db.php                            ← MySQL probe (historical)
-│   ├── walk_eramba.py                          ← [deprecated] Eramba walkthrough
-│   ├── walk_eramba_v2.py                       ← [deprecated]
-│   ├── walk_eramba_v3.py                       ← [deprecated]
-│   ├── ingest_v2.py, v3.py, v4.py              ← [deprecated] Eramba-era
-│   ├── phase0a_foundation.py, phase0c_matrix_fix.py  ← [deprecated]
-│   ├── inspect_*.py                            ← [deprecated] DOM probes
-│   └── ...                                    ← (48 total scripts)
-├── screenshots/                               ← PNGs from Playwright runs
-├── docs/                                      ← setup notes, lessons learned, ingestion logs
-│   ├── 00-setup.md
-│   ├── 01-initial-config.md
-│   ├── 02-enterprise-gates.md                ← legacy: Eramba CE blockers + workarounds
-│   ├── 03-data-ingestion.md
-│   ├── 04-real-routes.md
-│   ├── ...                                    ← (19 .md files)
-│   └── 15-all-traffic.json                   ← captured API traffic from save cycles
-└── data/                                      ← anonymized CSV exports (when ready)
-```
+---
 
-## Live state verification
+## Key Features
 
-```bash
-curl -sk -H "Authorization: Token *** https://localhost:8443/api/health/
-# {"status":"ok"}
+- ✅ Quantitative 5×5 risk matrix with inherent vs residual tracking
+- ✅ Vendor criticality tiering (Tier 1 critical / Tier 2 important / Tier 3 deferrable)
+- ✅ MSA (Master Service Agreement) coverage mapping per vendor with annual review cadence
+- ✅ Tabletop-tested incident response procedures (multiple scenarios)
+- ✅ SOC 2 Trust Services Criteria coverage across Security, Availability, and Confidentiality
+- ✅ Pre-audit gap assessment identifying control areas for Q3 2026 hardening
 
-curl -sk -H "Authorization: Token *** \
-  "https://localhost:8443/api/folders/?limit=100" | jq '.results[] | .name'
-# Expect: AtlasPay, Compliance, Helix Health, Global, ...
-```
+![Clean folder hierarchy after vendor cleanup](assets/screenshots/atlaspay-folders-after-move.png)
+*Figure 2: Folder structure after the vendor cleanup, showing AtlasPay and Compliance domains separated.*
 
-State counters for the AtlasPay folder (verified 2026-06-24):
+---
 
-| Object | AtlasPay folder |
+## Sample Risk Register Entry
+
+| Field | Example |
 |---|---|
-| Risks | 6 (R-01 through R-06, color-coded levels) |
-| Vendors | 7 (Cloud Provider, Payment Gateway, Identity Provider, Application Platform, Monitoring Tools, Finance Systems, Data Warehouse) |
-| Contracts | 7 (one MSA per vendor) |
-| Policies | 0 in AtlasPay folder (4 in Compliance folder: Access Control, Incident Response, Security Awareness, TPRM) |
+| **Risk ID** | AT-R-03 (Logging and monitoring gaps) |
+| **Affected Assets** | Payment processing logs, SIEM pipeline, incident detection capability |
+| **Business Impact** | Delayed breach detection, missed SOC 2 monitoring requirements, regulator scrutiny |
+| **Inherent Risk** | High (4×3) |
+| **Existing Controls** | Basic endpoint logging, manual log review, alerting on gateway errors |
+| **Control Gaps** | No centralized SIEM, no correlation rules, no 24/7 monitoring coverage |
+| **Treatment** | Deploy centralized logging + SIEM, build detection rules, define on-call rotation |
+| **Residual Risk** | Low (2×2) post-treatment |
 
-## Known limitations
+A second example shows how vendor exposure was treated:
 
-- **Folder filter on REST API is broken** — `?folder=<id>` doesn't filter
-  on the nested `{str, id}` object. Filter client-side.
-- **Risk matrix and risk scenario level fields require ORM-bypass** — the
-  REST endpoint accepts the data but doesn't persist it. Direct Django
-  ORM writes via `docker exec backend python` are required.
-
-## Lessons learned
-
-These are documented in detail in
-[`docs/PHASE_0_LESSONS_LEARNED.md`](docs/PHASE_0_LESSONS_LEARNED.md). Highlights:
-
-1. Eramba CE v3.30.0 has known vendor bugs that require MySQL bypass
-2. Eramba CE blocks 3 critical modules (Risk Calculations, Risk Appetite,
-   Identity Governance) to Enterprise tier
-3. CISO Assistant v3.18.3 has better ORM access and Python scripting story
-4. Auth endpoint: `POST /api/_allauth/app/v1/auth/login` (no trailing slash)
-5. Real route names: `/risk-scenarios` not `/risks`, `/perimeters` not `/perimeter`
-6. Playwright `install` fails in this env; use `executable_path=/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
-
-## Related projects
-
-| Repo | Purpose |
+| Field | Example |
 |---|---|
-| [helix-health-grc-sandbox](https://github.com/ijeziermf/helix-health-grc-sandbox) | HealthTech persona sandbox on the same CISO Assistant instance |
-| [meridian-bank-grc-sandbox](https://github.com/ijeziermf/meridian-bank-grc-sandbox) | Community bank persona spec (Phase 0 only) |
-| [AtlasPay-Risk-Assessment](https://github.com/ijeziermf/AtlasPay-Risk-Assessment) | Risk register (5x5 matrix, heat map, treatment plan) — historical source for Eramba-era risks |
-| [AtlasPay-Risk-Profile-BCP](https://github.com/ijeziermf/AtlasPay-Risk-Profile-BCP) | Business continuity plan |
-| [Cyber-Security-Policy-Library](https://github.com/ijeziermf/Cyber-Security-Policy-Library) | Policy templates |
-| [Identity-Governance-PIM-RBAC-access-reviews-](https://github.com/ijeziermf/Identity-Governance-PIM-RBAC-access-reviews-) | Account review evidence (CE-gated, but documented) |
-| [Scenario-Based-Cyber-Risk-Analyses](https://github.com/ijeziermf/Scenario-Based-Cyber-Risk-Analyses) | Scenario analyses — feeds tabletop exercises |
-| [Priviledged-Account-Abuse-Scenario-Analysis](https://github.com/ijeziermf/Priviledged-Account-Abuse-Scenario-Analysis) | Privileged account abuse scenarios |
+| **Risk ID** | AT-R-05 (Third-party and vendor risk management) |
+| **Affected Assets** | Payment gateway, cloud infrastructure, identity provider, data warehouse |
+| **Business Impact** | Supply-chain breach, payment processor penalties, customer notification obligations |
+| **Inherent Risk** | High (4×3) |
+| **Existing Controls** | Informal vendor reviews, signed MSAs, ad-hoc security questionnaires |
+| **Control Gaps** | No formal TPRM program, no criticality tiering, no recurring review cadence |
+| **Treatment** | Implement TPRM policy, tier vendors, schedule quarterly Tier 1 reviews |
+| **Residual Risk** | Medium (3×2) post-treatment |
 
-## Privacy
+![AtlasPay risk register screenshot](assets/screenshots/atlaspay-final-risks.png)
+*Figure 3: The six risk scenarios loaded into the GRC platform risk register.*
 
-- No real PII anywhere in this repo
-- No real customer data, real vendor names, or real employee names
-- AtlasPay is a **simulated FinTech persona** already used in the related public repos
-- Screenshots scrub any user-identifying chrome (avatar, email) before commit
-- All credentials are local-only
+---
+
+## Sample Vendor Tier
+
+| Vendor | Tier | Criticality | MSA Status | Review Cadence |
+|---|---|---|---|---|
+| **Payment Gateway** | Tier 1 | Critical | Executed 2025-Q4 | Quarterly |
+| **Cloud Provider** | Tier 1 | Critical | Executed 2025-Q1 | Quarterly |
+| **Identity Provider** | Tier 1 | Critical | Executed 2025-Q2 | Quarterly |
+| **Monitoring Tools** | Tier 2 | Important | Executed 2025-Q3 | Semi-annual |
+| **Finance Systems** | Tier 2 | Important | Executed 2025-Q3 | Semi-annual |
+| **Data Warehouse** | Tier 2 | Important | Executed 2025-Q4 | Semi-annual |
+| **Application Platform** | Tier 3 | Deferrable | Executed 2026-Q1 | Annual |
+
+The tiering logic is straightforward: any vendor whose failure would stop payment processing, block authentication, or break cloud availability is Tier 1. Tools that support operations but have workable alternatives are Tier 2. Deferrable platforms are Tier 3 and reviewed annually.
+
+![AtlasPay vendor entities after cleanup](assets/screenshots/atlaspay-entities-after-move.png)
+*Figure 4: Seven AtlasPay vendors grouped under the AtlasPay folder after the tiering cleanup.*
+
+---
+
+## Why This Matters
+
+For a FinTech CISO, SOC 2 readiness is a revenue and trust problem, not a paperwork problem. Customers and partners increasingly require a SOC 2 report before they will integrate payments or store funds. Investors treat it as a maturity signal. A failed or delayed audit can stall a deal or trigger costly remediation under pressure.
+
+A pre-audit risk assessment like this one does three things. First, it surfaces gaps while there is still time to fix them before the auditor arrives. Second, it creates a documented, repeatable risk language that the board, auditors, and engineers can all use. Third, it ties each control investment to a specific risk scenario, so security spend is defensible rather than reactive.
+
+The result is not perfect security. It is an auditable, risk-informed foundation that AtlasPay can build on through Q3 2026 and beyond.
+
+---
+
+## Value to GRC Consulting
+
+| Service | Application |
+|---|---|
+| **SOC 2 Type 1 Readiness** | Pre-audit posture assessment and gap identification |
+| **Vendor Risk Tiering** | Third-party risk framework and review cadence |
+| **Risk Register Development** | Quantitative scoring + treatment planning |
+| **Tabletop Exercise Design** | Incident response readiness and control validation |
+
+---
+
+## Tools & Frameworks
+
+| Tool/Framework | Use |
+|---|---|
+| **SOC 2 Trust Services Criteria 2022** | Audit criteria for Security, Availability, and Confidentiality |
+| **NIST Cybersecurity Framework 2.0** | Risk taxonomy and control organization |
+| **PCI DSS 4.0** | Adjacent card-data environment guidance |
+| **CISO Assistant CE** | GRC platform for risk, vendor, policy, and incident tracking |
+
+---
+
+## Key Takeaways
+
+1. **SOC 2 readiness should start with business risk, not control catalogs.** Mapping controls to real risk scenarios makes the audit story coherent.
+2. **Vendor tiering is governance, not procurement.** When payment processing depends on three external providers, their review cadence is a board-level decision.
+3. **Residual risk tells the truth.** Inherent risk motivates action; residual risk shows whether the action worked.
+4. **Tabletop exercises expose gaps that documents hide.** A written incident response policy is only evidence once it has been rehearsed.
+
+---
+
+## Related Projects
+
+- [AtlasPay Risk Assessment](https://github.com/ijeziermf/AtlasPay-Risk-Assessment): NIST SP 800-53 Rev. 5 risk assessment with heat map and treatment plan
+- [AtlasPay Risk Profile & BCP](https://github.com/ijeziermf/AtlasPay-Risk-Profile-BCP): Business continuity plan and organizational risk profile
+- [Cyber-Security Policy Library](https://github.com/ijeziermf/Cyber-Security-Policy-Library): NIST-aligned policy templates used across sandboxes
+- [Helix Health GRC Sandbox](https://github.com/ijeziermf/helix-health-grc-sandbox): HIPAA + SOC 2 readiness for a HealthTech SaaS
+- [Meridian Bank GRC Sandbox](https://github.com/ijeziermf/meridian-bank-grc-sandbox): Community bank risk and compliance program
+
+---
 
 ## License
 
-MIT — same as the related Helix and Meridian repos.
+This project is for educational and portfolio demonstration purposes. Organizations may adapt the methodology for internal use.

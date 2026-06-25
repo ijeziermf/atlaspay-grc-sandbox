@@ -1,0 +1,1618 @@
+[
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/CrudController.js?app_v=1.0.0",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/dashboard?reload=1&_=1782175263763",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/dashboard?reload=1&_=1782175263764",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/risks/classifications",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/CrudController.js?app_v=1.0.0",
+    "ct": "text/javascript",
+    "body": "\"use strict\";\n\nYoonityJS.ClassFile({\n\tuses: [\n\t\t'//Controllers/AppController'\n\t],\n\tnamespace: 'Controllers',\n\textends: 'Controllers/AppController',\n\tclass: function CrudController()\n\t{\n\t\treturn {\n\t\t\tallowedSelect2TagNames: ['INPUT', 'SELECT'],\n\n\t\t\tconstructor: function(params)\n\t\t\t{\n\t\t\t\t// Call parent constructor\n\t\t\t\tthis._parent.constructor(params);\n\t\t\t},\n\n\t\t\t$reloadTable: function(params)\n\t\t\t{\n\t\t\t\tif (typeof startSystemTableLoading === 'function') {\n\t\t\t\t\tstartSystemTableLoading();\n\t\t\t\t\trefreshSystemTable();\n\t\t\t\t}\n\t\t\t},\n\n\t\t\t$refreshTableData: function(params)\n\t\t\t{\n\t\t\t\tif (typeof startSystemTableLoading === 'function') {\n\t\t\t\t\trefreshSystemTable();\n\t\t\t\t}\n\t\t\t},\n\n\t\t\t$reloadSection: function(params)\n\t\t\t{\n\t\t\t\tif (typeof refreshSection === 'function') {\n\t\t\t\t\trefreshSection();\n\t\t\t\t}\n\t\t\t},\n\n\t\t\t$reloadSourceForm: function(params)\n\t\t\t{\n\t\t\t\tif (typeof reloadSourceForm === 'function') {\n\t\t\t\t\treloadSourceForm();\n\t\t\t\t}\n\t\t\t},\n\n\t\t\t$customizationReload: function(params)\n\t\t\t{\n\t\t\t\tif (typeof customization"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/icons/icomoon/styles.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/bootstrap.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/core.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/components.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/colors.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/css/report-blocks-grid.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/summernote/summernote.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/css/eramba.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/css/bootstrap-colorpicker.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/css/policy-document.css?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/jquery-3.6.0.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/jquery-ui.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/datatables.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/ColReorder-1.5.2/js/dataTables.colReorder.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/Buttons-1.6.1/js/dataTables.buttons.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/loaders/pace.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/libraries/bootstrap.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/loaders/blockui.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/selects/select2.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/uniform.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/app.js?ver=20200327",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/pages/datatables_basic.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/notifications/pnotify.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/switch.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/switchery.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/extensions/mousewheel.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/libraries/jquery_ui/globalize/globalize.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/editors/summernote/summernote.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/wizards/steps.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/buttons/spin.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/buttons/ladda.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/uploaders/dropzone.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/pickers/color/spectrum.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/notifications/sweet_alert.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/velocity/velocity.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/velocity/velocity.ui.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/pages/components_popups.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/ui/moment/moment.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/ui/fullcalendar/fullcalendar.min.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/js/policy-document.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/YoonityJS-2.0.2-eramba.js?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/index-D67nL0vi.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/index-BDO0i8po.css",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/icons/icomoon/fonts/icomoon.woff?3p0rtw",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/Class.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Readex+Pro:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap",
+    "ct": "text/css; charset=utf-8",
+    "body": "/* cyrillic-ext */\n@font-face {\n  font-family: 'Onest';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/onest/v9/gNMKW3F-SZuj7xmS-HYoEoeyxMI.woff2) format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Onest';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/onest/v9/gNMKW3F-SZuj7xmb-HYoEoeyxMI.woff2) format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* latin-ext */\n@font-face {\n  font-family: 'Onest';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/onest/v9/gNMKW3F-SZuj7xmR-HYoEoeyxMI.woff2) format('woff2');\n  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+2"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/icons/icomoon/styles.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "@font-face {\n    font-family: 'icomoon';\n    src:url('fonts/icomoon.eot?3p0rtw');\n    src:url('fonts/icomoon.eot?#iefix3p0rtw') format('embedded-opentype'),\n        url('fonts/icomoon.woff?3p0rtw') format('woff'),\n        url('fonts/icomoon.ttf?3p0rtw') format('truetype'),\n        url('fonts/icomoon.svg?3p0rtw#icomoon') format('svg');\n    font-weight: normal;\n    font-style: normal;\n}\n\n[class^=\"icon-\"], [class*=\" icon-\"] {\n    font-family: 'icomoon';\n    speak: none;\n    font-style: normal;\n    font-weight: normal;\n    font-variant: normal;\n    text-transform: none;\n    line-height: 1;\n    min-width: 1em;\n    display: inline-block;\n    text-align: center;\n    font-size: 16px;\n    vertical-align: middle;\n    position: relative;\n    top: -1px;\n\n    /* Better Font Rendering =========== */\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.icon-2x {\n    font-size: 32px;\n}\n.icon-3x {\n    font-size: 48px;\n}\n\n.icon-bordered {\n    padding: 5px;\n    border: 2px"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/bootstrap.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/* ------------------------------------------------------------------------------\n *\n *  # Bootstrap file imports\n *\n *  Import all main Bootstrap files. Bootstrap version 3.3.5\n *\n *  Version: 1.1\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n *\n *  # Components\n *\n *  Common less file with imports of plugins and pages\n *\n *  Version: 1.0\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\nhtml {\n    font-family: sans-serif;\n    -ms-text-size-adjust: 100%;\n    -webkit-text-size-adjust: 100%;\n}\n\nbody {\n    margin: 0;\n}\n\n.theme-content {\n    /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */;\n}\n\n.theme-content article,\n.theme-content aside,\n.theme-content details"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/img/_components/loading.webp",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/system-api/login",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7W0Q5nw.woff2",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/remixicon-BVvFtaex.woff2?t=1734404658139",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/Scopes.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/core.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/* ------------------------------------------------------------------------------\n *\n *  # Components\n *\n *  Common less file with imports of plugins and pages\n *\n *  Version: 1.0\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n *\n *  # Glyphicons for Bootstrap\n *\n *  Glyphicons icon font path and style overrides\n *\n *  Version: 1.0\n *  Latest update: May 25, 2015\n *\n * ---------------------------------------------------------------------------- */\n@font-face {\n  font-family: 'Glyphicons Halflings';\n  src: url(\"../css/icons/glyphicons/glyphicons-halflings-regular.eot\");\n  src: url(\"../css/icons/glyphicons/glyphicons-halflings-regular.eot?#iefix\") format(\"embedded-opentype\"), url(\"../css/icons/glyphicons/glyphicons-halflings-regular.woff2\") format(\"woff2\"), url(\"../css/icons/glyphicons/glyphicons-halflings-regular.woff\") format(\"woff\"), u"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/components.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/* ------------------------------------------------------------------------------\n *\n *  # Components\n *\n *  Common less file with imports of plugins and pages\n *\n *  Version: 1.3\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n *\n *  # Components\n *\n *  Common less file with imports of plugins and pages\n *\n *  Version: 1.0\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n*\n*  # Utilites\n*\n*  Additional animations, transitions, transforms and other utilities\n*\n*  Version: 1.0\n*  Latest update: Mar 10, 2016\n*\n* ---------------------------------------------------------------------------- */\n.no-transitions * {\n  -webkit-transition: none !important;\n  -o-transition: none !important;\n  transiti"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/colors.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/* ------------------------------------------------------------------------------\n *\n *  # Color system\n *\n *  Keep all color classes in a separate file as it's quite heavy and still optional\n *\n *  Version: 1.1\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n *\n *  # Components\n *\n *  Common less file with imports of plugins and pages\n *\n *  Version: 1.0\n *  Latest update: Feb 5, 2016\n *\n * ---------------------------------------------------------------------------- */\n/* ------------------------------------------------------------------------------\n*\n*  # Custom color system\n*\n*  Custom color system styles, includes background, border and text colors\n*\n*  Version: 1.1\n*  Latest update: Oct 20, 2015\n*\n* ---------------------------------------------------------------------------- */\n.theme-content .bg-primary {\n  background-color: #2196F"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/css/report-blocks-grid.css?v=1780668492081",
+    "ct": "text/css",
+    "body": ".report-blocks-container:before, .report-blocks-container:after {\n\tcontent : \" \";\n\tdisplay : table;\n\tclear : both;\n}\n\n.report-block {\n\tpadding : 0 10px 0 10px;\n}\n\n[class*='report-block-width-'],\n[class*='report-block-pull-'],\n[class*='report-block-push-'],\n[class*='report-block-offset-'],\n[class*='report-block-gutter-'] {\n\tposition : relative;\n\tmin-height : 1px;\n\tfloat : left;\n\tbox-sizing : border-box;\n\t-moz-box-sizing : border-box;\n\t-webkit-box-sizing : border-box;\n}\n\n.report-block-width-1 {\n\twidth : 8.33%;\n}\n\n.report-block-width-2 {\n\twidth : 16.66%;\n}\n\n.report-block-width-3 {\n\twidth : 25%;\n}\n\n.report-block-width-4 {\n\twidth : 33.33%;\n}\n\n.report-block-width-5 {\n\twidth : 41.66%;\n}\n\n.report-block-width-6 {\n\twidth : 50%;\n}\n\n.report-block-width-7 {\n\twidth : 58.33%;\n}\n\n.report-block-width-8 {\n\twidth : 66.66%;\n}\n\n.report-block-width-9 {\n\twidth : 75%;\n}\n\n.report-block-width-10 {\n\twidth : 83.33%;\n}\n\n.report-block-width-11 {\n\twidth : 91.66%;\n}\n\n.report-block-width-12 {\n\twidth : 100%;\n}\n\n.report"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/css/summernote/summernote.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/*!\n * \n * Super simple wysiwyg editor v0.8.18\n * https://summernote.org\n * \n * \n * Copyright 2013- Alan Hong. and other contributors\n * summernote may be freely distributed under the MIT license.\n * \n * Date: 2020-05-20T18:09Z\n * \n */\n@font-face{font-family:\"summernote\";font-style:normal;font-weight:400;font-display:auto;src:url(font/summernote.eot);src:url(font/summernote.eot?#iefix) format(\"embedded-opentype\"),url(font/summernote.woff2) format(\"woff2\"),url(font/summernote.woff) format(\"woff\"),url(font/summernote.ttf) format(\"truetype\")}[class^=note-icon]:before,[class*=\" note-icon\"]:before{display:inline-block;font-family:summernote;font-style:normal;font-size:inherit;text-decoration:inherit;text-rendering:auto;text-transform:none;vertical-align:middle;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;speak:none}.note-icon-fw{text-align:center;width:1.25em}.note-icon-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.note-icon-pull-left{fl"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/css/eramba.css?v=1780668492081",
+    "ct": "text/css",
+    "body": ".theme-content {\n\t/**\n   * Avatars\n   */\n\t/**\n   * Modals\n   */\n\t/**\n   * Set higher z-index of datepicker so datepicker will be visible also in modals\n   */\n\t/**\n   * Popovers\n   */\n\t/**\n   * Form elements customizations\n   */\n\t/**\n   * End Form elements customizations\n   */\n\t/**\n   * Spectrum\n   */\n\t/**\n   * End Spectrum\n   */\n\t/**\n   * Video JS\n   */\n\t/**\n   * End Video JS\n   */\n\t/**\n   * Timeline custom css\n   */\n\t/**\n   * End Timeline custom css\n   */\n\t/**\n   * Drobdown menus\n   */\n\t/**\n   * End Dropdown menus\n   */\n\t/**\n   * Forms\n   */\n\t/**\n   * End Forms\n   */\n\t/**\n   * Attachments\n   */\n\t/**\n   * Comments widget\n   */\n\t/**\n   * Page Toolbar\n   */\n\t/**\n   * End Page Toolbar\n   */\n\t/**\n   * DataTables\n   */\n\t/**\n   * End DataTables\n   */\n\t/**\n   * DataTables dropdown buttons\n   */\n\t/**\n   * End DataTables dropdown buttons\n   */\n\t/**\n   * Data Tables Field cell\n   */\n\t/**\n   * End Data Tables Field cell\n   */\n\t/**\n   * Active Filters\n   */\n\t/**\n   * End Active Filters\n   */\n\t/**\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/css/bootstrap-colorpicker.css?v=1780668492081",
+    "ct": "text/css",
+    "body": "/*!\n * Bootstrap Colorpicker - Simple and customizable colorpicker component for Twitter Bootstrap.\n * @package bootstrap-colorpicker\n * @version v3.0.0-beta.1\n * @license MIT\n * @link https://farbelous.github.io/bootstrap-colorpicker/\n * @link https://github.com/farbelous/bootstrap-colorpicker.git\n */\n.colorpicker-saturation {\n  width: 100px;\n  height: 100px;\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAQAAADa613fAAAP9klEQVR4XnRWC47rNgwcKjlA0bv2VL1Qi/YELRav7203iS1ppqZoiXCAhuBHVLI74xFtG3/Hz2joIOjRGuR5eMYuRn9YA1fds859KX8ZvczLr9/pImiR3Rqky9/wlajRIdVE/1Rufeu/0No3/ASgBZAJUkwgi0iCaEatekJJoEqiTQncd67/gyOfRCZshTed0Nl8LbLj8D6qxtoq9/7kJz/aH/3Xfu8VwI5+AUH8DxE7gUyiIpZ5LwiGzUqE3CScJsCDQHAsvBnxWpkbC0QMHmBp6latWS0bnvrCN/x1+xPfce+Ij0GAyeAGGz15sOiax2UylPhKrFaMPnVWClwepKh07hdhkVDsK2uoyEIySergjdbY2VBtV8VLr8Mf9mF/4wMb7kR8FOhzFWZZe7HIZD9JRIbee28eJKBweTB6TwjYkAgWaUmtDveGw1Wx3zZ76YlPPfQd/+gTTUFkiGiJ+NQAszU1EPT/QJEgufolAMPkNU4CVOyUIBLg4xglEZHGQnTFOFV0VaulYddBhA986ge/7N/yQi"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/css/policy-document.css?v=1780668492081",
+    "ct": "text/css",
+    "body": ".bootbox .modal-body {\n    padding: 0 !important;\n}\n\n@media (min-width: 990px) {\n    .bootbox .modal-dialog {\n        width: 990px;\n    }\n}\n\n.bootbox-close-button.close {\n    margin-top: 0 !important;\n    margin-right: 4px;\n}\n\n.document-modal {\n    font-size: 12px;\n    border: 1px solid #d8dce2 !important;\n}\n\n.modal-body > .document-modal {\n    margin:-1px 0px -1px 0px;\n}\n.document-modal .modal-body {\n\tpadding: 0;\n}\n.document-modal .modal-box {\n\tpadding: 15px 30px;\n\tbackground-color: #f8fbfc;\n\tborder-bottom: 1px solid #d8dce2;\n}\n.document-modal .modal-bg {\n\tbackground-color: #f8fbfc;\n\tborder-bottom: 1px solid #d8dce2;\n}\n.document-modal .modal-padding {\n\tpadding: 15px 30px;\n}\n.document-modal .modal-box h3, .document-modal .modal-bg h3, .document-modal .custom-title {\n\tfont-family: 'Montserrat', sans-serif;\n\tcolor: #989fa7;\n\ttext-transform: uppercase;\n\tfont-size: 0.96em;\n\tmargin-top: 0;\n\tmargin-bottom: 15px;\n}\n\n.document-modal .document-title {\n\tfont-size: 1.1em;\n\tfont-weight: bold;\n}\n.d"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/jquery-3.6.0.min.js",
+    "ct": "text/javascript",
+    "body": "/*! jQuery v3.6.0 | (c) OpenJS Foundation and other contributors | jquery.org/license */\n!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(C,e){\"use strict\";var t=[],r=Object.getPrototypeOf,s=t.slice,g=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf,n={},o=n.toString,v=n.hasOwnProperty,a=v.toString,l=a.call(Object),y={},m=function(e){return\"function\"==typeof e&&\"number\"!=typeof e.nodeType&&\"function\"!=typeof e.item},x=function(e){return null!=e&&e===e.window},E=C.document,c={type:!0,src:!0,nonce:!0,noModule:!0};function b(e,t,n){var r,i,o=(n=n||E).createElement(\"script\");if(o.text=e,t)for(r in c)(i=t[r]||t.getAttribute&&t.getAttribute(r))&&o.setAttribute(r,i);n.head.appendChild(o).parentNode.removeChild(o)}funct"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/jquery-ui.min.js",
+    "ct": "text/javascript",
+    "body": "/*! jQuery UI - v1.13.2 - 2022-07-14\n* http://jqueryui.com\n* Includes: widget.js, position.js, data.js, disable-selection.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-puff.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-transfer.js, focusable.js, form-reset-mixin.js, jquery-patch.js, keycode.js, labels.js, scroll-parent.js, tabbable.js, unique-id.js, widgets/accordion.js, widgets/autocomplete.js, widgets/button.js, widgets/checkboxradio.js, widgets/controlgroup.js, widgets/datepicker.js, widgets/dialog.js, widgets/draggable.js, widgets/droppable.js, widgets/menu.js, widgets/mouse.js, widgets/progressbar.js, widgets/resizable.js, widgets/selectable.js, widgets/selectmenu.js, widgets/slider.js, widgets/sorta"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/datatables.min.js",
+    "ct": "text/javascript",
+    "body": "/*\n * This combined file was created by the DataTables downloader builder:\n *   https://datatables.net/download\n *\n * To rebuild or modify this file with the latest versions of the included\n * software please visit:\n *   https://datatables.net/download/#dt/dt-1.11.5/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/b-print-1.6.1/cr-1.5.2/date-1.5.2/fc-3.3.0/fh-3.1.6/kt-2.5.1/r-2.2.3/rg-1.1.1/rr-1.2.6/sc-2.4.0/sp-1.0.1/sl-1.3.1\n *\n * Included libraries:\n *  DataTables 1.11.5, AutoFill 2.3.4, Buttons 1.6.1, Column visibility 1.6.1, HTML5 export 1.6.1, Print view 1.6.1, ColReorder 1.5.2, DateTime 1.5.2, FixedColumns 3.3.0, FixedHeader 3.1.6, KeyTable 2.5.1, Responsive 2.2.3, RowGroup 1.1.1, RowReorder 1.2.6, Scroller 2.4.0, SearchPanes 1.0.1, Select 1.3.1\n */\n\n/*!\n   Copyright 2008-2021 SpryMedia Ltd.\n\n This source file is free software, available under the following license:\n   MIT license - http://datatables.net/license\n\n This source file is distributed in the hope that it will be useful, b"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/ColReorder-1.5.2/js/dataTables.colReorder.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n   Copyright 2010-2019 SpryMedia Ltd.\n\n This source file is free software, available under the following license:\n   MIT license - http://datatables.net/license/mit\n\n This source file is distributed in the hope that it will be useful, but\n WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY\n or FITNESS FOR A PARTICULAR PURPOSE. See the license files for details.\n\n For details please refer to: http://www.datatables.net\n ColReorder 1.5.2\n \u00a92010-2019 SpryMedia Ltd - datatables.net/license\n*/\n(function(d){\"function\"===typeof define&&define.amd?define([\"jquery\",\"datatables.net\"],function(t){return d(t,window,document)}):\"object\"===typeof exports?module.exports=function(t,r){t||(t=window);r&&r.fn.dataTable||(r=require(\"datatables.net\")(t,r).$);return d(r,t,t.document)}:d(jQuery,window,document)})(function(d,t,r,w){function v(a){for(var b=[],c=0,d=a.length;c<d;c++)b[a[c]]=c;return b}function u(a,b,c){b=a.splice(b,1)[0];a.splice(c,0,b)}function x(a,b,c){for(var d=[]"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/jquery-upgrade/DataTables/Buttons-1.6.1/js/dataTables.buttons.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n Buttons for DataTables 1.6.1\n \u00a92016-2019 SpryMedia Ltd - datatables.net/license\n*/\n(function(d){\"function\"===typeof define&&define.amd?define([\"jquery\",\"datatables.net\"],function(u){return d(u,window,document)}):\"object\"===typeof exports?module.exports=function(u,t){u||(u=window);t&&t.fn.dataTable||(t=require(\"datatables.net\")(u,t).$);return d(t,u,u.document)}:d(jQuery,window,document)})(function(d,u,t,p){function y(a){a=new m.Api(a);var b=a.init().buttons||m.defaults.buttons;return(new n(a,b)).container()}var m=d.fn.dataTable,B=0,C=0,q=m.ext.buttons,n=function(a,b){if(!(this instanceof\nn))return function(b){return(new n(b,a)).container()};\"undefined\"===typeof b&&(b={});!0===b&&(b={});d.isArray(b)&&(b={buttons:b});this.c=d.extend(!0,{},n.defaults,b);b.buttons&&(this.c.buttons=b.buttons);this.s={dt:new m.Api(a),buttons:[],listenKeys:\"\",namespace:\"dtb\"+B++};this.dom={container:d(\"<\"+this.c.dom.container.tag+\"/>\").addClass(this.c.dom.container.className)};this._constructor()};d.exte"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/locales/en/translation.json?v=1780668492081",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/loaders/pace.min.js",
+    "ct": "text/javascript",
+    "body": "/*! pace 1.0.2 */\n(function(){var a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X=[].slice,Y={}.hasOwnProperty,Z=function(a,b){function c(){this.constructor=a}for(var d in b)Y.call(b,d)&&(a[d]=b[d]);return c.prototype=b.prototype,a.prototype=new c,a.__super__=b.prototype,a},$=[].indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(b in this&&this[b]===a)return b;return-1};for(u={catchupTime:100,initialRate:.03,minTime:250,ghostTime:100,maxProgressPerFrame:20,easeFactor:1.25,startOnPageLoad:!0,restartOnPushState:!0,restartOnRequestAfter:500,target:\"body\",elements:{checkInterval:100,selectors:[\"body\"]},eventLag:{minSamples:10,sampleCount:3,lagThreshold:3},ajax:{trackMethods:[\"GET\"],trackWebSockets:!0,ignoreURLs:[]}},C=function(){var a;return null!=(a=\"undefined\"!=typeof performance&&null!==performance&&\"function\"==typeof performance.now?performance.now():void 0)?a:+new Date},E=window.requestAnimationFrame||window.mozRequestAnimatio"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/libraries/bootstrap.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n * Bootstrap v3.4.1 (https://getbootstrap.com/)\n * Copyright 2011-2019 Twitter, Inc.\n * Licensed under the MIT license\n */\nif(\"undefined\"==typeof jQuery)throw new Error(\"Bootstrap's JavaScript requires jQuery\");!function(t){\"use strict\";var e=jQuery.fn.jquery.split(\" \")[0].split(\".\");if(e[0]<2&&e[1]<9||1==e[0]&&9==e[1]&&e[2]<1||3<e[0])throw new Error(\"Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4\")}(),function(n){\"use strict\";n.fn.emulateTransitionEnd=function(t){var e=!1,i=this;n(this).one(\"bsTransitionEnd\",function(){e=!0});return setTimeout(function(){e||n(i).trigger(n.support.transition.end)},t),this},n(function(){n.support.transition=function o(){var t=document.createElement(\"bootstrap\"),e={WebkitTransition:\"webkitTransitionEnd\",MozTransition:\"transitionend\",OTransition:\"oTransitionEnd otransitionend\",transition:\"transitionend\"};for(var i in e)if(t.style[i]!==undefined)return{end:e[i]};return!1}(),n.support.transition&&(n.event.specia"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/loaders/blockui.min.js",
+    "ct": "text/javascript",
+    "body": "!function(){\"use strict\";function e(e){function t(t,n){var s,h,k=t==window,y=n&&void 0!==n.message?n.message:void 0;if(n=e.extend({},e.blockUI.defaults,n||{}),!n.ignoreIfBlocked||!e(t).data(\"blockUI.isBlocked\")){if(n.overlayCSS=e.extend({},e.blockUI.defaults.overlayCSS,n.overlayCSS||{}),s=e.extend({},e.blockUI.defaults.css,n.css||{}),n.onOverlayClick&&(n.overlayCSS.cursor=\"pointer\"),h=e.extend({},e.blockUI.defaults.themedCSS,n.themedCSS||{}),y=void 0===y?n.message:y,k&&p&&o(window,{fadeOut:0}),y&&\"string\"!=typeof y&&(y.parentNode||y.jquery)){var m=y.jquery?y[0]:y,v={};e(t).data(\"blockUI.history\",v),v.el=m,v.parent=m.parentNode,v.display=m.style.display,v.position=m.style.position,v.parent&&v.parent.removeChild(m)}e(t).data(\"blockUI.onUnblock\",n.onUnblock);var g,I,w,U,x=n.baseZ;g=e(r||n.forceIframe?'<iframe class=\"blockUI\" style=\"z-index:'+x++ +';display:none;border:none;margin:0;padding:0;position:absolute;width:100%;height:100%;top:0;left:0\" src=\"'+n.iframeSrc+'\"></iframe>':'<div clas"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/DOM.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Config.js?c_v=2026622",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Globals.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Init.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/risks/classifications",
+    "ct": "text/html; charset=UTF-8",
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"icon\" href=\"/favicon.png\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap\" rel=\"stylesheet\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Eramba</title>\n\n      <link rel=\"stylesheet\" href=\"/eramba-assets/limitless_theme/css/icons/icomoon/styles.css?v=1780668492081\">\n      <link rel=\"stylesheet\" href=\"/eramba-assets/limitless_theme/css/bootstrap.css?v=1780668492081\">\n      <link rel=\"stylesheet\" href=\"/eramba-assets/limitless_theme/css/core.css?v=1780668492081\">\n      <link rel=\"stylesheet\" href=\"/eramba-assets/limitless_theme/css/components.css?v=1780668492081\">\n      <link rel=\"stylesheet\" href=\"/eramba-assets/limitless_theme/css/colors.css?v=1780668492081\">\n      <link rel=\"stylesheet"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/selects/select2.min.js",
+    "ct": "text/javascript",
+    "body": "/*! Select2 4.0.13 | https://github.com/select2/select2/blob/master/LICENSE.md */!function(a){\"function\"==typeof define&&define.amd?define([\"jquery\"],a):a(\"object\"==typeof exports?require(\"jquery\"):jQuery)}(function(a){var b=function(){if(a&&a.fn&&a.fn.select2&&a.fn.select2.amd)var b=a.fn.select2.amd;var b;return function(){if(!b||!b.requirejs){b?c=b:b={};var a,c,d;!function(b){function e(a,b){return u.call(a,b)}function f(a,b){var c,d,e,f,g,h,i,j,k,l,m,n=b&&b.split(\"/\"),o=s.map,p=o&&o[\"*\"]||{};if(a&&\".\"===a.charAt(0))if(b){for(a=a.split(\"/\"),g=a.length-1,s.nodeIdCompat&&w.test(a[g])&&(a[g]=a[g].replace(w,\"\")),a=n.slice(0,n.length-1).concat(a),k=0;k<a.length;k+=1)if(m=a[k],\".\"===m)a.splice(k,1),k-=1;else if(\"..\"===m){if(1===k&&(\"..\"===a[2]||\"..\"===a[0]))break;k>0&&(a.splice(k-1,2),k-=2)}a=a.join(\"/\")}else 0===a.indexOf(\"./\")&&(a=a.substring(2));if((n||p)&&o){for(c=a.split(\"/\"),k=c.length;k>0;k-=1){if(d=c.slice(0,k).join(\"/\"),n)for(l=n.length;l>0;l-=1)if(e=o[n.slice(0,l).join(\"/\")],e&&("
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/uniform.min.js",
+    "ct": "text/javascript",
+    "body": "!function(e,t,n){\"use strict\";function s(e){var t=Array.prototype.slice.call(arguments,1);return e.prop?e.prop.apply(e,t):e.attr.apply(e,t)}function a(e,t,n){var s,a;for(s in n)n.hasOwnProperty(s)&&(a=s.replace(/ |$/g,t.eventNamespace),e.bind(a,n[s]))}function i(e,t,n){a(e,n,{focus:function(){t.addClass(n.focusClass)},blur:function(){t.removeClass(n.focusClass),t.removeClass(n.activeClass)},mouseenter:function(){t.addClass(n.hoverClass)},mouseleave:function(){t.removeClass(n.hoverClass),t.removeClass(n.activeClass)},\"mousedown touchbegin\":function(){e.is(\":disabled\")||t.addClass(n.activeClass)},\"mouseup touchend\":function(){t.removeClass(n.activeClass)}})}function r(e,t){e.removeClass(t.hoverClass+\" \"+t.focusClass+\" \"+t.activeClass)}function l(e,t,n){n?e.addClass(t):e.removeClass(t)}function u(e,t,n){var s=\"checked\",a=t.is(\":\"+s);t.prop?t.prop(s,a):a?t.attr(s,s):t.removeAttr(s),l(e,n.checkedClass,a)}function o(e,t,n){l(e,n.disabledClass,t.is(\":disabled\"))}function c(e,t,n){switch(n){ca"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/app.js?ver=20200327",
+    "ct": "text/javascript",
+    "body": "/* ------------------------------------------------------------------------------\n*\n*  # Template JS core\n*\n*  Core JS file with default functionality configuration\n*\n*  Version: 1.3\n*  Latest update: Aug 10, 2016\n*\n* ---------------------------------------------------------------------------- */\n\n\n// Allow CSS transitions when page is loaded\n$(window).on('load', function () {\n    $('body').removeClass('no-transitions');\n});\n\n\n$(function () {\n\n    // Disable CSS transitions on page load\n    $('body').addClass('no-transitions');\n\n\n\n    // ========================================\n    //\n    // Content area height\n    //\n    // ========================================\n\n\n    // Calculate min height\n    function containerHeight()\n    {\n        if ($('.page-container').length <= 0) {\n            return;\n        }\n\n        var\n            windowHeight = $(window).height() || 0,\n            pageContainerTop = $('.page-container').offset().top || 0,\n            navbarFixedBottomHeight = $('.nav"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/pages/datatables_basic.js",
+    "ct": "text/javascript",
+    "body": "/* ------------------------------------------------------------------------------\n*\n*  # Basic datatables\n*\n*  Specific JS code additions for datatable_basic.html page\n*\n*  Version: 1.0\n*  Latest update: Aug 1, 2015\n*\n* ---------------------------------------------------------------------------- */\n\n$(function () {\n\n\n    // Table setup\n    // ------------------------------\n\n    // Setting datatable defaults\n    $.extend($.fn.dataTable.defaults, {\n        // autoWidth: false,\n        columnDefs: [{\n            orderable: false,\n            // width: '100px',\n            targets: [ 0 ]\n        }],\n        dom: '<\"datatable-header\"fl><\"datatable-scroll\"t><\"datatable-footer\"ip>',\n        language: {\n            search: '<span>Filter:</span> _INPUT_',\n            searchPlaceholder: 'Type to filter...',\n            lengthMenu: '<span>Show:</span> _MENU_',\n            paginate: { 'first': 'First', 'last': 'Last', 'next': '&rarr;', 'previous': '&larr;' }\n        },\n        // drawCallback: fun"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/notifications/pnotify.min.js",
+    "ct": "text/javascript",
+    "body": "/*\nPNotify 3.0.0 sciactive.com/pnotify/\n(C) 2015 Hunter Perrin; Google, Inc.\nlicense Apache-2.0\n*/\n(function(b,k){\"function\"===typeof define&&define.amd?define(\"pnotify\",[\"jquery\"],function(q){return k(q,b)}):\"object\"===typeof exports&&\"undefined\"!==typeof module?module.exports=k(require(\"jquery\"),global||b):b.PNotify=k(b.jQuery,b)})(this,function(b,k){var q=function(l){var k={dir1:\"down\",dir2:\"left\",push:\"bottom\",spacing1:36,spacing2:36,context:b(\"body\"),modal:!1},g,h,n=b(l),r=function(){h=b(\"body\");d.prototype.options.stack.context=h;n=b(l);n.bind(\"resize\",function(){g&&clearTimeout(g);g=setTimeout(function(){d.positionAll(!0)},\n10)})},s=function(c){var a=b(\"<div />\",{\"class\":\"ui-pnotify-modal-overlay\"});a.prependTo(c.context);c.overlay_close&&a.click(function(){d.removeStack(c)});return a},d=function(c){this.parseOptions(c);this.init()};b.extend(d.prototype,{version:\"3.0.0\",options:{title:!1,title_escape:!1,text:!1,text_escape:!1,styling:\"brighttheme\",addclass:\"\",cornerclass:\"\",auto"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/switch.min.js",
+    "ct": "text/javascript",
+    "body": "/**\n  * bootstrap-switch - Turn checkboxes and radio buttons into toggle switches.\n  *\n  * @version v3.3.4\n  * @homepage https://bttstrp.github.io/bootstrap-switch\n  * @author Mattia Larentis <mattia@larentis.eu> (http://larentis.eu)\n  * @license Apache-2.0\n  */\n\n(function(a,b){if('function'==typeof define&&define.amd)define(['jquery'],b);else if('undefined'!=typeof exports)b(require('jquery'));else{b(a.jquery),a.bootstrapSwitch={exports:{}}.exports}})(this,function(a){'use strict';function c(j,k){if(!(j instanceof k))throw new TypeError('Cannot call a class as a function')}var d=function(j){return j&&j.__esModule?j:{default:j}}(a),e=Object.assign||function(j){for(var l,k=1;k<arguments.length;k++)for(var m in l=arguments[k],l)Object.prototype.hasOwnProperty.call(l,m)&&(j[m]=l[m]);return j},f=function(){function j(k,l){for(var n,m=0;m<l.length;m++)n=l[m],n.enumerable=n.enumerable||!1,n.configurable=!0,'value'in n&&(n.writable=!0),Object.defineProperty(k,n.key,n)}return function(k,l,m){r"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Errors/ExceptionRenderer.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/styling/switchery.min.js",
+    "ct": "text/javascript",
+    "body": "(function(){function require(name){var module=require.modules[name];if(!module)throw new Error('failed to require \"'+name+'\"');if(!(\"exports\"in module)&&typeof module.definition===\"function\"){module.client=module.component=true;module.definition.call(this,module.exports={},module);delete module.definition}return module.exports}require.loader=\"component\";require.helper={};require.helper.semVerSort=function(a,b){var aArray=a.version.split(\".\");var bArray=b.version.split(\".\");for(var i=0;i<aArray.length;++i){var aInt=parseInt(aArray[i],10);var bInt=parseInt(bArray[i],10);if(aInt===bInt){var aLex=aArray[i].substr((\"\"+aInt).length);var bLex=bArray[i].substr((\"\"+bInt).length);if(aLex===\"\"&&bLex!==\"\")return 1;if(aLex!==\"\"&&bLex===\"\")return-1;if(aLex!==\"\"&&bLex!==\"\")return aLex>bLex?1:-1;continue}else if(aInt>bInt){return 1}else{return-1}}return 0};require.latest=function(name,returnPath){function showError(name){throw new Error('failed to find latest module of \"'+name+'\"')}var versionRegexp=/"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/extensions/mousewheel.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n * jQuery Mousewheel 3.1.13\n *\n * Copyright 2015 jQuery Foundation and other contributors\n * Released under the MIT license.\n * http://jquery.org/license\n */\n!function(a){\"function\"==typeof define&&define.amd?define([\"jquery\"],a):\"object\"==typeof exports?module.exports=a:a(jQuery)}(function(a){function b(b){var g=b||window.event,h=i.call(arguments,1),j=0,l=0,m=0,n=0,o=0,p=0;if(b=a.event.fix(g),b.type=\"mousewheel\",\"detail\"in g&&(m=-1*g.detail),\"wheelDelta\"in g&&(m=g.wheelDelta),\"wheelDeltaY\"in g&&(m=g.wheelDeltaY),\"wheelDeltaX\"in g&&(l=-1*g.wheelDeltaX),\"axis\"in g&&g.axis===g.HORIZONTAL_AXIS&&(l=-1*m,m=0),j=0===m?l:m,\"deltaY\"in g&&(m=-1*g.deltaY,j=m),\"deltaX\"in g&&(l=g.deltaX,0===m&&(j=-1*l)),0!==m||0!==l){if(1===g.deltaMode){var q=a.data(this,\"mousewheel-line-height\");j*=q,m*=q,l*=q}else if(2===g.deltaMode){var r=a.data(this,\"mousewheel-page-height\");j*=r,m*=r,l*=r}if(n=Math.max(Math.abs(m),Math.abs(l)),(!f||f>n)&&(f=n,d(g,n)&&(f/=40)),d(g,n)&&(j/=40,l/=40,m/=40),j=Math[j>=1?\"floor"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/core/libraries/jquery_ui/globalize/globalize.js",
+    "ct": "text/javascript",
+    "body": "!function(e,r){var t,n,a,s,u,l,i,c,o,f,d,p,h,g,b,m,y,M,v,k,z,F,A,x;t=function(e){return new t.prototype.init(e)},\"undefined\"!=typeof require&&\"undefined\"!=typeof exports&&\"undefined\"!=typeof module?module.exports=t:e.Globalize=t,t.cultures={},t.prototype={constructor:t,init:function(e){return this.cultures=t.cultures,this.cultureSelector=e,this}},t.prototype.init.prototype=t.prototype,t.cultures[\"default\"]={name:\"en\",englishName:\"English\",nativeName:\"English\",isRTL:!1,language:\"en\",numberFormat:{pattern:[\"-n\"],decimals:2,\",\":\",\",\".\":\".\",groupSizes:[3],\"+\":\"+\",\"-\":\"-\",NaN:\"NaN\",negativeInfinity:\"-Infinity\",positiveInfinity:\"Infinity\",percent:{pattern:[\"-n %\",\"n %\"],decimals:2,groupSizes:[3],\",\":\",\",\".\":\".\",symbol:\"%\"},currency:{pattern:[\"($n)\",\"$n\"],decimals:2,groupSizes:[3],\",\":\",\",\".\":\".\",symbol:\"$\"}},calendars:{standard:{name:\"Gregorian_USEnglish\",\"/\":\"/\",\":\":\":\",firstDay:0,days:{names:[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],namesAbbr:[\"Sun\",\"Mon\",\"Tu"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Errors/Exceptions.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/editors/summernote/summernote.min.js",
+    "ct": "text/javascript",
+    "body": "/*! For license information please see summernote.min.js.LICENSE.txt */\n!function(t,e){if(\"object\"==typeof exports&&\"object\"==typeof module)module.exports=e(require(\"jquery\"));else if(\"function\"==typeof define&&define.amd)define([\"jquery\"],e);else{var n=\"object\"==typeof exports?e(require(\"jquery\")):e(t.jQuery);for(var o in n)(\"object\"==typeof exports?exports:t)[o]=n[o]}}(window,(function(t){return function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}return n.m=t,n.c=e,n.d=function(t,e,o){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},n.r=function(t){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(t,\"__esModule\",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&\"object\"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,\"default\""
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Registry.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/forms/wizards/steps.min.js",
+    "ct": "text/javascript",
+    "body": "/*! \n * jQuery Steps v1.1.0 - 09/04/2014\n * Copyright (c) 2014 Rafael Staib (http://www.jquery-steps.com)\n * Licensed under MIT http://www.opensource.org/licenses/MIT\n */\n!function(a,b){function c(a,b){o(a).push(b)}function d(d,e,f){var g=d.children(e.headerTag),h=d.children(e.bodyTag);g.length>h.length?R(Z,\"contents\"):g.length<h.length&&R(Z,\"titles\");var i=e.startIndex;if(f.stepCount=g.length,e.saveState&&a.cookie){var j=a.cookie(U+q(d)),k=parseInt(j,0);!isNaN(k)&&k<f.stepCount&&(i=k)}f.currentIndex=i,g.each(function(e){var f=a(this),g=h.eq(e),i=g.data(\"mode\"),j=null==i?$.html:r($,/^\\s*$/.test(i)||isNaN(i)?i:parseInt(i,0)),k=j===$.html||g.data(\"url\")===b?\"\":g.data(\"url\"),l=j!==$.html&&\"1\"===g.data(\"loaded\"),m=a.extend({},bb,{title:f.html(),content:j===$.html?g.html():\"\",contentUrl:k,contentMode:j,contentLoaded:l});c(d,m)})}function e(a){a.triggerHandler(\"canceled\")}function f(a,b){return a.currentIndex-b}function g(b,c){var d=i(b);b.unbind(d).removeData(\"uid\").removeData(\"options\").re"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/buttons/spin.min.js",
+    "ct": "text/javascript",
+    "body": "//fgnass.github.com/spin.js#v2.0.1\n!function(a,b){\"object\"==typeof exports?module.exports=b():\"function\"==typeof define&&define.amd?define(b):a.Spinner=b()}(this,function(){\"use strict\";function a(a,b){var c,d=document.createElement(a||\"div\");for(c in b)d[c]=b[c];return d}function b(a){for(var b=1,c=arguments.length;c>b;b++)a.appendChild(arguments[b]);return a}function c(a,b,c,d){var e=[\"opacity\",b,~~(100*a),c,d].join(\"-\"),f=.01+c/d*100,g=Math.max(1-(1-a)/b*(100-f),a),h=j.substring(0,j.indexOf(\"Animation\")).toLowerCase(),i=h&&\"-\"+h+\"-\"||\"\";return l[e]||(m.insertRule(\"@\"+i+\"keyframes \"+e+\"{0%{opacity:\"+g+\"}\"+f+\"%{opacity:\"+a+\"}\"+(f+.01)+\"%{opacity:1}\"+(f+b)%100+\"%{opacity:\"+a+\"}100%{opacity:\"+g+\"}}\",m.cssRules.length),l[e]=1),e}function d(a,b){var c,d,e=a.style;for(b=b.charAt(0).toUpperCase()+b.slice(1),d=0;d<k.length;d++)if(c=k[d]+b,void 0!==e[c])return c;return void 0!==e[b]?b:void 0}function e(a,b){for(var c in b)a.style[d(a,c)||c]=b[c];return a}function f(a){for(var b=1;b<arguments."
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/buttons/ladda.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n * Ladda 1.0.0 (2016-03-08, 09:31)\n * http://lab.hakim.se/ladda\n * MIT licensed\n *\n * Copyright (C) 2016 Hakim El Hattab, http://hakim.se\n */\n!function(a,b){\"object\"==typeof exports?module.exports=b(require(\"spin.js\")):\"function\"==typeof define&&define.amd?define([\"spin\"],b):a.Ladda=b(a.Spinner)}(this,function(a){\"use strict\";function b(a){if(\"undefined\"==typeof a)return void console.warn(\"Ladda button target must be defined.\");if(/ladda-button/i.test(a.className)||(a.className+=\" ladda-button\"),a.hasAttribute(\"data-style\")||a.setAttribute(\"data-style\",\"expand-right\"),!a.querySelector(\".ladda-label\")){var b=document.createElement(\"span\");b.className=\"ladda-label\",i(a,b)}var c,d=a.querySelector(\".ladda-spinner\");d||(d=document.createElement(\"span\"),d.className=\"ladda-spinner\"),a.appendChild(d);var e,f={start:function(){return c||(c=g(a)),a.setAttribute(\"disabled\",\"\"),a.setAttribute(\"data-loading\",\"\"),clearTimeout(e),c.spin(d),this.setProgress(0),this},startAfter:function(a){return c"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/uploaders/dropzone.min.js",
+    "ct": "text/javascript",
+    "body": "(function(){var a,b,c,d,e,f,g,h,i=[].slice,j={}.hasOwnProperty,k=function(a,b){function c(){this.constructor=a}for(var d in b)j.call(b,d)&&(a[d]=b[d]);return c.prototype=b.prototype,a.prototype=new c,a.__super__=b.prototype,a};g=function(){},b=function(){function a(){}return a.prototype.addEventListener=a.prototype.on,a.prototype.on=function(a,b){return this._callbacks=this._callbacks||{},this._callbacks[a]||(this._callbacks[a]=[]),this._callbacks[a].push(b),this},a.prototype.emit=function(){var a,b,c,d,e,f;if(d=arguments[0],a=2<=arguments.length?i.call(arguments,1):[],this._callbacks=this._callbacks||{},c=this._callbacks[d])for(e=0,f=c.length;f>e;e++)b=c[e],b.apply(this,a);return this},a.prototype.removeListener=a.prototype.off,a.prototype.removeAllListeners=a.prototype.off,a.prototype.removeEventListener=a.prototype.off,a.prototype.off=function(a,b){var c,d,e,f,g;if(!this._callbacks||0===arguments.length)return this._callbacks={},this;if(d=this._callbacks[a],!d)return this;if(1===arg"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Server.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/pickers/color/spectrum.js",
+    "ct": "text/javascript",
+    "body": "// Spectrum Colorpicker v1.8.0\n// https://github.com/bgrins/spectrum\n// Author: Brian Grinstead\n// License: MIT\n\n(function (factory) {\n    \"use strict\";\n\n    if (typeof define === 'function' && define.amd) { // AMD\n        define(['jquery'], factory);\n    } else if (typeof exports == \"object\" && typeof module == \"object\") { // CommonJS\n        module.exports = factory(require('jquery'));\n    } else { // Browser\n        factory(jQuery);\n    }\n})(function ($, undefined) {\n    \"use strict\";\n\n    var defaultOpts = {\n\n        // Callbacks\n        beforeShow: noop,\n        move: noop,\n        change: noop,\n        show: noop,\n        hide: noop,\n\n        // Options\n        color: false,\n        flat: false,\n        showInput: false,\n        allowEmpty: false,\n        showButtons: true,\n        clickoutFiresChange: true,\n        showInitial: false,\n        showPalette: false,\n        showPaletteOnly: false,\n        hideAfterPaletteSelect: false,\n        togglePaletteOnly: false,\n        showS"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/notifications/sweet_alert.min.js",
+    "ct": "text/javascript",
+    "body": "!function(e,t,n){\"use strict\";!function o(e,t,n){function a(s,l){if(!t[s]){if(!e[s]){var i=\"function\"==typeof require&&require;if(!l&&i)return i(s,!0);if(r)return r(s,!0);var u=new Error(\"Cannot find module '\"+s+\"'\");throw u.code=\"MODULE_NOT_FOUND\",u}var c=t[s]={exports:{}};e[s][0].call(c.exports,function(t){var n=e[s][1][t];return a(n?n:t)},c,c.exports,o,e,t,n)}return t[s].exports}for(var r=\"function\"==typeof require&&require,s=0;s<n.length;s++)a(n[s]);return a}({1:[function(o,a,r){var s=function(e){return e&&e.__esModule?e:{\"default\":e}};Object.defineProperty(r,\"__esModule\",{value:!0});var l,i,u,c,d=o(\"./modules/handle-dom\"),f=o(\"./modules/utils\"),p=o(\"./modules/handle-swal-dom\"),m=o(\"./modules/handle-click\"),v=o(\"./modules/handle-key\"),y=s(v),h=o(\"./modules/default-params\"),b=s(h),g=o(\"./modules/set-params\"),w=s(g);r[\"default\"]=u=c=function(){function o(e){var t=a;return t[e]===n?b[\"default\"][e]:t[e]}var a=arguments[0];if(d.addClass(t.body,\"stop-scrolling\"),p.resetInput(),a===n)retu"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/velocity/velocity.min.js",
+    "ct": "text/javascript",
+    "body": "/*! VelocityJS.org (1.2.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */\n/*! VelocityJS.org jQuery Shim (1.0.1). (C) 2014 The jQuery Foundation. MIT @license: en.wikipedia.org/wiki/MIT_License. */\n!function(a){function b(a){var b=a.length,d=c.type(a);return\"function\"===d||c.isWindow(a)?!1:1===a.nodeType&&b?!0:\"array\"===d||0===b||\"number\"==typeof b&&b>0&&b-1 in a}if(!a.jQuery){var c=function(a,b){return new c.fn.init(a,b)};c.isWindow=function(a){return null!=a&&a==a.window},c.type=function(a){return null==a?a+\"\":\"object\"==typeof a||\"function\"==typeof a?e[g.call(a)]||\"object\":typeof a},c.isArray=Array.isArray||function(a){return\"array\"===c.type(a)},c.isPlainObject=function(a){var b;if(!a||\"object\"!==c.type(a)||a.nodeType||c.isWindow(a))return!1;try{if(a.constructor&&!f.call(a,\"constructor\")&&!f.call(a.constructor.prototype,\"isPrototypeOf\"))return!1}catch(d){return!1}for(b in a);return void 0===b||f.call(a,b)},c.each=function(a,c,d){var e,f=0,g=a.length,h=b("
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Modals.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/velocity/velocity.ui.min.js",
+    "ct": "text/javascript",
+    "body": "/* VelocityJS.org UI Pack (5.0.4). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License. Portions copyright Daniel Eden, Christian Pucci. */\n!function(t){\"function\"==typeof require&&\"object\"==typeof exports?module.exports=t():\"function\"==typeof define&&define.amd?define([\"velocity\"],t):t()}(function(){return function(t,a,e,r){function n(t,a){var e=[];return t&&a?($.each([t,a],function(t,a){var r=[];$.each(a,function(t,a){for(;a.toString().length<5;)a=\"0\"+a;r.push(a)}),e.push(r.join(\"\"))}),parseFloat(e[0])>parseFloat(e[1])):!1}if(!t.Velocity||!t.Velocity.Utilities)return void(a.console&&console.log(\"Velocity UI Pack: Velocity must be loaded first. Aborting.\"));var i=t.Velocity,$=i.Utilities,s=i.version,o={major:1,minor:1,patch:0};if(n(o,s)){var l=\"Velocity UI Pack: You need to update Velocity (jquery.velocity.js) to a newer version. Visit http://github.com/julianshapiro/velocity.\";throw alert(l),new Error(l)}i.RegisterEffect=i.RegisterUI=function(t,a){function e(t,a,"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/pages/components_popups.js",
+    "ct": "text/javascript",
+    "body": "/* ------------------------------------------------------------------------------\n*\n*  # Tooltips and popovers\n*\n*  Specific JS code additions for components_popups.html page\n*\n*  Version: 1.0\n*  Latest update: Aug 1, 2015\n*\n* ---------------------------------------------------------------------------- */\n\n$(function () {\n\n\n    // Tooltips\n    // ------------------------------\n\n    // Custom color\n    $('[data-popup=tooltip-custom]').tooltip({\n        template: '<div class=\"tooltip\"><div class=\"bg-teal\"><div class=\"tooltip-arrow\"></div><div class=\"tooltip-inner\"></div></div></div>'\n    });\n\n\n    //\n    // Tooltip events\n    //\n\n    // onShow event\n    $('#tooltip-show').tooltip({\n        title: 'I am a tooltip',\n        trigger: 'click'\n    }).on('show.bs.tooltip', function () {\n        alert('Show event fired.')\n    });\n\n    // onShown event\n    $('#tooltip-shown').tooltip({\n        title: 'I am a tooltip',\n        trigger: 'click'\n    }).on('shown.bs.tooltip', function () {\n        a"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/ui/moment/moment.min.js",
+    "ct": "text/javascript",
+    "body": "!function(e,t){\"object\"==typeof exports&&\"undefined\"!=typeof module?module.exports=t():\"function\"==typeof define&&define.amd?define(t):e.moment=t()}(this,function(){\"use strict\";var H;function f(){return H.apply(null,arguments)}function a(e){return e instanceof Array||\"[object Array]\"===Object.prototype.toString.call(e)}function F(e){return null!=e&&\"[object Object]\"===Object.prototype.toString.call(e)}function c(e,t){return Object.prototype.hasOwnProperty.call(e,t)}function L(e){if(Object.getOwnPropertyNames)return 0===Object.getOwnPropertyNames(e).length;for(var t in e)if(c(e,t))return;return 1}function o(e){return void 0===e}function u(e){return\"number\"==typeof e||\"[object Number]\"===Object.prototype.toString.call(e)}function V(e){return e instanceof Date||\"[object Date]\"===Object.prototype.toString.call(e)}function G(e,t){for(var n=[],s=e.length,i=0;i<s;++i)n.push(t(e[i],i));return n}function E(e,t){for(var n in t)c(t,n)&&(e[n]=t[n]);return c(t,\"toString\")&&(e.toString=t.toString),"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Request.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/limitless_theme/js/plugins/ui/fullcalendar/fullcalendar.min.js",
+    "ct": "text/javascript",
+    "body": "/*!\n * FullCalendar v3.9.0\n * Docs & License: https://fullcalendar.io/\n * (c) 2018 Adam Shaw\n */\n!function(t,e){\"object\"==typeof exports&&\"object\"==typeof module?module.exports=e(require(\"moment\"),require(\"jquery\")):\"function\"==typeof define&&define.amd?define([\"moment\",\"jquery\"],e):\"object\"==typeof exports?exports.FullCalendar=e(require(\"moment\"),require(\"jquery\")):t.FullCalendar=e(t.moment,t.jQuery)}(\"undefined\"!=typeof self?self:this,function(t,e){return function(t){function e(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,e),r.l=!0,r.exports}var n={};return e.m=t,e.c=n,e.d=function(t,n,i){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:i})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,\"a\",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p=\"\",e(e.s=236)}([function(e,n){e.exports=t},,function(t,e){var n=Object.setPrototypeOf"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/js/policy-document.js",
+    "ct": "text/javascript",
+    "body": "jQuery(function($) {\n\tattachEvents($(\"[data-document-link]\"));\n\n\t// $(\"#content\").on(\"Eramba.reloadIndex\", function(e) {\n\t// \tattachEvents($(\"[data-document-link]\"));\n\t// });\n\n    $( document ).ajaxComplete(function() {\n        attachEvents($(\"[data-document-link]\"));\n    });\n\n\tfunction attachEvents(ele) {\n\t\t$(ele).off('click.Eramba').on('click.Eramba', function(e){\n\t\t\tvar title = $(this).data(\"doc-title\");\n\t\t\tvar href = $(this).attr(\"href\");\n\n\t\t\t$.ajax({\n\t\t\t\ttype: \"GET\",\n\t\t\t\tdataType: \"html\",\n\t\t\t\turl: href\n\t\t\t}).done(function(data) {\n\t\t\t\tvar html = $(data);\n\t\t\t\tattachEvents(html.find('[data-document-link]'));\n\n\t\t\t\tbootbox.hideAll();\n\t\t\t\tbootbox.dialog({\n\t\t\t\t\t//title: title,\n\t\t\t\t\tmessage : html,\n\t\t\t\t\t// className: \"document-modal\",\n\t\t\t\t});\n\t\t\t});\n\n\t\t\te.preventDefault();\n\t\t});\n\t}\n\n});\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.js",
+    "ct": "text/javascript",
+    "body": "/*!\n * Bootstrap Colorpicker - Simple and customizable colorpicker component for Twitter Bootstrap.\n * @package bootstrap-colorpicker\n * @version v3.0.0-wip\n * @license MIT\n * @link https://farbelous.github.io/bootstrap-colorpicker/\n * @link https://github.com/farbelous/bootstrap-colorpicker.git\n */\n(function webpackUniversalModuleDefinition(root, factory) {\n\tif(typeof exports === 'object' && typeof module === 'object')\n\t\tmodule.exports = factory(require(\"jQuery\"));\n\telse if(typeof define === 'function' && define.amd)\n\t\tdefine(\"bootstrap-colorpicker\", [\"jQuery\"], factory);\n\telse if(typeof exports === 'object')\n\t\texports[\"bootstrap-colorpicker\"] = factory(require(\"jQuery\"));\n\telse\n\t\troot[\"bootstrap-colorpicker\"] = factory(root[\"jQuery\"]);\n})(this, function(__WEBPACK_EXTERNAL_MODULE_0__) {\nreturn /******/ (function(modules) { // webpackBootstrap\n/******/ \t// The module cache\n/******/ \tvar installedModules = {};\n/******/\n/******/ \t// The require function\n/******/ \tfunction __webpack_requi"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Response.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/YoonityJS-2.0.2-eramba.js?v=1780668492081",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('2w(2q(p,a,c,k,e,d){e=2q(c){2p(c<a?\\'\\':e(3i(c/a)))+((c=c%a)>35"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Templates.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/system-api/users/info",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Forms.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Loaders.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Notifications.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Object.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Model.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Controller.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/View.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/index-D67nL0vi.js",
+    "ct": "text/javascript",
+    "body": "const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=[\"vue_assets/AssetsView-B-QuxH6J.js\",\"vue_assets/SectionComponent.vue_vue_type_script_setup_true_lang-BjIAQ7ch.js\",\"vue_assets/FilterModal.vue_vue_type_script_setup_true_lang-RdIQeLpn.js\",\"vue_assets/SideModal.vue_vue_type_script_setup_true_lang-tLJkRn1g.js\",\"vue_assets/overlaypanel.esm-DHGcsoiE.js\",\"vue_assets/vuedraggable.umd-CKn4TdeO.js\",\"vue_assets/TooltipPanel.vue_vue_type_script_setup_true_lang-C_rZabXD.js\",\"vue_assets/truncationTooltip-xps7cKWb.js\",\"vue_assets/index-Dkd00njL.js\",\"vue_assets/htmlElement-cp7_gLSH.js\",\"vue_assets/FilterInputChips.vue_vue_type_script_setup_true_lang-CckPt1VL.js\",\"vue_assets/CountBadge.vue_vue_type_script_setup_true_lang-Zsdhswg5.js\",\"vue_assets/date-CCKBDuhP.js\",\"vue_assets/dayjs.min-CtO9jC7H.js\",\"vue_assets/FormFileInputIcon.vue_vue_type_script_setup_true_lang-DMxPE_yj.js\",\"vue_assets/dialog.esm-C82mfUnA.js\",\"vue_assets/FormToggleField.vue_vue_type_script_setup_true_lang-Dko3CFqc.js\",\"vue_asse"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Models/AppModel.js?app_v=1.0.0",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/AppController.js?app_v=1.0.0",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/index-BDO0i8po.css",
+    "ct": "text/css",
+    "body": "@import\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Readex+Pro:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap\";*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(52 121 233 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shad"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Views/AppView.js?app_v=1.0.0",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Readex+Pro:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap",
+    "ct": "text/css; charset=utf-8",
+    "body": "/* cyrillic-ext */\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7W0Q5n-wU.woff2) format('woff2');\n  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;\n}\n/* cyrillic */\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7W0Q5n-wU.woff2) format('woff2');\n  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;\n}\n/* greek-ext */\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7W0Q5n-wU.woff2) format('woff2');\n  unicode-range: U+1F00-1FFF;\n}\n/* greek */\n@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weigh"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/img/_components/loading.webp",
+    "ct": "image/webp",
+    "body": "RIFF\n<\u0000\u0000WEBPVP8X\n\u0000\u0000\u0000\u0012\u0000\u0000\u0000+\u0001\u0000+\u0001\u0000ANIM\u0006\u0000\u0000\u0000\u0000\u0000ANMF\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000+\u0001\u0000+\u0001\u0000\u001e\u0000\u0000\u0002VP8 \u0000\u0000\u0000\u0016\u0000\u0001*,\u0001,\u0001>HM%#\" (\u0000\u0012\tinwa\u001b@\t\u0003l9\u000f}r\u001ed={\ud4d0'!NCl9\u000f}r\u001ed={\ud4d0'!NCl9\u000f}r\u001ed={\ud4d0'!NCl9\u000f}r\u001ed={\ud4d0'!NCl9\u000f}r\u001ed={\ud4d0'!`\u0000\u06e6\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000ANMF\u0001\u0000\u0000f\u0000\u0000#\u0000\u00003\u0000\u00001\u0000\u0000\u001e\u0000\u0000\u0000ALPH(\u0000\u0000\u0000\u0001\u000f0\u0011\u0011BM\u001bI2\u0018,AC\u001d\t\u0005sG:G~\t\u001d\u0013\u0000VP8 L\u0001\u0000\u0000\t\u0000\u0001*4\u00002\u0000><G?\u0000\u0001\u0010@\r&).nf1@o\u0000o9/\u0019\u0016)\u001dwkQ\"pf\u0013PGE\u07a481oeO]b\u0018'@\u0000e&aIt\u45df~,/U\u0010&\u0012,\u0012&I\u0007\u0001z-NCUd\u0004~\u001e-CeXJ\u0019\nyI\u0004_\u001b\u000bp<a\u007f UA\u001e\u0006y%/vHH J~\u000ex`W\u07cb!\u0003l\u0010FY@Qw\u00f0\u0018z_i\u000bH\u001csl\u0001Y'\u0011\u0007d^ak1\"G\u001e\u001d\u0016\u0016Y\u017b/Jf}y\u0723n{dn\u01a8?,eZW\u02acp\u0602oX\u0004v\u0000\u0000\u0000ANMF\"\u0001\u0000\u0000b\u0000\u0000/\u0000\u0000*\u0000\u0000$\u0000\u0000\u001e\u0000\u0000\u0000ALPH!\u0000\u0000\u0000\u0001\u000f0\u0011\u0011BM$)RH\u007f8\fG@D\u0003Dun3\u0003\u0000VP8 \u0000\u0000\u0000\u0005\u0000\u0001*+\u0000%\u0000>8G\u001c\u0000\u0001\u0010@\r\u0007\u0000V\u001c\u0000y\u0015Kj\u0620\u00103+\n\u001c\u0005\u000e B\u0000\u0000\u0013IP\u001c\u000bd\u0000\u0016~\u0005jf4zXb:\u00120$\u001b\u03396\r-\u0002xlQ;W.I\u000f#,Hzcu\u0004]j2\u0015|~\u000bB,-T\u000ebP\u0017QG7\u0006+1E<4\u0429~\u0014`\u001bX\u87a9v?)\u0010\u01c4W9L3Jt\u0000\u0000\u0000ANMF8\u0001\u0000\u0000"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/ErambaLayout-2GdEHKhE.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/MenuButton.vue_vue_type_script_setup_true_lang-DJiH5ezA.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/button.esm-6xIW8qRw.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/skeleton.esm-DzxLoQds.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/index.esm-BBe4Vqwc.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/overlaypanel.esm-DHGcsoiE.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/TooltipPanel.vue_vue_type_script_setup_true_lang-C_rZabXD.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/htmlElement-cp7_gLSH.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/index-Dkd00njL.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/CustomMessage.vue_vue_type_script_setup_true_lang-Dw9o5R3V.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/message.esm-DrpnOKLP.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/appConfig-C5lmRV4k.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/dialog.esm-C82mfUnA.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/ConfirmationDialog.vue_vue_type_script_setup_true_lang-BZ7IZuIb.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/UserAvatar.vue_vue_type_script_setup_true_lang-COyI1MmI.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormModal.vue_vue_type_script_setup_true_lang-BtxEoyI7.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/SideModal.vue_vue_type_script_setup_true_lang-tLJkRn1g.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormField.vue_vue_type_script_setup_true_lang-B3ghVRj1.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/debounce-CvptyIbi.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/validator-uy-XM-s9.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/dayjs.min-CtO9jC7H.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/BulkEditModeSwitch.vue_vue_type_script_setup_true_lang-CCRvSyTT.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/SystemDialog.vue_vue_type_script_setup_true_lang-BeBr8ofM.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormSelectField.vue_vue_type_script_setup_true_lang-OZgnPC8D.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormInput.vue_vue_type_script_setup_true_lang-f66g0RhL.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/inputtext.esm-cMJBxvrA.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/MessageWrapper.vue_vue_type_script_setup_true_lang-y1zM-XrQ.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/InfoWrapper.vue_vue_type_script_setup_true_lang-Dkhteq_6.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/vue-virtual-scroller-DJTLg9Bb.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/vue-virtual-scroller-C9QS1f1T.css",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/nestedOverlayRegistry-CEp9RkJ4.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/filterOptions-BAPiidjJ.js",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/Class.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"E t\";(3(g){5 4=3(6){5 7=6.u(\\'7\\')?3(){6.7.v(1,w)}:3(){};e(5 "
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormCodeEditor.vue_vue_type_script_setup_true_lang-DbE0Lo1o.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/CodeEditor-BI6qrHu1.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/_plugin-vue_export-helper-DlAUqK2U.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/CodeEditor-BnTNJ_vF.css",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FormPopupModal.vue_vue_type_script_setup_true_lang-CFQNIl9U.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/vue_assets/FallbackView-CsvFr-8g.js",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/ServerRequest.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/settings/get-logo/new-layout",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/risks/classifications",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/system-api/users/menu",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "post_data": null
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/ServerResponse.js?yjs_v=2.0.2-eramba",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/Scopes.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"1b U\";(3(z){8 N=q.I({H:3(4){2.G({b:7,n:7,k:7,j:7,5:\\'x\\'},4||"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/locales/en/translation.json?v=1780668492081",
+    "ct": "application/json",
+    "body": "{\n    \"global\": {\n        \"terms_conditions\": {\n            \"text\": \"By using Eramba, you agree to our\",\n            \"link\": \"Terms and Conditions\"\n        },\n        \"user\": \"User\",\n        \"superadmin\": \"Super Admin\",\n        \"resolve\": \"Resolve\",\n        \"mixed_content\": \"Mixed content\",\n        \"mixed\": \"Mixed\",\n        \"no_data_to_display\": \"No data to display\",\n        \"clear\": \"Clear\",\n        \"cancel\": \"Cancel\",\n        \"download\": \"Download\",\n        \"guest\": \"Guest\",\n        \"back\": \"Back\",\n        \"add_new\": \"Add new\",\n        \"submit\": \"Submit\",\n        \"view\": \"View\",\n        \"tools\": \"Tools\",\n        \"test\": \"Test\",\n        \"output\": \"Output\",\n        \"close\": \"Close\",\n        \"expand\": \"Expand\",\n        \"edit\": \"Edit\",\n        \"current\": \"Current\"\n    },\n    \"login\": {\n        \"title\": \"Sign in to Eramba\",\n        \"username\": \"Username\",\n        \"password\": \"Password\",\n        \"submit\": {\n            \"form\": \"Sign in\",\n            \"saml\": \"Sign in with SAML\",\n           "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Resources/DOM.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"10 M\";(3(c){d b=f.L({K:3(C){2.G({l:6,o:6,m:6,j:f.J.j,},C||{})"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Config.js?c_v=2026622",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Config\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n\n\"use strict\";\n\n(function(Config)\n{\n\t//\n\t// Set actual version of your application developed on this framework.\n\t// You need to update this number after every change in your application \n\t// so your js files won't be loaded from cache for the first time after update.\n\t// Recommended way how to version your application is to use a semantic versioning.\n\t// \n\t// Version of your applica"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Globals.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Globals\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"4I 2c\";(6(3){3.3q={3d:F 12(),3p:6(x,E,Q,j){4 r={\\'E\\'"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Init.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"2V 23\";(7(6){i 14=[\\'//4/4\\',\\'//4/1s\\',\\'//4/1o\\',\\'//4/1t\\'"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Errors/ExceptionRenderer.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Errors\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"s c\";(2(3){d 4=9.e({f:2(6){1.g({0:h},6||{})},b:2(){j.k(\"l m o.\\\\n\"+\"7 8: \"+1.0.8+\"\\\\n\"+\"7 5: \"+1.0.5"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Errors/Exceptions.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Errors\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"x j\";(3(c){k 2=l m();2.n=3(0){5(!0){0=\\'6 4 d b a 9\\'}1.0=0;1.8=\\'o q p\\'};2.r=3(0){5(!0){0=\\'6 d f "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Registry.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"u k\";j.i({h:\\'9\\',f:2 9(){d{6:l,g:2(1){0.n({},1||{});0.6=7 b()},o:2(c,3,1){8(!1){1=7 b()}0.6[3]=7 "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Server.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"1i P\";9.Q({K:[\\'//p/t\\'],U:\\'p\\',T:8 S(){r{6:l,k:l,R"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Modals.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n//eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"3X 2b\";1h.3D({3E:\\'3F\\',2n:b 3P(){q{d:L,8:L,1J:j,1"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Request.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('2K(2C(p,a,c,k,e,d){e=2C(c){2D(c<a?\\'\\':e(3A(c/a)))+(("
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Response.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"s d\";e.f({g:\\'h\\',i:1 c(){5{4:7,3:\\'j\\',l:1(8){0.m({2:7,},8||{})},p:1(){0.a()},a:1(){0.4=$(0.2).9("
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/system-api/login",
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":{\"methods\":{\"form\":true},\"welcome\":false,\"demo\":false,\"cloudDeployment\":false,\"licenseType\":\"community\",\"licenseActive\":true,\"appVersion\":\"3.30.0\",\"databaseVersion\":\"20260410120000\",\"activeTranslationId\":1,\"activeTranslationLocale\":\"en_US\"}}"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Templates.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "\"use strict\";\nYoonityJS.ClassFile({\n    namespace: 'Registry',\n    class: function Templates() {\n        return {\n            layout: null,\n            elements: null,\n            tags: null,\n            constructor: function (params) {\n                this.__setProperties({}, params || {});\n                this.elements = new Array();\n                this.tags = new Array()\n            },\n            getLayout: function () {\n                return this.layout\n            },\n            setLayout: function (layout, fromServer) {\n                if (fromServer) {\n                    layout = YoonityJS.Globals.fwUrl(layout);\n                    if (YoonityJS.Config.useCache) {\n                        layout += '?' + YoonityJS.Globals.createFileSuffix('app')\n                    } else {\n                        layout += '?' + YoonityJS.Globals.createFileSuffix('timestamp')\n                    }\n                    this._timeline.addScope({\n                        object: this,\n           "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Forms.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"1w 1k\";u.1m({1n:\\'1q\\',1s:x 1t(){B{b:14,l:M,o:\\'1f\\'"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Loaders.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"Y B\";a.A({F:\\'K\\',d:1 J(){4{3:H,G:1(m){2.D({},m||{})"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/Notifications.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n\"use strict\";\nYoonityJS.ClassFile({\n    namespace: 'Registry',\n    class: function Notifications() {\n        return {\n            text: \"\",\n            timeout: 6000,\n            constructor: function (params) {\n                this.__setProperties({}, params || {})\n            },\n            show: function (text, type, timeout) {\n                var settings = {\n                 "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Object.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Libs\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"b a\";9.8({7:\\'6\\',5:0 4(){3{2:0(1){}}}});',12,12,'function|params|constructor|return|Object|class|Libs"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Model.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Libs\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"14 D\";f.C({B:[\\'//d/a\\'],A:\\'d\\',z:\\'d/a\\',y:4 x(){b{g:4"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/Controller.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Libs\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"2t 1W\";f.1X({1b:[\\'//1f/15\\'],1Y:\\'1f\\',1Z:\\'1f/15\\',21:"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Libs/View.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Libs\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"10 G\";p.F({E:[\\'//b/h\\'],D:\\'b\\',C:\\'b/h\\',A:7 y(){m{2:a"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Models/AppModel.js?app_v=1.0.0",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Models\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n\n\"use strict\";\n\nYoonityJS.ClassFile({\n\tuses: [\n\t\t'//Libs/Model'\n\t],\n\tnamespace: 'Models',\n\textends: 'Libs/Model',\n\tclass: function AppModel()\n\t{\n\t\treturn {\n\t\t\tconstructor: function(params)\n\t\t\t{\n\t\t\t\t// Call parent constructor\n\t\t\t\tthis._parent.constructor(params);\n\t\t\t}\n\t\t};\n\t}\n});\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/AppController.js?app_v=1.0.0",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Controllers\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n\n\"use strict\";\n\nYoonityJS.ClassFile({\n\tuses: [\n\t\t'//Libs/Controller'\n\t],\n\tnamespace: 'Controllers',\n\textends: 'Libs/Controller',\n\tclass: function AppController()\n\t{\n\t\treturn {\n\t\t\t\n\t\t\tconstructor: function(params)\n\t\t\t{\n\t\t\t\t// Call parent constructor\n\t\t\t\tthis._parent.constructor(params);\n\t\t\t},\n\n\t\t\t$load: function(params)\n\t\t\t{\n\t\t\t\t// Prepare form data for server side processing (B"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Views/AppView.js?app_v=1.0.0",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Views\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\n\n\"use strict\";\n\nYoonityJS.ClassFile({\n\tuses: [\n\t\t'//Libs/View'\n\t],\n\tnamespace: 'Views',\n\textends: 'Libs/View',\n\tclass: function AppView()\n\t{\n\t\treturn {\n\t\t\tconstructor: function(params)\n\t\t\t{\n\t\t\t\t// Call parent constructor\n\t\t\t\tthis._parent.constructor(params);\n\n\t\t\t\tthis.__setProperties({}, params || {});\n\t\t\t}\n\t\t};\n\t}\n});\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/system-api/users/info",
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":{\"user\":{\"id\":1,\"name\":\"Ifeanyi\",\"surname\":\"Ijezie\",\"email\":\"ijeziermf@gmail.com\",\"login\":\"admin\",\"language\":\"eng\",\"status\":1,\"blocked\":0,\"local_account\":1,\"api_allow\":0,\"default_password\":0,\"account_ready\":1,\"ldap_sync\":0,\"ldap_synchronization_id\":null,\"created\":\"2026-06-22T23:09:53-04:00\",\"modified\":\"2026-06-22T19:40:43-04:00\",\"edited\":null,\"custom_user\":{\"id\":1,\"user_id\":1,\"created\":\"2019-05-21T12:35:44-04:00\"},\"portals\":[{\"id\":1,\"name\":\"main\",\"_joinData\":{\"id\":1,\"user_id\":1,\"portal_id\":1,\"created\":\"2019-05-21T12:35:33-04:00\",\"modified\":\"2019-05-21T12:35:33-04:00\"}},{\"id\":2,\"name\":\"vendor_assessments\",\"_joinData\":{\"id\":2,\"user_id\":1,\"portal_id\":2,\"created\":\"2022-01-01T12:34:56-05:00\",\"modified\":\"2022-01-01T12:34:56-05:00\"}},{\"id\":3,\"name\":\"account_reviews\",\"_joinData\":{\"id\":3,\"user_id\":1,\"portal_id\":3,\"created\":\"2022-01-01T12:34:56-05:00\",\"modified\":\"2022-01-01T12:34:56-05:00\"}},{\"id\":4,\"name\":\"awareness\",\"_joinData\":{\"id\":4,\"user_id\":1,\"portal_id\":4,\"created\""
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/ErambaLayout-2GdEHKhE.js",
+    "ct": "text/javascript",
+    "body": "import{s as Me}from\"./MenuButton.vue_vue_type_script_setup_true_lang-DJiH5ezA.js\";import{l as f,d as O,c as K,k as o,e as p,h,g as v,D as C,T as oe,ai as Te,X as g,aj as Pe,ak as le,U as J,al as M,V as I,am as Se,an as Y,ao as ie,r as B,a6 as ue,J as _,w as S,F as H,C as $,a5 as ce,S as N,n as T,t as P,ap as Q,aq as de,f as L,W as ne,i as me,a3 as Ee,A as Z,a4 as Ae,E as Ke,ag as ae,j as Ve,ar as he,v as X,u as He,Q as Fe,as as Ze,at as Oe,au as De,Y as Re,av as Ne,a as Be,o as fe,aw as ze,ax as je,O as $e,ab as Ue,ay as Ge,az as We,aA as qe,I as Ye}from\"./index-D67nL0vi.js\";import{_ as pe}from\"./CustomMessage.vue_vue_type_script_setup_true_lang-Dw9o5R3V.js\";import{u as be}from\"./appConfig-C5lmRV4k.js\";import{s as Qe}from\"./skeleton.esm-DzxLoQds.js\";import{O as Xe}from\"./overlaypanel.esm-DHGcsoiE.js\";import{s as Je}from\"./dialog.esm-C82mfUnA.js\";import{a as et}from\"./button.esm-6xIW8qRw.js\";import{_ as ve}from\"./SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js\";import{u as "
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/MenuButton.vue_vue_type_script_setup_true_lang-DJiH5ezA.js",
+    "ct": "text/javascript",
+    "body": "import{_ as fe}from\"./SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js\";import{s as te,a as ne}from\"./index.esm-BBe4Vqwc.js\";import{_ as he,A as L,aa as pe,a as ge,av as Ie,d as X,c as ae,J as T,h as j,n as E,w as O,k as p,g as C,W as R,e as v,F as V,C as J,t as _,ap as ie,X as g,D as x,T as ve,ak as ye,U as Q,V as k,al as I,ao as Z,r as Y,a6 as be,a5 as W,S as F,f as N,b4 as se,aq as re,aN as Pe,aB as z,aC as G,ad as oe,ar as we,be as ke}from\"./index-D67nL0vi.js\";import{s as Ce}from\"./overlaypanel.esm-DHGcsoiE.js\";import{_ as Ae}from\"./TooltipPanel.vue_vue_type_script_setup_true_lang-C_rZabXD.js\";import{i as xe}from\"./htmlElement-cp7_gLSH.js\";import{b as Se}from\"./index-Dkd00njL.js\";const Ke=he(\"relationModalStack\",()=>{const t=L([]),e=L(0),n=(m,h,y,A,S)=>({id:`relation-modal-${m.modelAlias}-${e.value++}`,visible:!0,isLoading:!0,source:h,ids:y,filter:A,...S,...m});return{stack:t,openRelationModal:(m,h,y=[],A={},S)=>t.value.some(b=>b.modelAlias===m.modelAlias)?!1:(t.value.p"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js",
+    "ct": "text/javascript",
+    "body": "import{d as B,aH as A,c as t,J as L,aM as I,k as r,w as g,i as u,f as m,h as o,X as T,W as E,e as l,n as s,g as n,D as i,t as M,ar as N}from\"./index-D67nL0vi.js\";import{a as S}from\"./button.esm-6xIW8qRw.js\";import{s as V}from\"./skeleton.esm-DzxLoQds.js\";const $={key:2,class:\"animate-spin\"},D=[\"src\"],j={key:5,class:\"absolute top-0 left-0 w-full h-full p-2\"},W=B({inheritAttrs:!1,__name:\"SystemButton\",props:{label:{},name:{},type:{default:\"button\"},appearance:{default:\"primary\"},size:{default:\"medium\"},icon:{},iconAfterText:{},showMenuExpandIcon:{type:Boolean,default:!1},stretched:{type:Boolean},disabled:{type:Boolean},loading:{type:Boolean},formTarget:{},apiLink:{},iconClasses:{},buttonClasses:{},labelClasses:{},dataCy:{}},emits:[\"click\"],setup(b,{emit:h}){const e=b,y=h,{buildAttributes:f}=N(),d=A(),k=t(()=>e.appearance===\"secondary\"?u(\"/img/_components/dark-loader.svg\"):u(\"/img/_components/loader.svg\")),x=t(()=>[{\"!w-full justify-center\":e.stretched,\"h-14 rounded-lg\":e.size===\"xlarge\",\""
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/button.esm-6xIW8qRw.js",
+    "ct": "text/javascript",
+    "body": "import{T as v,al as c,U as m,k as l,e as s,W as d,j as w,t as h,X as i,ai as k,g as C,ak as z,r as b,a6 as N,a5 as T,n as g,J as f,D as y}from\"./index-D67nL0vi.js\";var A={root:function(n){var t=n.props,a=n.instance;return[\"p-badge p-component\",{\"p-badge-no-gutter\":c.isNotEmpty(t.value)&&String(t.value).length===1,\"p-badge-dot\":c.isEmpty(t.value)&&!a.$slots.default,\"p-badge-lg\":t.size===\"large\",\"p-badge-xl\":t.size===\"xlarge\",\"p-badge-info\":t.severity===\"info\",\"p-badge-success\":t.severity===\"success\",\"p-badge-warning\":t.severity===\"warning\",\"p-badge-danger\":t.severity===\"danger\",\"p-badge-secondary\":t.severity===\"secondary\",\"p-badge-contrast\":t.severity===\"contrast\"}]}},O=v.extend({name:\"badge\",classes:A}),D={name:\"BaseBadge\",extends:m,props:{value:{type:[String,Number],default:null},severity:{type:String,default:null},size:{type:String,default:null}},style:O,provide:function(){return{$parentInstance:this}}},S={name:\"Badge\",extends:D,inheritAttrs:!1};function E(e,n,t,a,u,r){return l(),s(\""
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/skeleton.esm-DzxLoQds.js",
+    "ct": "text/javascript",
+    "body": "import{T as i,U as s,k as o,e as a,X as l}from\"./index-D67nL0vi.js\";var p={root:{position:\"relative\"}},d={root:function(r){var t=r.props;return[\"p-skeleton p-component\",{\"p-skeleton-circle\":t.shape===\"circle\",\"p-skeleton-none\":t.animation===\"none\"}]}},u=i.extend({name:\"skeleton\",classes:d,inlineStyles:p}),c={name:\"BaseSkeleton\",extends:s,props:{shape:{type:String,default:\"rectangle\"},size:{type:String,default:null},width:{type:String,default:\"100%\"},height:{type:String,default:\"1rem\"},borderRadius:{type:String,default:null},animation:{type:String,default:\"wave\"}},style:u,provide:function(){return{$parentInstance:this}}},h={name:\"Skeleton\",extends:c,inheritAttrs:!1,computed:{containerStyle:function(){return this.size?{width:this.size,height:this.size,borderRadius:this.borderRadius}:{width:this.width,height:this.height,borderRadius:this.borderRadius}}}};function S(e,r,t,y,f,n){return o(),a(\"div\",l({class:e.cx(\"root\"),style:[e.sx(\"root\"),n.containerStyle],\"aria-hidden\":\"true\"},e.ptmi(\"roo"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/index.esm-BBe4Vqwc.js",
+    "ct": "text/javascript",
+    "body": "import{ai as r,k as t,e as o,X as n,g as s}from\"./index-D67nL0vi.js\";var l={name:\"ChevronDownIcon\",extends:r},c=s(\"path\",{d:\"M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z\",fill:\"currentColor\"},null,-1),d=[c];function v(e,a,C,i,p,h){return t(),o(\"svg\",n({width:\"14\",height:\"14\",viewBox:\"0 0 14 14\",fill:\"none\",xmlns:\"http://www.w3.org/2000/svg\"},e.pti()),d,16)}l.render=v;var w={name:\"ChevronRight"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/overlaypanel.esm-DHGcsoiE.js",
+    "ct": "text/javascript",
+    "body": "import{V as r,aO as T,al as D,aP as I,T as P,aQ as B,aj as A,ak as H,U as z,ao as j,am as $,an as g,r as x,a6 as C,k as h,J as S,w as k,f as R,aq as U,X as v,a5 as F,e as E,W as w,F as N,g as Z,S as V,D as O}from\"./index-D67nL0vi.js\";var q={},M=T.extend({style:q});function m(t){\"@babel/helpers - typeof\";return m=typeof Symbol==\"function\"&&typeof Symbol.iterator==\"symbol\"?function(e){return typeof e}:function(e){return e&&typeof Symbol==\"function\"&&e.constructor===Symbol&&e!==Symbol.prototype?\"symbol\":typeof e},m(t)}function _(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var i=Object.getOwnPropertySymbols(t);e&&(i=i.filter(function(o){return Object.getOwnPropertyDescriptor(t,o).enumerable})),n.push.apply(n,i)}return n}function K(t){for(var e=1;e<arguments.length;e++){var n=arguments[e]!=null?arguments[e]:{};e%2?_(Object(n),!0).forEach(function(i){J(t,i,n[i])}):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):_(Object(n)).forEa"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/TooltipPanel.vue_vue_type_script_setup_true_lang-C_rZabXD.js",
+    "ct": "text/javascript",
+    "body": "import{s as m}from\"./overlaypanel.esm-DHGcsoiE.js\";import{d as h,A as n,Q as u,c as y,J as w,h as C,w as g,k,g as x,W as T,n as O,ad as i}from\"./index-D67nL0vi.js\";const M=h({__name:\"TooltipPanel\",props:{tooltip:{},isInCell:{type:Boolean,default:!1},showDelay:{default:500},hideDelay:{default:300},overlayPanelClass:{default:\"mt-1\"},keepOnMouseOver:{type:Boolean,default:!0},panelClasses:{default:\"!z-[2180]\"}},setup(p){const a=p,o=n(null),l=n(!1),s=n(null),f=e=>{s.value&&clearTimeout(s.value),e&&setTimeout(()=>{var r;return a.isInCell&&((r=o.value)==null?void 0:r.show(e,e.target))},a.showDelay)},t=()=>{s.value=setTimeout(()=>{var e;return!l.value&&!a.isInCell&&((e=o.value)==null?void 0:e.hide())},a.hideDelay)},c=()=>{a.keepOnMouseOver&&(s.value&&clearTimeout(s.value),l.value=!0)},d=()=>{a.keepOnMouseOver&&(l.value=!1,t())};u(()=>a.isInCell,e=>{i(()=>{e&&f(a.tooltip),!e&&!l.value&&t()})}),u(()=>l.value,e=>i(()=>!e&&!a.isInCell&&t()));const v=y(()=>({root:{class:[`flex bg-white rounded-lg s"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/htmlElement-cp7_gLSH.js",
+    "ct": "text/javascript",
+    "body": "import{b5 as c}from\"./index-D67nL0vi.js\";const i=e=>{document.querySelectorAll(`#${e} script`).forEach(r=>{const n=document.createElement(\"script\");n.text=r.innerHTML;const s=r.getAttribute(\"src\");s&&(n.src=s);const t=r.parentNode;t==null||t.removeChild(r),t==null||t.appendChild(n)})},l=(e,r)=>{document.querySelectorAll(`#${e} a:not(.static-link)`).forEach(n=>{n.addEventListener(\"click\",function(s){s.preventDefault();const t=n.getAttribute(\"href\");t&&r.push(t.startsWith(\"http\")?c(t):t)})})},a=e=>{const r=document.getElementById(e);r&&r.querySelectorAll(\"[id]\").forEach(s=>s.removeAttribute(\"id\"))},u=e=>e?e.scrollWidth>e.clientWidth:!1;export{a,u as i,i as r,l as s};\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/index-Dkd00njL.js",
+    "ct": "text/javascript",
+    "body": "import{h as ne,o as U,ad as B,a9 as G,aR as J,aS as oe,aT as re,aA as se,c as L,Q as P,A as b,B as j}from\"./index-D67nL0vi.js\";function F(e){return oe()?(re(e),!0):!1}function E(e){return typeof e==\"function\"?e():ne(e)}const q=typeof window<\"u\"&&typeof document<\"u\";typeof WorkerGlobalScope<\"u\"&&globalThis instanceof WorkerGlobalScope;const le=e=>e!=null,ie=Object.prototype.toString,ue=e=>ie.call(e)===\"[object Object]\",x=()=>{},ce=ae();function ae(){var e,t;return q&&((e=window==null?void 0:window.navigator)==null?void 0:e.userAgent)&&(/iP(?:ad|hone|od)/.test(window.navigator.userAgent)||((t=window==null?void 0:window.navigator)==null?void 0:t.maxTouchPoints)>2&&/iPad|Macintosh/.test(window==null?void 0:window.navigator.userAgent))}function Q(e,t){function n(...o){return new Promise((c,l)=>{Promise.resolve(e(()=>t.apply(this,o),{fn:t,thisArg:this,args:o})).then(c).catch(l)})}return n}function fe(e,t={}){let n,o,c=x;const l=i=>{clearTimeout(i),c(),c=x};return i=>{const a=E(e),v=E(t.maxWa"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/CustomMessage.vue_vue_type_script_setup_true_lang-Dw9o5R3V.js",
+    "ct": "text/javascript",
+    "body": "import{s as f}from\"./message.esm-DrpnOKLP.js\";import{d,J as m,w as p,h as u,k as t,g as l,n as s,W as n,e as r,t as o,D as a}from\"./index-D67nL0vi.js\";const h={class:\"min-w-0 flex-1\"},c=[\"href\"],w=d({__name:\"CustomMessage\",props:{type:{default:\"info\"},title:{},text:{},hrefText:{},href:{},closable:{type:Boolean,default:!0},icon:{},contentClasses:{},iconClasses:{},titleClasses:{},textClasses:{},endClasses:{},messageStyle:{}},setup(y){const i=e=>({success:\"ri-check-line text-green-600\",error:\"ri-error-warning-fill text-red-500 \",warn:\"ri-error-warning-fill text-yellow-400\",info:\"ri-error-warning-fill text-purple-600\"})[e];return(e,C)=>(t(),m(u(f),{severity:e.type,closable:e.closable,pt:{root:{style:e.messageStyle}}},{messageicon:p(()=>[l(\"div\",{class:s([\"flex w-full items-start gap-2\",e.contentClasses])},[l(\"div\",{class:s([\"shrink-0 text-xl leading-none\",e.iconClasses])},[n(e.$slots,\"icon\",{},()=>[l(\"i\",{class:s(e.icon||i(e.type))},null,2)])],2),l(\"div\",h,[e.title?(t(),r(\"div\",{key:0,clas"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/message.esm-DrpnOKLP.js",
+    "ct": "text/javascript",
+    "body": "import{T as O,b0 as f,b1 as y,b2 as b,b3 as v,aQ as P,ak as k,U as $,r as B,a6 as C,k as i,J as u,w as j,a5 as d,g,X as n,W as c,e as m,S as D,D as T,b4 as A,aq as E}from\"./index-D67nL0vi.js\";var N={root:function(t){var o=t.props;return\"p-message p-component p-message-\"+o.severity},wrapper:\"p-message-wrapper\",icon:\"p-message-icon\",text:\"p-message-text\",closeButton:\"p-message-close p-link\",closeIcon:\"p-message-close-icon\"},L=O.extend({name:\"message\",classes:N}),M={name:\"BaseMessage\",extends:$,props:{severity:{type:String,default:\"info\"},closable:{type:Boolean,default:!0},sticky:{type:Boolean,default:!0},life:{type:Number,default:3e3},icon:{type:String,default:void 0},closeIcon:{type:String,default:void 0},closeButtonProps:{type:null,default:null}},style:L,provide:function(){return{$parentInstance:this}}},K={name:\"Message\",extends:M,inheritAttrs:!1,emits:[\"close\",\"life-end\"],timeout:null,data:function(){return{visible:!0}},watch:{sticky:function(t){t||this.closeAfterDelay()}},mounted:fun"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/appConfig-C5lmRV4k.js",
+    "ct": "text/javascript",
+    "body": "import{_ as f,A as t}from\"./index-D67nL0vi.js\";const M=f(\"appConfig\",()=>{const n=t(),o=t(),s=t(),m=e=>{n.value=e,p()},p=()=>{var r;const e=(u,a)=>{var l;return{...u,key:`${a}`,items:(l=u.children)==null?void 0:l.map((c,i)=>e(c,`${a}_${i}`))}};o.value=(r=n.value)==null?void 0:r.menu.map(e)};return{menuConfig:n,menuItems:o,currentModelAlias:s,setAppConfig:m,setCurrentModelAlias:e=>{s.value=e}}});export{M as u};\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/dialog.esm-C82mfUnA.js",
+    "ct": "text/javascript",
+    "body": "import{F as R}from\"./overlaypanel.esm-DHGcsoiE.js\";import{ai as P,k as s,e as u,X as r,g as y,T as A,aQ as K,aj as j,ak as Z,U as T,ao as v,V as l,an as D,c as X,r as Y,a6 as E,J as L,w as S,f as U,aq as F,a5 as w,W as p,F as N,n as z,t as I,D as d,S as V,j as W}from\"./index-D67nL0vi.js\";var O={name:\"WindowMaximizeIcon\",extends:P},G=y(\"path\",{\"fill-rule\":\"evenodd\",\"clip-rule\":\"evenodd\",d:\"M7 14H11.8C12.3835 14 12.9431 13.7682 13.3556 13.3556C13.7682 12.9431 14 12.3835 14 11.8V2.2C14 1.61652 13.7682 1.05694 13.3556 0.644365C12.9431 0.231785 12.3835 0 11.8 0H2.2C1.61652 0 1.05694 0.231785 0.644365 0.644365C0.231785 1.05694 0 1.61652 0 2.2V7C0 7.15913 0.063214 7.31174 0.175736 7.42426C0.288258 7.53679 0.44087 7.6 0.6 7.6C0.75913 7.6 0.911742 7.53679 1.02426 7.42426C1.13679 7.31174 1.2 7.15913 1.2 7V2.2C1.2 1.93478 1.30536 1.68043 1.49289 1.49289C1.68043 1.30536 1.93478 1.2 2.2 1.2H11.8C12.0652 1.2 12.3196 1.30536 12.5071 1.49289C12.6946 1.68043 12.8 1.93478 12.8 2.2V11.8C12.8 12.0652 12.6"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/ConfirmationDialog.vue_vue_type_script_setup_true_lang-BZ7IZuIb.js",
+    "ct": "text/javascript",
+    "body": "import{a as Y,u as N,d as F,c as S,k as s,e as d,aB as K,aC as Z,h as f,g as e,n as A,f as x,t as v,D as C,ar as G,l as H,A as O,Q as tt,F as L,C as E,J as j,v as J,W as B,w,X as I,ad as et,aD as nt,m as M,G as ot,T as it,U as st,aE as D,r as V,aF as U,S as X,a7 as at,aG as ct}from\"./index-D67nL0vi.js\";import{s as q}from\"./overlaypanel.esm-DHGcsoiE.js\";import{_ as P}from\"./UserAvatar.vue_vue_type_script_setup_true_lang-COyI1MmI.js\";import{_ as R}from\"./SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js\";import{a as lt}from\"./button.esm-6xIW8qRw.js\";import{s as rt}from\"./dialog.esm-C82mfUnA.js\";import{_ as ut}from\"./CustomMessage.vue_vue_type_script_setup_true_lang-Dw9o5R3V.js\";const Q=9,$={\"Reports.ReportAppNotification\":{title:\"Report\",icon:\"ri-pie-chart-2-fill\",color:\"blue\"},\"Dashboard.CalendarAppNotification\":{title:\"Calendar\",icon:\"ri-calendar-schedule-fill\",color:\"red\"},\"Import.ImportAppNotification\":{title:\"Import\",icon:\"ri-arrow-right-up-line\",color:\"blue\"},\"AppNotific"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/UserAvatar.vue_vue_type_script_setup_true_lang-COyI1MmI.js",
+    "ct": "text/javascript",
+    "body": "import{d as w,c as t,k as n,e as c,n as p,t as y,h as _,D as k,g as C}from\"./index-D67nL0vi.js\";const b={purple:{background:\"bg-purple-50\",color:\"text-purple-700\",border:\"border-purple-200\"},green:{background:\"bg-green-50\",color:\"text-green-700\",border:\"border-green-200\"},pink:{background:\"bg-pink-50\",color:\"text-pink-700\",border:\"border-pink-200\"},red:{background:\"bg-red-50\",color:\"text-red-700\",border:\"border-red-200\"},orange:{background:\"bg-orange-50\",color:\"text-orange-700\",border:\"border-orange-200\"},blue:{background:\"bg-blue-50\",color:\"text-blue-700\",border:\"border-blue-200\"},gray:{background:\"bg-gray-50\",color:\"text-gray-500\",border:\"border-gray-200\"}},f=[{background:\"bg-purple-950\",color:\"text-purple-300\"},{background:\"bg-purple-700\",color:\"text-purple-300\"},{background:\"bg-purple-500\",color:\"text-purple-950\"},{background:\"bg-purple-300\",color:\"text-purple-700\"},{background:\"bg-green-900\",color:\"text-green-200\"},{background:\"bg-green-600\",color:\"text-green-200\"},{background:\"bg"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormModal.vue_vue_type_script_setup_true_lang-BtxEoyI7.js",
+    "ct": "text/javascript",
+    "body": "import{d as Z,k as n,e as h,n as ue,F as J,C as Q,J as j,bn as Se,w as z,g as s,t as O,A as F,c as L,Q as ne,f as w,D as U,h as b,bo as Ie,bp as je,bq as he,a3 as ke,a4 as pe,a as we,br as ie,bs as re,v as Y,bt as Me,B as ye,bu as me,at as Le,aD as Re,Y as De,ar as He,a9 as Ne,i as ze}from\"./index-D67nL0vi.js\";import{_ as Ue}from\"./SideModal.vue_vue_type_script_setup_true_lang-tLJkRn1g.js\";import{_ as Ee}from\"./FormField.vue_vue_type_script_setup_true_lang-B3ghVRj1.js\";import{u as We}from\"./validator-uy-XM-s9.js\";import{_ as E}from\"./SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js\";import{_ as $e}from\"./CustomMessage.vue_vue_type_script_setup_true_lang-Dw9o5R3V.js\";import{_ as fe}from\"./BulkEditModeSwitch.vue_vue_type_script_setup_true_lang-CCRvSyTT.js\";import{s as qe}from\"./overlaypanel.esm-DHGcsoiE.js\";import{b as Pe}from\"./index-Dkd00njL.js\";import{_ as Ve}from\"./SystemDialog.vue_vue_type_script_setup_true_lang-BeBr8ofM.js\";import{_ as Ge}from\"./FormSelectField.vue_vue_"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/SideModal.vue_vue_type_script_setup_true_lang-tLJkRn1g.js",
+    "ct": "text/javascript",
+    "body": "import{F as K}from\"./overlaypanel.esm-DHGcsoiE.js\";import{T as A,aQ as M,aj as O,ak as V,U as $,V as p,an as y,r as z,a6 as g,k as a,J as L,w as b,e as u,X as d,f as Z,aq as F,a5 as S,W as f,F as T,g as c,n as B,t as C,D as m,S as U,d as W,a3 as N,A as P,h as j,ap as q,a4 as D}from\"./index-D67nL0vi.js\";var x={mask:function(t){var i=t.position;return{position:\"fixed\",height:\"100%\",width:\"100%\",left:0,top:0,display:\"flex\",justifyContent:i===\"left\"?\"flex-start\":i===\"right\"?\"flex-end\":\"center\",alignItems:i===\"top\"?\"flex-start\":i===\"bottom\"?\"flex-end\":\"center\"}}},H={mask:function(t){var i=t.instance,l=t.props,o=[\"left\",\"right\",\"top\",\"bottom\"],n=o.find(function(h){return h===l.position});return[\"p-sidebar-mask\",{\"p-component-overlay p-component-overlay-enter\":l.modal,\"p-sidebar-mask-scrollblocker\":l.blockScroll,\"p-sidebar-visible\":i.containerVisible,\"p-sidebar-full\":i.fullScreen},n?\"p-sidebar-\".concat(n):\"\"]},root:function(t){var i=t.instance;return[\"p-sidebar p-component\",{\"p-ripple-disable"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormField.vue_vue_type_script_setup_true_lang-B3ghVRj1.js",
+    "ct": "text/javascript",
+    "body": "import{d as D,bs as w,v as k,br as I,A as R,c as m,Q as T,k as t,e as f,n as C,g as L,t as N,D as c,F as $,C as j,J as h,bt as z,h as r,S as J,ae as O,bi as Q}from\"./index-D67nL0vi.js\";import{u as q}from\"./debounce-CvptyIbi.js\";const H={key:0,class:\"text-gray-500 font-medium text-sm pb-3.5\"},K=D({__name:\"FormGroup\",props:{item:{},storeId:{},alignFields:{type:Boolean},validator:{},scope:{}},setup(g){const a=g,p=w(a.storeId)(),{fieldsActive:v}=k(p),{getTabFields:d}=I(a.storeId),u=R(!1),b=m(()=>a.item.inline?!1:d({label:\"\",elements:a.item.elements},!0).filter(i=>!!p.fieldsActive[i.name]&&i.type!==\"hidden\").some(i=>i.description));return T(()=>v.value,()=>{for(const l of Object.values(a.item.elements))if(v.value[l.name]){u.value=!0;return}u.value=!1},{immediate:!0,deep:!0}),(l,i)=>u.value?(t(),f(\"div\",{key:0,class:C({\"mr-6\":l.alignFields})},[L(\"div\",{class:C([\"flex flex-col rounded-lg w-full\",{\"border border-1 border-gray-200 p-3\":l.item.border,\"!flex-row gap-2\":l.item.inline}])},[l.item.l"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/debounce-CvptyIbi.js",
+    "ct": "text/javascript",
+    "body": "import{A as t}from\"./index-D67nL0vi.js\";const i=()=>{const e=t(void 0);return{debounce:(o,u=300)=>{e.value&&clearTimeout(e.value),e.value=window.setTimeout(()=>{o()},u)}}};export{i as u};\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/validator-uy-XM-s9.js",
+    "ct": "text/javascript",
+    "body": "import{d as u}from\"./dayjs.min-CtO9jC7H.js\";import{B as y,c as b}from\"./index-D67nL0vi.js\";const w=(e,t)=>({rule:r=>/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(r),message:{trans:\"validation_errors.email\"}}),E=(e,t)=>({rule:r=>/^[0-9a-zA-Z]{8}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{12}$/.test(r),message:{trans:\"validation_errors.token\"}}),h=e=>{if(e==null)return!1;if(typeof e==\"string\")return e.trim().length>0;if(Array.isArray(e))return e.length>0;if(typeof e==\"object\"){const t=Object.keys(e);return t.length===0?!1:t.every(r=>{const a=e[r];return a==null?!1:typeof a==\"string\"?e.trim().length>0:Array.isArray(a)?a.length>0:typeof a==\"object\"?h(a):!0})}return!0},x=(e,t)=>({rule:r=>h(r),message:{trans:\"validation_errors.required\"}}),A=(e,t)=>({rule:r=>!0,message:{trans:\"validation_errors.nullable\"}}),z=(e,t)=>({rule:r=>new RegExp(`^.{${e},}$`).test(r),message:{trans:\"validation_errors.min\",params:{min:e}}}),j=(e,t)=>({rule:r=>new RegExp(`^.{0,${e}}$`).test(r),message:{trans:\"validat"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/dayjs.min-CtO9jC7H.js",
+    "ct": "text/javascript",
+    "body": "import{a$ as G}from\"./index-D67nL0vi.js\";var W={exports:{}},K=W.exports,E;function X(){return E||(E=1,(function(V,et){(function(A,x){V.exports=x()})(K,(function(){var A=1e3,x=6e4,U=36e5,I=\"millisecond\",S=\"second\",w=\"minute\",_=\"hour\",M=\"day\",H=\"week\",m=\"month\",J=\"quarter\",y=\"year\",O=\"date\",Z=\"Invalid Date\",B=/^(\\d{4})[-/]?(\\d{1,2})?[-/]?(\\d{0,2})[Tt\\s]*(\\d{1,2})?:?(\\d{1,2})?:?(\\d{1,2})?[.:]?(\\d+)?$/,P=/\\[([^\\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,Q={name:\"en\",weekdays:\"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday\".split(\"_\"),months:\"January_February_March_April_May_June_July_August_September_October_November_December\".split(\"_\"),ordinal:function(s){var n=[\"th\",\"st\",\"nd\",\"rd\"],t=s%100;return\"[\"+s+(n[(t-20)%10]||n[t]||n[0])+\"]\"}},F=function(s,n,t){var r=String(s);return!r||r.length>=n?s:\"\"+Array(n+1-r.length).join(t)+s},R={s:F,z:function(s){var n=-s.utcOffset(),t=Math.abs(n),r=Math.floor(t/60),e=t%60;return(n<=0?\"+\":\"-\")+F(r,2,\"0\")+\":\"+F"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/BulkEditModeSwitch.vue_vue_type_script_setup_true_lang-CCRvSyTT.js",
+    "ct": "text/javascript",
+    "body": "import{d as L,a3 as S,A as c,c as n,Q as b,o as C,k as y,e as g,ap as k,n as m,g as d,h as A,i as T,t as W,D as w,a4 as D,bT as M,ad as O}from\"./index-D67nL0vi.js\";const N=[\"src\",\"alt\"],V={class:\"flex items-center\"},R=8,$=38,H=56,G=L({__name:\"BulkEditModeSwitch\",props:D({mode:{},options:{},expanded:{type:Boolean,default:!1},disabled:{type:Boolean},withExpandIcon:{type:Boolean,default:!0}},{modelValue:{},modelModifiers:{}}),emits:[\"update:modelValue\"],setup(p){const t=p,o=S(p,\"modelValue\"),i=c(null),v=c(0),l=c(t.expanded),x=n(()=>o.value??t.mode??\"leave\"),s=n(()=>M.find(e=>e.id===x.value)),r=n(()=>M.filter(e=>{var a;return(a=t.options)==null?void 0:a.includes(e.id)})),E=n(()=>({\"cursor-default\":t.disabled,\"cursor-pointer\":!t.disabled,\"transition-all duration-300 ease-in-out\":!0})),I=n(()=>{const e=t.withExpandIcon?H:$;return{maxWidth:`${l.value?v.value+R+e:e}px`}}),_=n(()=>({\"opacity-100\":l.value,\"opacity-0\":!l.value,\"delay-100 duration-300\":l.value,\"delay-0 duration-100\":!l.value})),B="
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/SystemDialog.vue_vue_type_script_setup_true_lang-BeBr8ofM.js",
+    "ct": "text/javascript",
+    "body": "import{s as c}from\"./dialog.esm-C82mfUnA.js\";import{_ as r}from\"./SystemButton.vue_vue_type_script_setup_true_lang-DIZFC3J4.js\";import{d as B,a3 as v,J as $,h as k,ap as d,n as m,w as a,a4 as u,k as f,g as i,W as t,e as C,f as b,D as w}from\"./index-D67nL0vi.js\";const h=B({__name:\"SystemDialog\",props:u({title:{},confirmButtonLabel:{},cancelButtonLabel:{},dialogClasses:{},dialogStyle:{type:[Boolean,null,String,Object,Array]},buttonsPosition:{default:\"right\"},draggable:{type:Boolean,default:!1},dismissable:{type:Boolean,default:!1},showFooter:{type:Boolean,default:!0},contentPadding:{default:24}},{modelValue:{type:Boolean},modelModifiers:{}}),emits:u([\"confirm\",\"close\",\"show\"],[\"update:modelValue\"]),setup(p,{emit:g}){const l=g,n=v(p,\"modelValue\"),y=()=>{l(\"close\"),n.value=!1};return(e,o)=>(f(),$(k(c),{visible:n.value,\"onUpdate:visible\":o[1]||(o[1]=s=>n.value=s),modal:\"\",class:m(e.dialogClasses),style:d(e.dialogStyle),header:e.title,draggable:e.draggable,\"dismissable-mask\":e.dismissable,on"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormSelectField.vue_vue_type_script_setup_true_lang-OZgnPC8D.js",
+    "ct": "text/javascript",
+    "body": "import{d as K,a3 as Y,A as i,c as m,Q as Z,aN as ee,e as f,F as se,g as l,f as z,aF as ae,w as v,ap as te,h as _,a4 as P,k as r,W as g,J as k,D as u,E as le,n as oe,t as h,aB as I,X as ne,aC as R,ad as re}from\"./index-D67nL0vi.js\";import{_ as U}from\"./FormInput.vue_vue_type_script_setup_true_lang-f66g0RhL.js\";import{s as ie}from\"./overlaypanel.esm-DHGcsoiE.js\";import{b as F}from\"./index-Dkd00njL.js\";import{_ as N}from\"./UserAvatar.vue_vue_type_script_setup_true_lang-COyI1MmI.js\";import{a as ue,s as ce}from\"./vue-virtual-scroller-DJTLg9Bb.js\";import{u as pe}from\"./nestedOverlayRegistry-CEp9RkJ4.js\";const de={class:\"flex items-center\"},me={key:0,class:\"h-[38px]\"},fe={class:\"w-full p-2 bg-gray-50 text-gray-600 font-medium rounded-t-lg text-xs\"},ve={class:\"flex items-center justify-between h-[38px] w-full hover:bg-gray-100 rounded-lg px-2 cursor-pointer\"},ge={class:\"flex items-center w-full\"},he={class:\"text-gray-600 font-medium text-sm line-clamp-1 w-full break-all\"},ye={key:0,class:\"ri-c"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormInput.vue_vue_type_script_setup_true_lang-f66g0RhL.js",
+    "ct": "text/javascript",
+    "body": "import{s as j}from\"./inputtext.esm-cMJBxvrA.js\";import{_ as A}from\"./MessageWrapper.vue_vue_type_script_setup_true_lang-y1zM-XrQ.js\";import{_ as W}from\"./InfoWrapper.vue_vue_type_script_setup_true_lang-Dkhteq_6.js\";import{d as J,a3 as K,A as m,c as y,J as O,w as V,a4 as B,k as a,f as I,g as i,W as v,e as l,n,j as S,t as k,D as r,h as U}from\"./index-D67nL0vi.js\";const q=[\"id\"],G={key:0,class:\"flex flex-col flex-1 justify-center h-full relative\"},H=[\"for\"],L={key:0,class:\"text-red-500 text-xs\"},Q={class:\"flex items-center\"},X={key:0,class:\"min-w-fit relative -bottom-2 mr-1\"},Y={key:0,class:\"text-red-500 text-xs\"},Z={key:1,class:\"text-gray-400 text-sm\"},_={class:\"relative px-2\"},ee={key:2,class:\"text-green-600 text-xl\"},le=J({__name:\"FormInput\",props:B({name:{},label:{},placeholder:{},type:{default:\"text\"},size:{default:\"medium\"},icon:{},iconEnd:{},info:{},keepInfoIconSpace:{type:Boolean},dataCy:{},unstyledFocus:{type:Boolean,default:!1},showValidationSuccessIcon:{type:Boolean,default:!0}"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/inputtext.esm-cMJBxvrA.js",
+    "ct": "text/javascript",
+    "body": "import{T as a,U as r,k as s,e as p,X as u}from\"./index-D67nL0vi.js\";var o={root:function(t){var i=t.instance,n=t.props;return[\"p-inputtext p-component\",{\"p-filled\":i.filled,\"p-inputtext-sm\":n.size===\"small\",\"p-inputtext-lg\":n.size===\"large\",\"p-invalid\":n.invalid,\"p-variant-filled\":n.variant?n.variant===\"filled\":i.$primevue.config.inputStyle===\"filled\"}]}},d=a.extend({name:\"inputtext\",classes:o}),m={name:\"BaseInputText\",extends:r,props:{modelValue:null,size:{type:String,default:null},invalid:{type:Boolean,default:!1},variant:{type:String,default:null}},style:d,provide:function(){return{$parentInstance:this}}},f={name:\"InputText\",extends:m,inheritAttrs:!1,emits:[\"update:modelValue\"],methods:{getPTOptions:function(t){var i=t===\"root\"?this.ptmi:this.ptm;return i(t,{context:{filled:this.filled,disabled:this.$attrs.disabled||this.$attrs.disabled===\"\"}})},onInput:function(t){this.$emit(\"update:modelValue\",t.target.value)}},computed:{filled:function(){return this.modelValue!=null&&this.modelVa"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/MessageWrapper.vue_vue_type_script_setup_true_lang-y1zM-XrQ.js",
+    "ct": "text/javascript",
+    "body": "import{d as M,e as o,g as a,n as m,W as w,t as p,D as u,k as t}from\"./index-D67nL0vi.js\";const b={class:\"flex flex-col gap-1.5\"},y={key:0,class:\"flex gap-1.5 text-red-700 ml-1 min-w-0\"},C={class:\"text-xs min-w-0 flex-1 [overflow-wrap:anywhere] mt-0.5\"},c={key:1,class:\"flex gap-1.5 text-blue-800 ml-1 min-w-0\"},v={class:\"text-xs min-w-0 flex-1 [overflow-wrap:anywhere] mt-0.5\"},B=M({__name:\"MessageWrapper\",props:{errorMessage:{},infoMessage:{},errorRingClasses:{},infoRingClasses:{},border:{type:Boolean,default:!0}},setup(h){const i=e=>{if(!e)return;const s={};return Object.entries(e).forEach(([n,r])=>{s[n]=typeof r==\"string\"?r:r()}),s};return(e,s)=>{var n,r,l,g,d,f;return t(),o(\"div\",b,[a(\"div\",{class:m([{\"!ring-blue-100\":e.border},{\"ring-2 rounded-lg\":e.border&&((n=e.infoMessage)==null?void 0:n.trans)},{\"!ring-4\":e.border&&((r=e.errorMessage)==null?void 0:r.trans)&&((l=e.infoMessage)==null?void 0:l.trans)},e.infoRingClasses])},[a(\"div\",{class:m([{\"!ring-red-100 !ring-2 rounded-lg\":(g=e.e"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/InfoWrapper.vue_vue_type_script_setup_true_lang-Dkhteq_6.js",
+    "ct": "text/javascript",
+    "body": "import{_ as f}from\"./TooltipPanel.vue_vue_type_script_setup_true_lang-C_rZabXD.js\";import{d as u,A as i,e as o,g as l,W as d,n as m,D as _,f as v,w as h,k as s,t as k}from\"./index-D67nL0vi.js\";const y={class:\"flex flex-col gap-1.5\"},C={class:\"flex\"},w={class:\"flex-1\"},I={key:1,class:\"ri-information-line opacity-0 pointer-events-none\"},g={class:\"whitespace-pre-wrap\"},N=u({__name:\"InfoWrapper\",props:{info:{},iconClasses:{},keepInfoIconSpace:{type:Boolean}},setup(B){const a=i(null),n=i(!1),r=e=>{n.value=!0,a.value=e},c=()=>{n.value=!1,a.value=null};return(e,t)=>(s(),o(\"div\",y,[l(\"div\",C,[l(\"div\",w,[d(e.$slots,\"default\")]),e.keepInfoIconSpace||e.info?(s(),o(\"div\",{key:0,class:m([\"ml-1.5 mt-3 text-gray-400\",e.iconClasses])},[e.info?(s(),o(\"i\",{key:0,class:\"ri-information-line\",onMouseover:t[0]||(t[0]=p=>r(p)),onMouseout:c},null,32)):(s(),o(\"i\",I))],2)):_(\"\",!0)]),v(f,{tooltip:a.value,\"is-in-cell\":n.value,class:\"max-h-96 overflow-y-auto\"},{default:h(()=>[l(\"span\",g,k(e.info),1)]),_:1},8,[\"to"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/vue-virtual-scroller-DJTLg9Bb.js",
+    "ct": "text/javascript",
+    "body": "import{ad as Z,aU as ce,aV as de,k as _,J as U,aW as he,aX as ue,aY as fe,aZ as me,r as Q,a6 as pe,a5 as ve,e as x,W as w,D as K,w as T,F as ye,C as be,S as Y,X as ee,a_ as ge,n as X,ap as ze,f as Se,aB as $e,aC as _e}from\"./index-D67nL0vi.js\";function we(){var e=window.navigator.userAgent,t=e.indexOf(\"MSIE \");if(t>0)return parseInt(e.substring(t+5,e.indexOf(\".\",t)),10);var i=e.indexOf(\"Trident/\");if(i>0){var s=e.indexOf(\"rv:\");return parseInt(e.substring(s+3,e.indexOf(\".\",s)),10)}var r=e.indexOf(\"Edge/\");return r>0?parseInt(e.substring(r+5,e.indexOf(\".\",r)),10):-1}let M;function E(){E.init||(E.init=!0,M=we()!==-1)}var C={name:\"ResizeObserver\",props:{emitOnMount:{type:Boolean,default:!1},ignoreWidth:{type:Boolean,default:!1},ignoreHeight:{type:Boolean,default:!1}},emits:[\"notify\"],mounted(){E(),Z(()=>{this._w=this.$el.offsetWidth,this._h=this.$el.offsetHeight,this.emitOnMount&&this.emitSize()});const e=document.createElement(\"object\");this._resizeObject=e,e.setAttribute(\"aria-hidden\",\""
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/vue-virtual-scroller-C9QS1f1T.css",
+    "ct": "text/css",
+    "body": ".vue-recycle-scroller{position:relative}.vue-recycle-scroller.direction-vertical:not(.page-mode){overflow-y:auto}.vue-recycle-scroller.direction-horizontal:not(.page-mode){overflow-x:auto}.vue-recycle-scroller.direction-horizontal{display:-webkit-box;display:-ms-flexbox;display:flex}.vue-recycle-scroller__slot{-webkit-box-flex:1;-ms-flex:auto 0 0px;flex:auto 0 0}.vue-recycle-scroller__item-wrapper{-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;position:relative}.vue-recycle-scroller.ready .vue-recycle-scroller__item-view{position:absolute;top:0;left:0;will-change:transform}.vue-recycle-scroller.direction-vertical .vue-recycle-scroller__item-wrapper{width:100%}.vue-recycle-scroller.direction-horizontal .vue-recycle-scroller__item-wrapper{height:100%}.vue-recycle-scroller.ready.direction-vertical .vue-recycle-scroller__item-view{width:100%}.vue-recycle-scroller.ready.direction-horizontal .vue-recycle-scroller__item-view{height:100"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/nestedOverlayRegistry-CEp9RkJ4.js",
+    "ct": "text/javascript",
+    "body": "import{c as C,o as b}from\"./index-Dkd00njL.js\";import{A as i,c as N}from\"./index-D67nL0vi.js\";const s=i([]),p=()=>{const a=i(null),t=i(null),u=i(null),n=i(!1),v=()=>(s.value=s.value.filter(e=>e==null?void 0:e.isConnected),s.value.filter(e=>{const l=e.classList.contains(\"p-overlaypanel-hidden\"),f=e.getAttribute(\"aria-hidden\")===\"true\";return!l&&!f})),o=N(()=>v().length>0),g=e=>{!e||s.value.includes(e)||(s.value=[...s.value,e])},h=e=>{e&&(s.value=s.value.filter(l=>l!==e))},c=e=>e instanceof Node?v().some(l=>l.contains(e)):!1,d=()=>{var e;(e=a.value)==null||e.call(a),t.value=null,u.value=null,a.value=null,n.value=!1};return{hasOpenNestedOverlay:o,bindParentCloseOnOutsideClick:(e,l)=>{d();const O=e?typeof e==\"object\"&&\"value\"in e?e.value:e:null;O&&(u.value=C(document,\"pointerdown\",r=>{n.value=o.value&&!c(r.target)}),t.value=b(O,r=>{if(n.value){n.value=!1;return}o.value&&c(r.target)||l()}),a.value=()=>{var r,y;(r=t.value)==null||r.call(t),(y=u.value)==null||y.call(u),t.value=null,u.value=nu"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/filterOptions-BAPiidjJ.js",
+    "ct": "text/javascript",
+    "body": "const o=()=>({parseModelOptions:(n,r)=>{if(n===null&&!r)return[];const e=n??r;return e?Object.keys(e).map(s=>({label:e[s],id:s})):[]}});export{o as u};\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormCodeEditor.vue_vue_type_script_setup_true_lang-DbE0Lo1o.js",
+    "ct": "text/javascript",
+    "body": "import{C as y}from\"./CodeEditor-BI6qrHu1.js\";import{_ as h}from\"./MenuButton.vue_vue_type_script_setup_true_lang-DJiH5ezA.js\";import{_ as V}from\"./MessageWrapper.vue_vue_type_script_setup_true_lang-y1zM-XrQ.js\";import{d as k,a3 as x,A as i,c as C,k as l,e as m,g as t,j as _,t as M,D as u,J as B,f as c,w as $,a4 as f,ag as N}from\"./index-D67nL0vi.js\";const E={class:\"flex flex-col bg-gray-100 rounded-lg p-3 overflow-x-hidden\"},F={class:\"flex items-center w-full justify-between pb-3\"},j={class:\"text-sm text-gray-500\"},A={key:0,class:\"text-red-500 text-xs\"},D={class:\"flex items-center gap-2\"},J=k({__name:\"FormCodeEditor\",props:f({label:{},disabled:{type:Boolean},language:{default:\"php\"},macros:{},mandatory:{type:Boolean},validate:{},errorMessage:{}},{modelValue:{},modelModifiers:{}}),emits:f([\"focusin\",\"focusout\"],[\"update:modelValue\"]),setup(r,{emit:p}){const n=r,g=p,d=x(r,\"modelValue\"),o=i(null),v=i(n.language),b=C(()=>n.disabled?\"\":N(\"component.code_editor.placeholder\")),w=e=>{e.items||"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/CodeEditor-BI6qrHu1.js",
+    "ct": "text/javascript",
+    "body": "import{d as xh,b6 as hs,bc as yd,c as Ks,bd as Td,o as bd,Q as xt,aN as xd,aZ as kd,a3 as Xd,A as wd,k as vd,e as Rd,n as Zd,f as _d,h as Vd,a4 as Bo}from\"./index-D67nL0vi.js\";import{_ as zd}from\"./_plugin-vue_export-helper-DlAUqK2U.js\";let Js=[],kh=[];(()=>{let n=\"lc,34,7n,7,7b,19,,,,2,,2,,,20,b,1c,l,g,,2t,7,2,6,2,2,,4,z,,u,r,2j,b,1m,9,9,,o,4,,9,,3,,5,17,3,3b,f,,w,1j,,,,4,8,4,,3,7,a,2,t,,1m,,,,2,4,8,,9,,a,2,q,,2,2,1l,,4,2,4,2,2,3,3,,u,2,3,,b,2,1l,,4,5,,2,4,,k,2,m,6,,,1m,,,2,,4,8,,7,3,a,2,u,,1n,,,,c,,9,,14,,3,,1l,3,5,3,,4,7,2,b,2,t,,1m,,2,,2,,3,,5,2,7,2,b,2,s,2,1l,2,,,2,4,8,,9,,a,2,t,,20,,4,,2,3,,,8,,29,,2,7,c,8,2q,,2,9,b,6,22,2,r,,,,,,1j,e,,5,,2,5,b,,10,9,,2u,4,,6,,2,2,2,p,2,4,3,g,4,d,,2,2,6,,f,,jj,3,qa,3,t,3,t,2,u,2,1s,2,,7,8,,2,b,9,,19,3,3b,2,y,,3a,3,4,2,9,,6,3,63,2,2,,1m,,,7,,,,,2,8,6,a,2,,1c,h,1r,4,1c,7,,,5,,14,9,c,2,w,4,2,2,,3,1k,,,2,3,,,3,1m,8,2,2,48,3,,d,,7,4,,6,,3,2,5i,1m,,5,ek,,5f,x,2da,3,3x,,2o,w,fe,6,2x,2,n9w,4,,a,w,2,28,2,7k,,3,,4,,p,2,5,,47,2,q,i,d,,12,8,p,b,1a,3,1c,,2,4,"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/_plugin-vue_export-helper-DlAUqK2U.js",
+    "ct": "text/javascript",
+    "body": "const s=(t,r)=>{const o=t.__vccOpts||t;for(const[c,e]of r)o[c]=e;return o};export{s as _};\n"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/CodeEditor-BnTNJ_vF.css",
+    "ct": "text/css",
+    "body": "[data-v-d85d85ee] .cm-editor{height:100%;border:0;padding:8px;font-family:monospace;font-size:14px;overflow:visible}[data-v-d85d85ee] .cm-content,[data-v-d85d85ee] .cm-line,[data-v-d85d85ee] .cm-content span{font-family:monospace}[data-v-d85d85ee] .cm-gutters{border-radius:8px 0 0 8px;color:#000;background-color:#fff}.code-editor-disabled[data-v-d85d85ee] .cm-gutters{background-color:#f1f5f9}.code-editor-disabled[data-v-d85d85ee] .cm-activeLine,.code-editor-disabled[data-v-d85d85ee] .cm-activeLineGutter{background-color:transparent}[data-v-d85d85ee] .cm-gutterElement{min-width:30px!important;font-family:monospace}[data-v-d85d85ee] .cm-lineNumbers{text-align:center!important}[data-v-d85d85ee] .cm-focused{outline:none}[data-v-d85d85ee] .cm-scroller{overflow:auto}[data-v-d85d85ee] .cm-activeLine,[data-v-d85d85ee] .cm-activeLineGutter{background-color:#f1f5f980}[data-v-d85d85ee] .cm-placeholder{color:#a9b3c1}[data-v-d85d85ee] .cm-tooltip{z-index:80}[data-v-d85d85ee] .cm-tooltip.cm-tooltip-"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FormPopupModal.vue_vue_type_script_setup_true_lang-CFQNIl9U.js",
+    "ct": "text/javascript",
+    "body": "import{d as S,bs as V,bt as y,v as _,br as B,J as M,h as e,a9 as N,w as d,k as r,f as $,g as t,e as g,i as D,D as x,t as v}from\"./index-D67nL0vi.js\";import{b as R}from\"./FormModal.vue_vue_type_script_setup_true_lang-BtxEoyI7.js\";import{_ as E}from\"./SystemDialog.vue_vue_type_script_setup_true_lang-BeBr8ofM.js\";const J={class:\"w-full\"},L={class:\"font-bold text-2xl\"},P={key:0,class:\"text-xs font-medium text-gray-500\"},T={class:\"flex items-center gap-2\"},U={key:0,class:\"animate-spin w-[18px] h-[18px] min-w-[18px] min-h-[18px]\"},W=[\"src\"],A=S({__name:\"FormPopupModal\",props:{id:{},subModal:{type:Boolean,default:!1}},emits:[\"close\",\"save\"],setup(b,{emit:h}){const m=b,n=h,k=V(m.id)(),c=y(),{isLoading:w}=_(c),{removeForm:C}=B(m.id),{form:a,formModal:i}=_(k);c.setFormModalWidth(525);const F=()=>{C(),n(\"close\")};return(l,o)=>{var p;return r(),M(E,{modelValue:e(i),\"onUpdate:modelValue\":o[2]||(o[2]=s=>N(i)?i.value=s:null),class:\"overflow-hidden\",id:l.id,title:(p=e(a))==null?void 0:p.title,\"show-fo"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/vue_assets/FallbackView-CsvFr-8g.js",
+    "ct": "text/javascript",
+    "body": "import{d as _,u as b,b as A,ab as g,O as L,A as v,Q as d,e as R,k as x,I as T,Y as C,aJ as E,ad as m,H as y,G as h,ar as H}from\"./index-D67nL0vi.js\";import{r as I,s as M}from\"./htmlElement-cp7_gLSH.js\";const O=[\"innerHTML\"],q=_({__name:\"FallbackView\",setup(Q){const r=b(),k=A(),w=g(),{setErrorStatus:n}=L(),i=T(),l=C(),s=v(),a=new URL(\"/\",window.location.origin).origin,{reloadApiLink:S}=H();return w.setSubSections({}),d(()=>i.fullPath,(e,o)=>{if(!(o&&e&&o.split(\"#\")[0]===e.split(\"#\")[0])&&!(e.startsWith(\"/portal\")&&r.hasRequirements)){if(e.startsWith(\"/portal\")){window.location.href=a&&a!==window.location.origin?`${a}${e}`:e;return}E({withCredentials:!0,baseURL:\"/\",headers:{Accept:\"application/json\",\"Content-Type\":\"application/x-www-form-urlencoded\",\"X-Vue-Ajax\":!0},method:\"GET\",url:i.fullPath}).then(t=>{s.value=t.data,S(\"#fallback-view\"),m(()=>I(\"fallback-view\"))}).catch(t=>{var c,u,p;if(((c=t.response)==null?void 0:c.status)===401){const f=y(h);r.setAuthenticated(!1),l.push(f?{name:\"lo"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/ServerRequest.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "\"use strict\";\nYoonityJS.ClassFile({\n    uses: ['//Registry/ServerResponse'],\n    namespace: 'Registry',\n    class: function ServerRequest() {\n        return {\n            method: \"GET\",\n            url: null,\n            processData: true,\n            contentType: null,\n            data: null,\n            cache: false,\n            async: true,\n            response: null,\n            constructor: function () {},\n            setMethod: function (method) {\n                this.method = method\n            },\n            getMethod: function () {\n                return this.method\n            },\n            setUrl: function (url) {\n                this.url = url\n            },\n            setProcessData: function (bool) {\n                this.processData = bool ? true : false\n            },\n            setContentType: function (type) {\n                this.contentType = type\n            },\n            setData: function (data) {\n                this.data = data\n            },\n            setC"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Registry/ServerResponse.js?yjs_v=2.0.2-eramba",
+    "ct": "text/javascript",
+    "body": "/**\n * YoonityJS : MVC Framework for JavaScript FrontEnd Development (http://yoonityjs.org)\n * Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n *\n * Licensed under The MIT License\n * For full copyright and license information, please see the LICENSE.txt\n * Redistributions of files must retain the above copyright notice.\n *\n * @copyright     Copyright (c) Viktor Husz\u00e1r (http://viktor.huszar.sk)\n * @link          http://yoonityjs.org YoonityJS Project\n * @package       YoonityJS.Registry\n * @since         YoonityJS v 1.0.0\n * @license       https://opensource.org/licenses/mit-license.php MIT License\n */\neval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c])}}return p}('\"g f\";e.d({c:\\'b\\',a:3 9(){4{0:5,1:5,7:3(0,1){2.0=0||2.0;2.1=1||2.1},6:3(){4 2.1},8:3(){4 2.0}}}});"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/settings/get-logo/new-layout",
+    "ct": "image/svg+xml",
+    "body": "<svg width=\"100\" height=\"18\" viewBox=\"0 0 100 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1780_189)\">\n<path d=\"M39.4186 3.60028C39.1411 3.60028 38.7844 3.64073 38.3881 3.68118C37.9918 3.72164 37.6351 3.80254 37.2388 3.9239C36.8425 4.04525 36.5254 4.24751 36.2084 4.49022C36.0102 4.65203 35.8121 4.85429 35.6535 5.05655V4.04525H33.2756V16.6258H35.6932V9.66805C35.6932 9.10173 35.8121 8.57585 36.0102 8.13088C36.2084 7.68591 36.5254 7.2814 36.8425 6.99823C37.1992 6.67462 37.5955 6.43191 38.0711 6.2701C38.5467 6.10829 39.0222 6.02739 39.4978 6.02739H40.766L40.7264 3.60028H39.4186Z\" fill=\"#2B217A\"/>\n<path d=\"M52.6549 8.94005C52.4567 8.98051 52.2586 9.02096 52.0208 9.06141C52.0208 8.09057 51.8623 7.28153 51.5452 6.59385C51.2678 5.90617 50.8715 5.33984 50.3959 4.89487C49.9203 4.4499 49.3258 4.12629 48.6917 3.92403C48.0576 3.72177 47.3839 3.64087 46.6309 3.64087C45.9968 3.64087 45.4023 3.72177 44.8078 3.92403C44.2133 4.12629 43.6981 4.369 43.2226 4.73307C42.747 5."
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/system-api/users/menu",
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":{\"menu\":[{\"name\":\"Dashboard\",\"resource\":false,\"icon\":\"icon-chart\",\"class\":\"menu-dashboard\",\"url\":\"\\/dashboard\",\"childSections\":[\"DashboardKpis\"]},{\"name\":\"Program\",\"resource\":false,\"class\":\"menu-program\",\"children\":[{\"name\":\"Scope\",\"resource\":\"ProgramScopes\",\"url\":\"\\/program-scopes\",\"activeUrls\":[\"\\/form-customization\\/ProgramScopes\",\"\\/activity-log\\/activity-logs\\/index\\/ProgramScopes\",\"\\/api\\/apis\\/index\\/ProgramScopes\"]},{\"name\":\"Program Issues\",\"resource\":\"ProgramIssues\",\"url\":\"\\/program-issues\",\"activeUrls\":[\"\\/form-customization\\/ProgramIssues\",\"\\/activity-log\\/activity-logs\\/index\\/ProgramIssues\",\"\\/api\\/apis\\/index\\/ProgramIssues\"]},{\"name\":\"Goals\",\"resource\":\"Goals\",\"url\":\"\\/goals\",\"childSections\":[\"GoalAudits\"],\"activeUrls\":[\"\\/form-customization\\/Goals\",\"\\/customization\\/customization\\/index\\/Goals\",\"\\/activity-log\\/activity-logs\\/index\\/Goals\",\"\\/form-customization\\/GoalAudits\",\"\\/customization\\/customization\\/index\\/GoalAudits\",\"\\/activity-log\\/activ"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/risks/classifications",
+    "ct": "text/html; charset=UTF-8",
+    "body": "    <!-- Main content -->\n    <div class=\"content-wrapper \">\n\n                        <!-- Page header -->\n    <div class=\"page-header page-header-default\">\n        <div class=\"page-header-content\">\n            <div class=\"page-title\">\n                <ul id=\"breadcrumbs\" class=\"breadcrumb\"><li><a href=\"/dashboard\">Dashboard</a></li><li><a href=\"/risks/classifications\">Risk Classifications</a></li><li class=\"active\"><span>Index</span></li></ul><h4 class=\"\">RiskClassifications</h4>            </div>\n        </div>\n\n        <div id=\"main-toolbar\"\n             class=\"breadcrumb-line\"\n             data-yjs-request=\"crud/showForm\"\n             data-yjs-target=\"#main-toolbar\"\n             data-yjs-datasource-url=\"/risks/classifications?toolbar=1\"\n        >\n            <ul class=\"breadcrumb-elements\" activeclass=\"open\"><li class=\"dropdown\"><a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">Actions</a><ul class=\"dropdown-menu dropdown-menu-right\"><li class=\"\"><a href=\"#\" id=\"toolbar-ad"
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/laravel/api/app-notifications/check",
+    "ct": "application/json",
+    "body": "{\"success\":true,\"data\":{\"count\":0},\"messages\":[]}"
+  },
+  {
+    "type": "req",
+    "method": "GET",
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/IndexFiltersController.js?app_v=1.0.0",
+    "post_data": null
+  },
+  {
+    "type": "resp",
+    "status": 200,
+    "url": "https://localhost:8443/eramba-assets/YoonityJS/Controllers/IndexFiltersController.js?app_v=1.0.0",
+    "ct": "text/javascript",
+    "body": "\"use strict\";\n\nYoonityJS.ClassFile({\n\tuses: [\n\t\t'//Controllers/AppController'\n\t],\n\tnamespace: 'Controllers',\n\textends: 'Controllers/AppController',\n\tclass: function IndexFiltersController()\n\t{\n\t\treturn {\n\t\t\tfilterObjectId: '',\n\t\t\t$filterObject: null,\n\t\t\tdataTableConfig: null,\n\t\t\t$dataTable: null,\n\t\t\ttable: null,\n\t\t\tbulkActionCheckboxesSelector: \".bulk-action-checkbox:not(.bulk-action-check-all-checkbox):not(:disabled)\",\n\n\t\t\tconstructor: function(params)\n\t\t\t{\n\t\t\t\t// Call parent constructor\n\t\t\t\tthis._parent.constructor(params);\n\n\t\t\t\tthis.__setProperties({\n\t\t\t\t\tcolsParams: {\n\t\t\t\t\t\t'resize': [],\n\t\t\t\t\t\t'order': [],\n\t\t\t\t\t\t'sort': [],\n\t\t\t\t\t\t'wrap': []\n\t\t\t\t\t}\n\t\t\t\t}, params || {});\n\n\t\t\t\tthis.filterObjectId = $(this._registry.getObject('request').getObject()).attr('data-yjs-app-data-filter-object-id');\n\t\t\t\tthis.$filterObject = $(\"#advanced-filter-object-\" + this.filterObjectId);\n\t\t\t\tthis.dataTableConfig = YoonityJS.Globals.vars.get('eramba.filters.datatables.datatableConfig-' + this.filterObject"
+  }
+]
