@@ -1,0 +1,20 @@
+POA&M_ID,Risk,CC,Severity,Action,Owner,Target,Status,Effort_Hours,Cost_USD
+POA&M-01,R-01,CC6.1,High,Implement PAM tool with session recording for all admin accounts,CISO,Q4 2026,Open,40,8000
+POA&M-02,R-01,CC6.3,Medium,Quarterly privileged access review with attestation,Security Lead,Q4 2026,Open,32,0
+POA&M-03,R-04,CC9.2,High,Require SOC 2 Type 2 reports from all Tier 1 vendors annually,TPRM Lead,Q1 2027,Open,40,0
+POA&M-04,R-04,CC9.2,High,Continuous security rating monitoring (BitSight/SecurityScorecard),TPRM Lead,Q1 2027,Open,16,12000
+POA&M-05,R-04,CC3.4,High,Vendor breach notification SLA in MSA (≤24h),Legal,Q4 2026,Open,12,0
+POA&M-06,R-05,CC1.4,Medium,Annual background checks for all employees with financial system access,HR,Q4 2026,Open,24,1500
+POA&M-07,R-05,CC6.3,Medium,Quarterly access review for all production systems,Security Lead,Ongoing,In Progress,32,0
+POA&M-08,R-06,CC7.1,Low,Quarterly audit log integrity test (sample 1% of events),Security Ops,Q4 2026,Open,16,0
+POA&M-09,R-02,CC6.6,Medium,API rate limiting + anomaly detection on payment endpoints,Engineering,Q4 2026,Open,60,0
+POA&M-10,R-03,CC7.4,Medium,Quarterly ransomware tabletop exercise with IR team,Security Lead,Q1 2027,Open,16,0
+POA&M-11,R-03,CC7.5,Medium,Immutable backup verification + restore test (monthly),Infrastructure,Ongoing,In Progress,12,0
+POA&M-12,R-06,A1.3,Low,Datadog availability dependency documented in BCP,Security Ops,Q4 2026,Open,4,0
+POA&M-13,All,CC1.4,Medium,Annual security awareness training (100% completion),HR,Annual,In Progress,40,3000
+POA&M-14,All,CC3.1,Low,Update risk register quarterly with material changes,vCISO,Quarterly,In Progress,16,0
+POA&M-15,All,CC1.2,High,Establish quarterly board security KPI reporting cadence,vCISO,Q1 2027,Open,20,0
+POA&M-16,R-04,CC3.3,Medium,Vendor fraud risk assessment + BEC tabletop,TPRM Lead+Security Lead,Q1 2027,Open,24,0
+POA&M-17,All,CC3.4,Medium,Codify vendor onboarding checklist and train procurement team,TPRM Lead,Q4 2026,Open,12,0
+POA&M-18,All,CC6.5,Medium,Document data retention and disposal policy,Security Lead,Q4 2026,Open,16,0
+POA&M-19,All,C1.1,Medium,Formalize data classification policy and train all employees,Security Lead,Q1 2027,Open,20,0

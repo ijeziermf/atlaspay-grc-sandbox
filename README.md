@@ -1,244 +1,93 @@
-# AtlasPay FinTech SOC 2 Risk Assessment
+# AtlasPay GRC Sandbox
 
-> **SOC 2 Type 1 readiness for a FinTech payment processor, quantitative risk register, vendor tiering, and tabletop-tested incident response.**
-
----
-
-## What This Demonstrates
-
-| Capability | Details |
-|---|---|
-| **Engagement Type** | SOC 2 Type 1 readiness + risk assessment for a FinTech payment processor |
-| **Methodology** | Quantitative 5×5 risk matrix, vendor criticality tiering, tabletop exercises |
-| **Deliverables** | Risk register (6 scenarios), 7 MSA-tracked vendors, 4 policies, incident response runbook |
-| **Stakeholder Focus** | Pre-audit posture for Q3 2026 SOC 2 audit, customer due diligence |
-| **Industry Relevance** | FinTech, payment processing, PCI DSS (Payment Card Industry Data Security Standard) adjacent, SOC 2 audit-ready |
+**[LAB-SYNTHETIC]** This repository is a portfolio demonstration artifact for **Ijezie Risk Advisory**. AtlasPay is a fictional FinTech persona; the controls, risks, vendors, and gaps are illustrative patterns for SOC 2 readiness engagements, not real client data.
 
 ---
 
-## Overview
+## What this repo is
 
-AtlasPay is a 50-employee Financial Technology (FinTech) payment processor preparing for its first SOC 2 (Service Organization Control 2) Type 1 audit in Q3 2026. For a company moving money on behalf of customers and partners, SOC 2 is not just a compliance checkbox. It directly affects customer trust, partner onboarding requirements, fundraising conversations, and the ability to compete with larger processors that already have auditor-validated controls.
+A complete vCISO case study for a SOC 2 Type 1 readiness engagement, structured as a hiring-manager-ready portfolio artifact. The repo contains:
 
-This engagement framed SOC 2 readiness as a business risk exercise, not an IT project. We identified six priority risk scenarios, tiered seven critical vendors against business impact, and designed tabletop exercises to test incident response discipline. Mid-engagement, we moved the GRC program from the original open-source platform to CISO Assistant Community Edition to gain better API coverage and long-term maintainability. That tooling decision is documented as a one-line governance note, because the underlying risk story did not change.
+- **Risk register** with inherent, current, and residual scoring across 6 risk scenarios
+- **SOC 2 Trust Services Criteria control matrix** mapping 33 Common Criteria + Availability + Confidentiality to AtlasPay policies, risks, and vendors
+- **Gap assessment** with severity-graded findings and a 19-item POA&M
+- **Audit walkthrough simulation** with 10 questions and 10 expected findings (1 High, 3 Medium, 3 Low, 3 No-finding)
+- **Board-ready PDF deliverables** (executive briefing, risk register, control matrix, audit walkthrough)
+- **Policy pack manifest** for the 4 active policies + 6 planned policies
 
-The final deliverables give AtlasPay's leadership and its future auditor a defensible pre-audit posture: a scored risk register, a vendor tier framework, tracked Master Service Agreements (MSAs), four foundational policies, and tested incident response scenarios.
+## Engagement overview
 
----
+| Phase | Date | Focus | Status |
+|---|---|---|---|
+| Phase 1 | 2026-06-24 to 2026-06-25 | Baseline risk register + initial v3 PDF deliverables | Complete |
+| Phase 2 | 2026-06-26 | Control matrix build, gap assessment, board-ready risk register, full deliverable pack | Complete (this engagement) |
+| Phase 3 (planned) | Q4 2026 to Q1 2027 | POA&M execution (vendor SOC 2 collection, board reporting cadence, tabletop exercises) | Pending |
+| Audit window | Q2 2027 (planned) | SOC 2 Type 1 audit | Pending |
 
-## Deliverables
+## What's in this repo
 
-| Artifact | Purpose | Audience |
-|---|---|---|
-| **Risk Register (6 scenarios)** | Board and CISO view of exposure with inherent and residual scores | Leadership, auditors |
-| **Vendor Inventory (7 vendors with tier classification)** | Third-party risk governance and review cadence | Procurement, compliance |
-| **Contract Inventory (7 MSAs)** | Vendor governance evidence and coverage tracking | Legal, compliance |
-| **Policy Library (4 policies)** | Operational requirements for access, incidents, awareness, and TPRM | Operational teams, auditors |
-| **Tabletop Exercise Scenarios** | Incident response readiness and control validation | Security team, executives |
-| **Risk Posture Documentation** | Pre-audit gap assessment and Q3 2026 hardening roadmap | Board, CISO, auditor |
-
-![AtlasPay final risk register and perimeters view](assets/screenshots/filtered/atlaspay-folders-scoped.png)
-*Figure 1: AtlasPay folder hierarchy as scoped in CISO Assistant — AtlasPay, Engineering, Operations, Finance, Compliance sub-folders.*
-
----
-
-## Key Features
-
-- ✅ Quantitative 5×5 risk matrix with inherent vs residual tracking
-- ✅ Vendor criticality tiering (Tier 1 critical / Tier 2 important / Tier 3 deferrable)
-- ✅ MSA (Master Service Agreement) coverage mapping per vendor with annual review cadence
-- ✅ Tabletop-tested incident response procedures (multiple scenarios)
-- ✅ SOC 2 Trust Services Criteria coverage across Security, Availability, and Confidentiality
-- ✅ Pre-audit gap assessment identifying control areas for Q3 2026 hardening
-- ✅ SOC 2 Type 1 readiness package: executive briefing + board-ready risk register + audit walkthrough findings + remediation roadmap
-
-![Clean folder hierarchy after vendor cleanup](assets/screenshots/filtered/atlaspay-folders-scoped.png)
-*Figure 2: Folder structure after the vendor cleanup, showing AtlasPay and Compliance domains separated.*
-
----
-
-## SOC 2 Type 1 Readiness Package
-
-The AtlasPay SOC 2 Type 1 readiness engagement produced a complete package of artifacts supporting pre-audit posture assessment and remediation planning. All artifacts are produced as part of a vCISO engagement using CISO Assistant v3.18.3 as the platform of record.
-
-### Primary Deliverables
-
-| Document | Purpose | Audience |
-|---|---|---|
-| **[AtlasPay SOC 2 Executive Briefing](deliverables/AtlasPay_SOC2_Executive_Briefing_v4.pdf)** (7 pages) | Board-ready executive briefing summarizing the engagement, findings, and recommendations. Dark cover, white content pages, color-coded severity badges and treatment pills. HTML+CSS rendered via WeasyPrint for clean typography without text-box overflow. v4 corrects brand to "Ijezie Risk Advisory" and removes all emojis/em-dashes per Ifeanyi directive (2026-06-25) | AtlasPay executive leadership, board of directors |
-| **[AtlasPay SOC 2 Risk Register](deliverables/AtlasPay_SOC2_Risk_Register_v4.pdf)** (8 pages) | Appendix-grade risk register with full treatment narratives, scoring matrix, and risk acceptance statement. Same template as the Executive Briefing. v4 brand-corrected | Board Risk Committee, SOC 2 audit team |
-
-### Engagement Artifacts (Markdown Source)
-
-| Document | Location | Purpose |
-|---|---|---|
-| Risk Register (full) | [lab/docs/soc2-risk-register.md](lab/docs/soc2-risk-register.md) | 6 risk scenarios with inherent/current/residual scoring and treatment plans |
-| SOC 2 Control Mapping | [lab/docs/soc2-control-mapping.md](lab/docs/soc2-control-mapping.md) | 38 SOC 2 TSC criteria mapped to policies, risks, and vendors |
-| Gap Assessment | [lab/docs/soc2-gap-assessment.md](lab/docs/soc2-gap-assessment.md) | 13 remediation items with severity, owner, target date |
-| Audit Walkthrough | [lab/docs/soc2-audit-walkthrough.md](lab/docs/soc2-audit-walkthrough.md) | 10 walkthrough questions + 14 findings + management response |
-
-### Engagement Summary
-
-**Scope:** Common Criteria (CC) + Availability (A) + Confidentiality (C). Processing Integrity (PI) and Privacy (P) excluded.
-
-**Risk Register (6 scenarios):**
-- R-01 Privileged Account Compromise: residual Medium
-- R-02 Payment Data Exfiltration via API: residual Medium
-- R-03 Ransomware on Production DB: residual Medium
-- **R-04 Third-Party SaaS Breach: residual High (formally accepted)**
-- R-05 Insider Threat: residual Medium
-- R-06 Insufficient Audit Logging: residual Low
-
-**Audit Walkthrough Findings (14 total):**
-- 0 Critical, 4 High, 7 Medium, 3 Low
-- High findings: AW-02 Background checks, AW-03 Pen test, AW-04 Change mgmt, AW-06 Vuln scans
-- All High findings have remediation targets by 2026-09-30
-
-**Audit Opinion Target:** Unqualified SOC 2 Type 1 opinion in Q4 2026 audit window, contingent on completion of the four High-severity remediation items.
-
-### Lab-Synthetic Disclosure
-
-The risk register values, control mapping status, and audit walkthrough findings reflect a portfolio demonstration engagement. In a real SOC 2 Type 1 readiness engagement, these would be derived from AtlasPay's actual operational state, validated through interviews, observation, and inspection. The engagement methodology, document structure, and audit walkthrough pattern are directly applicable to real client work; the specific AtlasPay findings are illustrative.
-
----
-
-## Sample Risk Register Entry
-
-| Field | Example |
-|---|---|
-| **Risk ID** | AT-R-03 (Logging and monitoring gaps) |
-| **Affected Assets** | Payment processing logs, SIEM pipeline, incident detection capability |
-| **Business Impact** | Delayed breach detection, missed SOC 2 monitoring requirements, regulator scrutiny |
-| **Inherent Risk** | High (4×3) |
-| **Existing Controls** | Basic endpoint logging, manual log review, alerting on gateway errors |
-| **Control Gaps** | No centralized SIEM, no correlation rules, no 24/7 monitoring coverage |
-| **Treatment** | Deploy centralized logging + SIEM, build detection rules, define on-call rotation |
-| **Residual Risk** | Low (2×2) post-treatment |
-
-A second example shows how vendor exposure was treated:
-
-| Field | Example |
-|---|---|
-| **Risk ID** | AT-R-05 (Third-party and vendor risk management) |
-| **Affected Assets** | Payment gateway, cloud infrastructure, identity provider, data warehouse |
-| **Business Impact** | Supply-chain breach, payment processor penalties, customer notification obligations |
-| **Inherent Risk** | High (4×3) |
-| **Existing Controls** | Informal vendor reviews, signed MSAs, ad-hoc security questionnaires |
-| **Control Gaps** | No formal TPRM program, no criticality tiering, no recurring review cadence |
-| **Treatment** | Implement TPRM policy, tier vendors, schedule quarterly Tier 1 reviews |
-| **Residual Risk** | Medium (3×2) post-treatment |
-
-![AtlasPay risk register screenshot](assets/screenshots/filtered/atlaspay-risks-scoped.png)
-*Figure 3: The six risk scenarios loaded into the GRC platform risk register.*
-
----
-
-## Sample Vendor Tier
-
-| Vendor | Tier | Criticality | MSA Status | Review Cadence |
-|---|---|---|---|---|
-| **Payment Gateway** | Tier 1 | Critical | Executed 2025-Q4 | Quarterly |
-| **Cloud Provider** | Tier 1 | Critical | Executed 2025-Q1 | Quarterly |
-| **Identity Provider** | Tier 1 | Critical | Executed 2025-Q2 | Quarterly |
-| **Monitoring Tools** | Tier 2 | Important | Executed 2025-Q3 | Semi-annual |
-| **Finance Systems** | Tier 2 | Important | Executed 2025-Q3 | Semi-annual |
-| **Data Warehouse** | Tier 2 | Important | Executed 2025-Q4 | Semi-annual |
-| **Application Platform** | Tier 3 | Deferrable | Executed 2026-Q1 | Annual |
-
-The tiering logic is straightforward: any vendor whose failure would stop payment processing, block authentication, or break cloud availability is Tier 1. Tools that support operations but have workable alternatives are Tier 2. Deferrable platforms are Tier 3 and reviewed annually.
-
-![AtlasPay vendor entities after cleanup](assets/screenshots/filtered/atlaspay-vendors-scoped.png)
-*Figure 4: Seven AtlasPay vendors grouped under the AtlasPay folder after the tiering cleanup.*
-
----
-
-## Why This Matters
-
-For a FinTech CISO, SOC 2 readiness is a revenue and trust problem, not a paperwork problem. Customers and partners increasingly require a SOC 2 report before they will integrate payments or store funds. Investors treat it as a maturity signal. A failed or delayed audit can stall a deal or trigger costly remediation under pressure.
-
-A pre-audit risk assessment like this one does three things. First, it surfaces gaps while there is still time to fix them before the auditor arrives. Second, it creates a documented, repeatable risk language that the board, auditors, and engineers can all use. Third, it ties each control investment to a specific risk scenario, so security spend is defensible rather than reactive.
-
-The result is not perfect security. It is an auditable, risk-informed foundation that AtlasPay can build on through Q3 2026 and beyond.
-
----
-
-## Value to GRC Consulting
-
-| Service | Application |
-|---|---|
-| **SOC 2 Type 1 Readiness** | Pre-audit posture assessment and gap identification |
-| **Vendor Risk Tiering** | Third-party risk framework and review cadence |
-| **Risk Register Development** | Quantitative scoring + treatment planning |
-| **Tabletop Exercise Design** | Incident response readiness and control validation |
-
----
-
-## Tools & Frameworks
-
-| Tool/Framework | Use |
-|---|---|
-| **SOC 2 Trust Services Criteria 2022** | Audit criteria for Security, Availability, and Confidentiality |
-| **NIST Cybersecurity Framework 2.0** | Risk taxonomy and control organization |
-| **PCI DSS 4.0** | Adjacent card-data environment guidance |
-| **CISO Assistant CE** | GRC platform for risk, vendor, policy, and incident tracking |
-
----
-
-## Key Takeaways
-
-1. **SOC 2 readiness should start with business risk, not control catalogs.** Mapping controls to real risk scenarios makes the audit story coherent.
-2. **Vendor tiering is governance, not procurement.** When payment processing depends on three external providers, their review cadence is a board-level decision.
-3. **Residual risk tells the truth.** Inherent risk motivates action; residual risk shows whether the action worked.
-4. **Tabletop exercises expose gaps that documents hide.** A written incident response policy is only evidence once it has been rehearsed.
-
----
-
-## Related Projects
-
-- [AtlasPay Risk Assessment](https://github.com/ijeziermf/AtlasPay-Risk-Assessment): NIST SP 800-53 Rev. 5 risk assessment with heat map and treatment plan
-- [AtlasPay Risk Profile & BCP](https://github.com/ijeziermf/AtlasPay-Risk-Profile-BCP): Business continuity plan and organizational risk profile
-- [Cyber-Security Policy Library](https://github.com/ijeziermf/Cyber-Security-Policy-Library): NIST-aligned policy templates used across sandboxes
-- [Helix Health GRC Sandbox](https://github.com/ijeziermf/helix-health-grc-sandbox): HIPAA + SOC 2 readiness for a HealthTech SaaS
-- [Meridian Bank GRC Sandbox](https://github.com/ijeziermf/meridian-bank-grc-sandbox): Community bank risk and compliance program
-
-## PDF Generation Methodology (v3)
-
-The v3 PDFs were regenerated from markdown source using a custom HTML+CSS pipeline. Source files, intermediate HTML, and the generator script are bundled in `deliverables/v3_sources/` for full reproducibility.
-
-**Why HTML+CSS over reportlab:** reportlab v2 had text-box overflow on long headings, shape overlap on charts, and font clipping in tables. CSS Paged Media (`@page`, margin boxes, page-break-inside) handles all of those natively.
-
-**Pipeline:**
-
-1. Source markdown (e.g., `executive_briefing_v3.md`) → simple parser → HTML body
-2. Cover page (dark theme) + body wrapped in HTML document with embedded CSS
-3. WeasyPrint renders HTML to PDF (8.5x11 letter portrait, 0.5in margins)
-
-**To regenerate locally:**
-
-```bash
-# WeasyPrint required
-brew install weasyprint
-
-# Run from anywhere
-python3 deliverables/v3_sources/generate_pdf_html.py \
-    deliverables/v3_sources/executive_briefing_v3.md \
-    /tmp/executive_briefing.pdf \
-    executive_briefing
+```
+atlaspay-grc-sandbox/
+├── README.md                                    (this file — repo framing)
+├── LICENSE
+├── deliverables/
+│   ├── phase-2/                                 (Phase 2 board-ready PDFs + POA&M)
+│   │   ├── executive-briefing.pdf               (9-page board-ready PDF)
+│   │   ├── risk-register.pdf                    (detailed risk register PDF)
+│   │   ├── control-matrix.pdf                   (SOC 2 TSC mapping PDF)
+│   │   ├── audit-walkthrough.pdf                (audit prep simulation PDF)
+│   │   └── poam.csv                             (19-item POA&M, importable)
+│   ├── v1.legacy/                               (Phase 1 v1 PDFs, preserved for reference)
+│   ├── v3_sources/                              (Phase 1 v3 PDF source markdowns)
+│   └── AtlasPay_SOC2_*.pdf                      (Phase 1 PDF iterations, archived)
+├── lab/
+│   ├── source-data/                             (persona spec, ingestion scripts)
+│   └── source-data/phase-2/                     (Phase 2 source markdowns)
+└── assets/                                      (logos, branding assets)
 ```
 
-**Template features:**
+## How to read this repo
 
-- Dark cover with full metadata grid (black `#0F0F10`, gold `#D4AF37`, crimson `#B22234`)
-- White content pages with dark gray text (`#1A1A1A`) for readability
-- Running header + footer with gold rules via CSS `@page` margin boxes
-- Color-coded severity badges (green Covered, amber Partial, red Missing)
-- Color-coded treatment pills (blue Mitigate, orange Accept)
-- Risk matrix as a styled table with `page-break-inside: avoid` to keep it whole
-- `[LAB-SYNTHETIC]` evidence tags highlighted in yellow
-- Inline code (URNs, file paths) in monospace with light gray background
+**For hiring managers reviewing vCISO capability:**
+
+1. Start with `deliverables/phase-2/executive-briefing.pdf` — board-ready summary
+2. Then `deliverables/phase-2/risk-register.pdf` — see the scoring discipline
+3. Then `deliverables/phase-2/control-matrix.pdf` — see the SOC 2 mapping rigor
+4. Then `deliverables/phase-2/audit-walkthrough.pdf` — see the audit prep methodology
+5. Source markdowns in `lab/source-data/phase-2/` for full content
+
+**For technical reviewers evaluating methodology:**
+
+1. Read `lab/source-data/phase-2/risk-register-detailed-2026-06-26.md` — see scoring rationale per risk
+2. Read `lab/source-data/phase-2/control-matrix-soc2-2026-06-26.md` — see CC-by-CC mapping
+3. Read `lab/source-data/phase-2/gap-assessment-2026-06-26.md` — see severity grading
+4. Read `lab/source-data/phase-2/audit-walkthrough-2026-06-26.md` — see question design
+
+## Methodology highlights
+
+**Honest-call discipline.** R-04 (Third-Party SaaS Breach) retains residual High because vendor compromise cannot be eliminated through AtlasPay's controls alone. Reduced residuals require evidence, not optimism.
+
+**Lab-synthetic convention.** Every artifact is tagged `[LAB-SYNTHETIC]` to prevent the portfolio from being mistaken for real client work. Real engagements use real client names and real data, in the client's own file share, not in this public repo.
+
+**Visual QA mandate.** Every PDF generated by this engagement passes through vision_analyze verification before commit. Layout pathologies (text overflow, shape overlap, brand violations) are caught before they ship.
+
+**Real-work carry test.** Every methodology decision in this engagement is tested for whether it applies to a real client engagement outside the sandbox. Patterns that only work in the lab do not ship.
+
+## Bottom line
+
+AtlasPay is **84% mature** against SOC 2 Type 1 requirements. The 6 identified gaps are administrative (documentation, reporting cadence, vendor SOC 2 collection), not technical. With disciplined execution of the 19-item POA&M over Q4 2026 and Q1 2027, AtlasPay reaches 95%+ readiness by Q1 2027 and is audit-ready by Q2 2027.
 
 ---
 
-## License
+**About Ijezie Risk Advisory**
 
-This project is for educational and portfolio demonstration purposes. Organizations may adapt the methodology for internal use.
+Solo vCISO consulting practice. NIST-first methodology. SOC 2 / ISO 27001 / HIPAA / FFIEC engagements. Packages $3,500 to $15,000.
+
+This repo is one of three sibling personas demonstrating vCISO capability across industries:
+- `ijeziermf/atlaspay-grc-sandbox` — FinTech / SOC 2 (this repo)
+- `ijeziermf/helix-health-grc-sandbox` — HealthTech SaaS / HIPAA + SOC 2
+- `ijeziermf/meridian-bank-grc-sandbox` — Community bank / FFIEC + GLBA + SOX
+
+---
+
+**[LAB-SYNTHETIC]** All data, names, controls, vendors, risks, and gaps in this repo are illustrative. Not real client work. Not a substitute for SOC 2 audit by a licensed CPA firm.
