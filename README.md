@@ -208,17 +208,26 @@ The following patterns came out of this engagement and should be applied to ever
 
 ## Deliverables
 
-### Stakeholder-Facing PDFs (5 files)
+### Stakeholder-Facing PDFs (4 files, v3 brand-compliant)
 
 | Deliverable | Purpose | Pages | Audience |
 |---|---|---|---|
-| [Executive Briefing](deliverables/phase-2/executive-briefing.pdf) | Board-ready summary | 5 | Board, CISO, executive leadership |
-| [Risk Register (Detailed)](deliverables/phase-2/risk-register.pdf) | Full risk register with scoring rationale | 5 | Board Risk Committee, SOC 2 audit team |
-| [Control Matrix](deliverables/phase-2/control-matrix.pdf) | SOC 2 TSC mapping across 40 criteria | 7 | SOC 2 auditor, internal compliance |
-| [Audit Walkthrough Simulation](deliverables/phase-2/audit-walkthrough.pdf) | 10 auditor questions with management response | 6 | Client team preparing for real audit |
-| [POA&M (CSV)](deliverables/phase-2/poam.csv) | 19-item Plan of Action and Milestones | 19 rows | Project managers, budget owners |
+| [Executive Briefing](deliverables/executive-briefing.pdf) | Board-ready summary with readiness projection | 6 | Board, CISO, executive leadership |
+| [Risk Register (Detailed)](deliverables/risk-register.pdf) | Full risk register with 5x5 heatmap visual | 6 | Board Risk Committee, SOC 2 audit team |
+| [Control Matrix](deliverables/control-matrix.pdf) | SOC 2 TSC mapping across 38 criteria with coverage chart | 7 | SOC 2 auditor, internal compliance |
+| [Audit Walkthrough Simulation](deliverables/audit-walkthrough.pdf) | 10 auditor questions with management response | 6 | Client team preparing for real audit |
 
-**Total:** 23 pages of stakeholder-ready PDF documentation plus an importable POA&M CSV.
+**Total:** 25 pages of stakeholder-ready PDF documentation across 4 stakeholder-facing PDFs.
+
+### Evidence-Quality Visuals (3 charts)
+
+Generated for the v3 stakeholder-facing PDFs (no UI screenshots, no platform captures — these show the analyst's output, not the platform's UI):
+
+| Visual | Source PDF | What it shows |
+|---|---|---|
+| [Risk Heatmap (5x5, INHERENT vs RESIDUAL)](assets/images/atlaspay-risk-heatmap.png) | risk-register.pdf, page 5 | All 6 risks plotted, INHERENT (left) vs RESIDUAL (right) |
+| [Control Coverage Stacked Bar](assets/images/atlaspay-control-coverage.png) | control-matrix.pdf, page 6 | 38 SOC 2 criteria broken down by Common Criteria category: 31 Met, 7 Partial, 0 Missing |
+| [Audit Readiness Projection (Dual-axis Line)](assets/images/atlaspay-readiness-projection.png) | executive-briefing.pdf, page 5 | 4-quarter readiness ramp Q3 2026 to Q2 2027, gaps 6 to 0 |
 
 ### Methodology Documents (4 files)
 
