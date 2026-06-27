@@ -39,12 +39,12 @@ Rather than focusing solely on IT recovery, this work emphasizes **business impa
 
 ## Key Features
 
-- ✅ **NIST-Aligned Structure**, SP 800-34 Rev. 1 contingency planning guide
-- ✅ **Business-Focused Language**, Accessible to non-technical executives
-- ✅ **RTO/RPO Definitions**, Recovery time and point objectives per function
-- ✅ **Dependency Mapping**, Cross-system, vendor, personnel dependencies
-- ✅ **Quantitative Risk Scoring**, Operational, security, third-party risks
-- ✅ **Governance Structure**, Roles, responsibilities, escalation pathways
+- - **NIST-Aligned Structure**, SP 800-34 Rev. 1 contingency planning guide
+- - **Business-Focused Language**, Accessible to non-technical executives
+- - **RTO/RPO Definitions**, Recovery time and point objectives per function
+- - **Dependency Mapping**, Cross-system, vendor, personnel dependencies
+- - **Quantitative Risk Scoring**, Operational, security, third-party risks
+- - **Governance Structure**, Roles, responsibilities, escalation pathways
 
 ---
 

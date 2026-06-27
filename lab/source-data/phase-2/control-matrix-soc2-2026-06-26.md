@@ -1,15 +1,15 @@
 # AtlasPay SOC 2 TSC Control Matrix
 
-[LAB-SYNTHETIC] — Control mapping demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; this matrix shows IfeSec's mapping methodology, not real client controls.
+[LAB-SYNTHETIC]  -  Control mapping demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; this matrix shows IfeSec's mapping methodology, not real client controls.
 
 ## Trust Services Categories (5 selected)
 
 For a FinTech SOC 2 Type 1, the standard selection is:
-- **Security (Common Criteria)** — required for all SOC 2 reports
-- **Availability** — required for SaaS / payments
-- **Confidentiality** — required for handling sensitive financial data
-- Processing Integrity — not selected (no transaction processing attestation scope)
-- Privacy — not selected (handled separately if needed; B2B not B2C)
+- **Security (Common Criteria)**  -  required for all SOC 2 reports
+- **Availability**  -  required for SaaS / payments
+- **Confidentiality**  -  required for handling sensitive financial data
+- Processing Integrity  -  not selected (no transaction processing attestation scope)
+- Privacy  -  not selected (handled separately if needed; B2B not B2C)
 
 ## Mapping methodology
 
@@ -24,7 +24,7 @@ Each Common Criterion (CC) is mapped to:
 
 ## Common Criteria Mapping (33 criteria)
 
-### CC1 — Control Environment
+### CC1  -  Control Environment
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -34,7 +34,7 @@ Each Common Criterion (CC) is mapped to:
 | CC1.4 | Competence of personnel | SA-01 | R-05 | - | Met | Job descriptions, training records |
 | CC1.5 | Accountability | ACC-01, SA-01 | R-01, R-05 | - | Met | Performance reviews, consequence management |
 
-### CC2 — Communication and Information
+### CC2  -  Communication and Information
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -42,7 +42,7 @@ Each Common Criterion (CC) is mapped to:
 | CC2.2 | Internal communication of security events | IR-01 | R-03 | - | Met | Slack security channel, incident reports |
 | CC2.3 | External communication (customers, regulators) | IR-01, TPRM-01 | R-04 | - | Met | Customer-facing security page, breach notification template |
 
-### CC3 — Risk Assessment
+### CC3  -  Risk Assessment
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -51,14 +51,14 @@ Each Common Criterion (CC) is mapped to:
 | CC3.3 | Fraud risk consideration | TPRM-01 | R-04 | V-02 (Payment Gateway) | Partial | Vendor fraud risk assessment, BEC tabletop result |
 | CC3.4 | Identifies and assesses changes | IR-01, TPRM-01 | R-04 | All | Partial | Change management log, vendor onboarding checklist |
 
-### CC4 — Monitoring Activities
+### CC4  -  Monitoring Activities
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
 | CC4.1 | Ongoing monitoring | SA-01, IR-01 | R-06 | V-05 (Monitoring Tools) | Met | Datadog dashboards, monthly KPI review |
 | CC4.2 | Evaluation and communication of deficiencies | - | R-04, R-06 | - | Partial | Quarterly board reporting cadence (in development) |
 
-### CC5 — Control Activities
+### CC5  -  Control Activities
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -66,20 +66,20 @@ Each Common Criterion (CC) is mapped to:
 | CC5.2 | Technology controls | ACC-01, IR-01 | R-01, R-02, R-03, R-06 | V-04 (Application Platform) | Met | IAM config, audit log config, encryption-at-rest config |
 | CC5.3 | Policies and procedures documented | All 4 | All | - | Met | Policy docs (4) + procedures (planned) |
 
-### CC6 — Logical and Physical Access
+### CC6  -  Logical and Physical Access
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
 | CC6.1 | Logical access controls | ACC-01 | R-01 | V-03 (Identity Provider) | Met | Auth0 config, MFA enforcement, RBAC matrix |
 | CC6.2 | New user provisioning | ACC-01 | R-01, R-05 | V-03 | Met | Joiner process doc, ticket trail |
-| CC6.3 | Removal of access | ACC-01 | R-01, R-05 | V-03 | Partial | Leaver process (documented) but no quarterly attestation yet — POA&M-02 |
+| CC6.3 | Removal of access | ACC-01 | R-01, R-05 | V-03 | Partial | Leaver process (documented) but no quarterly attestation yet  -  POA&M-02 |
 | CC6.4 | Physical access (data center, office) | - (co-located with cloud) | R-01 | V-01 (Cloud Provider) | Met | AWS SOC 2 report (inherit), badge access logs |
 | CC6.5 | Data disposal | - (in IRP / data retention) | - | - | Partial | Data retention policy (in development) |
 | CC6.6 | Boundary protection | ACC-01 | R-02, R-03 | V-01, V-04 | Met | WAF config, VPC config, network segmentation diagram |
 | CC6.7 | Data transmission integrity | ACC-01 | R-02 | V-02, V-04 | Met | TLS config, mTLS for internal services |
 | CC6.8 | Malicious software prevention | - (endpoint protection) | R-03 | V-04, V-05 | Met | EDR config (CrowdStrike or similar), monthly scan reports |
 
-### CC7 — System Operations
+### CC7  -  System Operations
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -89,13 +89,13 @@ Each Common Criterion (CC) is mapped to:
 | CC7.4 | Incident response | IR-01 | R-03, R-04 | - | Met | IRP doc, tabletop exercise result (POA&M-10) |
 | CC7.5 | Recovery from incidents | IR-01 | R-03 | V-01 (Cloud Provider), V-04 | Met | Backup verification, RTO/RPO evidence (POA&M-11) |
 
-### CC8 — Change Management
+### CC8  -  Change Management
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
 | CC8.1 | Change management process | IR-01 (implicit) | R-02, R-06 | V-04 | Met | PR review trail, change advisory board minutes |
 
-### CC9 — Risk Mitigation
+### CC9  -  Risk Mitigation
 
 | CC | Description | Policy | Risk | Vendor | Status | Evidence needed |
 |---|---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Each Common Criterion (CC) is mapped to:
 
 ## Trust Services Criteria (Categories)
 
-### A — Availability (selected)
+### A  -  Availability (selected)
 
 | Criterion | Description | Policy | Risk | Status | Evidence |
 |---|---|---|---|---|---|
@@ -114,7 +114,7 @@ Each Common Criterion (CC) is mapped to:
 | A1.2 | Environmental protections | - | R-03 | Met | AWS SOC 2 inheritance |
 | A1.3 | Disaster recovery | IR-01 | R-03 | Met | BCP/DR plan, RTO/RPO documented (POA&M-11) |
 
-### C — Confidentiality (selected)
+### C  -  Confidentiality (selected)
 
 | Criterion | Description | Policy | Risk | Status | Evidence |
 |---|---|---|---|---|---|
@@ -153,7 +153,7 @@ Every CC trace links back to at least one risk in the [[risk-register-board-2026
 
 ## Evidence trail
 
-- `raw/clients/atlaspay/state-2026-06-26.md` — Phase 1A live state
-- `raw/clients/atlaspay/risk-register-board-2026-06-26.md` — Phase 1B risk register
-- [[AtlasPay]] — entity page
-- [[SOC2-Type1-Readiness-Workflow]] — engagement pattern
+- `raw/clients/atlaspay/state-2026-06-26.md`  -  Phase 1A live state
+- `raw/clients/atlaspay/risk-register-board-2026-06-26.md`  -  Phase 1B risk register
+- [[AtlasPay]]  -  entity page
+- [[SOC2-Type1-Readiness-Workflow]]  -  engagement pattern

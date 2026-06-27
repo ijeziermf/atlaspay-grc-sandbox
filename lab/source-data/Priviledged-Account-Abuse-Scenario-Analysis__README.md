@@ -42,12 +42,12 @@ Rather than assessing controls in isolation, this analysis traces a **realistic 
 
 ## Key Features
 
-- ✅ **Scenario-Based Narrative**, Realistic insider threat story
-- ✅ **Threat Pathway Mapping**, From privileged access to business impact
-- ✅ **Quantitative Inherent Risk**, 5×5 matrix scoring (Impact × Likelihood)
-- ✅ **Business-Focused Language**, Accessible to non-technical executives
-- ✅ **Treatment Options**, Clear mitigation recommendations
-- ✅ **NIST-Aligned Structure**, Audit-defensible methodology
+- - **Scenario-Based Narrative**, Realistic insider threat story
+- - **Threat Pathway Mapping**, From privileged access to business impact
+- - **Quantitative Inherent Risk**, 5×5 matrix scoring (Impact × Likelihood)
+- - **Business-Focused Language**, Accessible to non-technical executives
+- - **Treatment Options**, Clear mitigation recommendations
+- - **NIST-Aligned Structure**, Audit-defensible methodology
 
 ---
 

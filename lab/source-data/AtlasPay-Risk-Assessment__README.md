@@ -38,12 +38,12 @@ The assessment identifies risks, quantifies exposure, prioritizes treatment, and
 
 ## Key Features
 
-- ✅ **Plain English Risk Descriptions**, Accessible to non-technical stakeholders
-- ✅ **Quantitative Scoring Model**, Impact × Likelihood for consistent prioritization
-- ✅ **NIST Control Mapping**, Audit-defensible framework alignment
-- ✅ **Residual Risk Tracking**, Post-treatment exposure visibility
-- ✅ **Executive Heat Map**, Visual priority communication
-- ✅ **Ownership & Timelines**, Accountability built into treatment plan
+- - **Plain English Risk Descriptions**, Accessible to non-technical stakeholders
+- - **Quantitative Scoring Model**, Impact × Likelihood for consistent prioritization
+- - **NIST Control Mapping**, Audit-defensible framework alignment
+- - **Residual Risk Tracking**, Post-treatment exposure visibility
+- - **Executive Heat Map**, Visual priority communication
+- - **Ownership & Timelines**, Accountability built into treatment plan
 
 ---
 

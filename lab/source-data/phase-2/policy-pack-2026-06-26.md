@@ -61,4 +61,4 @@ Defines vendor onboarding risk tiering (Tier 1/2/3 based on data access and crit
 
 **[LAB-SYNTHETIC]** This policy pack manifest is a portfolio demonstration artifact for Ijezie Risk Advisory's vCISO capability. AtlasPay is a fictional FinTech persona; the policies and their mappings are illustrative patterns for SOC 2 readiness engagements.
 
-**Ijezie Risk Advisory** — Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.
+**Ijezie Risk Advisory**  -  Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.

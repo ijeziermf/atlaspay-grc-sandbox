@@ -1,6 +1,6 @@
 <div class="lab-tag">[LAB-SYNTHETIC]</div>
 
-# AtlasPay SOC 2 Type 1 Readiness — Executive Briefing
+# AtlasPay SOC 2 Type 1 Readiness  -  Executive Briefing
 
 **Document Type:** Executive Briefing
 **Engagement:** AtlasPay SOC 2 Type 1 Readiness
@@ -42,7 +42,7 @@ AtlasPay has engaged Ijezie Risk Advisory to prepare the organization for SOC 2 
 
 **Aggregate residual:** 0 very high, 1 high (R-04), 4 medium, 1 low, 0 very low.
 
-**Honest-call note:** R-04 (Third-Party SaaS Breach) retains residual High because vendor compromise cannot be eliminated through AtlasPay's controls alone — only managed via contractual requirements, continuous monitoring, and incident response readiness. This is the realistic ceiling for third-party risk.
+**Honest-call note:** R-04 (Third-Party SaaS Breach) retains residual High because vendor compromise cannot be eliminated through AtlasPay's controls alone  -  only managed via contractual requirements, continuous monitoring, and incident response readiness. This is the realistic ceiling for third-party risk.
 
 ## Board-Relevant Risks (4 of 6)
 
@@ -123,4 +123,4 @@ AtlasPay is positioned for SOC 2 Type 1 audit readiness by Q2 2027. The 6 identi
 
 **[LAB-SYNTHETIC]** This document is a portfolio demonstration artifact for Ijezie Risk Advisory's vCISO capability. AtlasPay is a fictional FinTech persona; all data is illustrative. For real client engagements, the structure remains the same but the content reflects actual assessments, evidence, and stakeholder interviews.
 
-**Ijezie Risk Advisory** — Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.
+**Ijezie Risk Advisory**  -  Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.

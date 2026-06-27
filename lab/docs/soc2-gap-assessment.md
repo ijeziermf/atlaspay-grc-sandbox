@@ -1,4 +1,4 @@
-# SOC 2 Type 1 Readiness — Gap Assessment
+# SOC 2 Type 1 Readiness  -  Gap Assessment
 
 **Engagement:** AtlasPay FinTech SOC 2 Type 1 Readiness
 **Assessment Date:** 2026-06-25
@@ -61,8 +61,8 @@
 **Risk if not remediated:** Auditor will issue a finding on CC1.4; high-impact control for FinTech because insider threat is a named risk scenario (R-05).
 
 **Remediation:**
-1. Select background check vendor (Checkr, Sterling, or equivalent) — 1 week
-2. Sign MSA with vendor; integrate with HRIS (Gusto, Rippling, etc.) — 2 weeks
+1. Select background check vendor (Checkr, Sterling, or equivalent)  -  1 week
+2. Sign MSA with vendor; integrate with HRIS (Gusto, Rippling, etc.)  -  2 weeks
 3. Update employee onboarding checklist to enforce background check completion
 4. Define background check scope: identity, criminal, credit (for finance roles), employment history
 
@@ -242,9 +242,9 @@ For each High finding, recommend the following risk treatment in the engagement 
 
 | Finding | Treatment | Owner | Target |
 |---|---|---|---|
-| HF-01 (CC8.1) | Mitigate — document existing GitOps workflow | CTO + CISO | 2026-07-15 |
-| HF-02 (CC1.4) | Mitigate — vendor selection + HRIS integration | Head of People + CISO | 2026-08-15 |
-| HF-03 (CC7.1) | Mitigate — formalize vuln mgmt program | CISO + Engineering Lead | 2026-08-30 |
+| HF-01 (CC8.1) | Mitigate  -  document existing GitOps workflow | CTO + CISO | 2026-07-15 |
+| HF-02 (CC1.4) | Mitigate  -  vendor selection + HRIS integration | Head of People + CISO | 2026-08-15 |
+| HF-03 (CC7.1) | Mitigate  -  formalize vuln mgmt program | CISO + Engineering Lead | 2026-08-30 |
 
 For Medium and Low findings, treatment plans should be added to the risk register as separate risks with their own treatment plans.
 
@@ -263,5 +263,5 @@ The recommendations above are realistic for an early-stage FinTech but have not 
 ---
 
 **Last Updated:** 2026-06-25 01:20 EDT
-**Engagement:** Phase 1C — Gap Assessment
+**Engagement:** Phase 1C  -  Gap Assessment
 **Engagement Status:** Ready for Phase 3 (Audit Walkthrough Simulation)

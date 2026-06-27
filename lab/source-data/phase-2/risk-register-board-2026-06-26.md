@@ -11,7 +11,7 @@ status: active
 
 # AtlasPay Phase 2 Risk Register (Board-Relevant Subset)
 
-[LAB-SYNTHETIC] — This risk register is a portfolio demonstration artifact for Ijezie Risk Advisory's vCISO capability. AtlasPay is a fictional FinTech persona, not a real client.
+[LAB-SYNTHETIC]  -  This risk register is a portfolio demonstration artifact for Ijezie Risk Advisory's vCISO capability. AtlasPay is a fictional FinTech persona, not a real client.
 
 ## Board-relevant risks (4 of 6)
 
@@ -24,7 +24,7 @@ status: active
 | R-05 | Insider Threat (Malicious Employee) | Medium | People risk, audit committee and HR coordination |
 | R-06 | Insufficient Audit Logging | Low | Foundational control; if logging fails, all other controls fail |
 
-## Non-board risks (2 of 6) — tracked at management level
+## Non-board risks (2 of 6)  -  tracked at management level
 
 | Ref | Risk | Residual | Why not board-level |
 |---|---|---|---|
@@ -35,7 +35,7 @@ status: active
 
 1. **R-04 residual stays High.** Per [[Honest-Call-Discipline]], third-party breach can't be reduced below current state. Mitigation actions exist but cannot eliminate source. Board reporting must reflect this honestly.
 
-2. **R-06 logging risk reduced to Low after audit log forwarder** (Helix-era forwarder test artifact). Logging pipeline now streams to Datadog with retention + alerting. However, board reporting should note that audit log integrity depends on Datadog availability — a separate dependency to monitor.
+2. **R-06 logging risk reduced to Low after audit log forwarder** (Helix-era forwarder test artifact). Logging pipeline now streams to Datadog with retention + alerting. However, board reporting should note that audit log integrity depends on Datadog availability  -  a separate dependency to monitor.
 
 3. **R-05 residual Medium is defensible** with HR background check + access review cadence. Honest-call note: insider threat residual can never drop to Low because humans are unpredictable; Medium is the realistic floor.
 
@@ -45,7 +45,7 @@ status: active
 
 ## Board narrative (1-paragraph version)
 
-AtlasPay has 6 identified risk scenarios across the SOC 2 scope. Four are board-relevant due to residual severity or strategic exposure. The highest residual risk is third-party SaaS breach (R-04 at High), which reflects the structural reality that vendor compromise cannot be eliminated — only managed through contractual controls, continuous monitoring, and incident response readiness. The remaining 3 board-relevant risks (privileged access, insider threat, audit logging) sit at residual Medium with documented mitigation. Mitigation actions are tracked in the [[#POA&M|POA&M]] with assigned owners and target dates.
+AtlasPay has 6 identified risk scenarios across the SOC 2 scope. Four are board-relevant due to residual severity or strategic exposure. The highest residual risk is third-party SaaS breach (R-04 at High), which reflects the structural reality that vendor compromise cannot be eliminated  -  only managed through contractual controls, continuous monitoring, and incident response readiness. The remaining 3 board-relevant risks (privileged access, insider threat, audit logging) sit at residual Medium with documented mitigation. Mitigation actions are tracked in the [[#POA&M|POA&M]] with assigned owners and target dates.
 
 ## POA&M (Plan of Action & Milestones)
 
@@ -74,12 +74,12 @@ AtlasPay has 6 identified risk scenarios across the SOC 2 scope. Four are board-
   - **Recommendation:** Yes, but only at the line-item level for High-severity items. Avoids clutter.
 - **Q-B2.** R-04 board narrative: do we include the specific vendor count (7 vendors, 0 with SOC 2 Type 2 reports today) or generalize?
   - **Recommendation:** Generalize for the board version. Specifics belong in the vendor register and TPRM program docs.
-- **Q-B3.** R-05 "Medium is the realistic floor for insider threat" — is this defensible enough for a board, or do we need to cite a framework (e.g., NIST SP 800-53 AC-2(7) privileged user management)?
+- **Q-B3.** R-05 "Medium is the realistic floor for insider threat"  -  is this defensible enough for a board, or do we need to cite a framework (e.g., NIST SP 800-53 AC-2(7) privileged user management)?
   - **Recommendation:** Cite the framework. Board members with security backgrounds will look for it.
 
 ## Evidence trail
 
-- `raw/clients/atlaspay/state-2026-06-26.md` — Phase 1A live state
-- [[AtlasPay]] — entity page with risk register summary
-- [[Honest-Call-Discipline]] — the principle driving R-04 residual High
-- [[SOC2-Type1-Readiness-Workflow]] — the engagement pattern this risk register serves
+- `raw/clients/atlaspay/state-2026-06-26.md`  -  Phase 1A live state
+- [[AtlasPay]]  -  entity page with risk register summary
+- [[Honest-Call-Discipline]]  -  the principle driving R-04 residual High
+- [[SOC2-Type1-Readiness-Workflow]]  -  the engagement pattern this risk register serves

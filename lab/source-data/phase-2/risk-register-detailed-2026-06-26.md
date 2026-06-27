@@ -1,6 +1,6 @@
 <div class="lab-tag">[LAB-SYNTHETIC]</div>
 
-# AtlasPay Risk Register — Detailed View
+# AtlasPay Risk Register  -  Detailed View
 
 **Document Type:** Risk Register (Detailed)
 **Engagement:** AtlasPay SOC 2 Type 1 Readiness
@@ -104,7 +104,7 @@ AtlasPay uses a 5x5 ISO 27005-aligned risk matrix. Probability and impact are sc
 
 **Residual score:** Probability 3 (Likely), Impact 4 (Critical) → Level 4 (High)
 
-**Rationale for residual:** AtlasPay cannot eliminate third-party breach risk. SOC 2 Type 2 vendor reports, continuous security rating monitoring, contractual breach notification SLAs, and incident response coordination reduce probability and impact slightly but cannot drive residual below current state. This is the realistic ceiling — **honest-call discipline requires keeping residual High** rather than artificially reducing it.
+**Rationale for residual:** AtlasPay cannot eliminate third-party breach risk. SOC 2 Type 2 vendor reports, continuous security rating monitoring, contractual breach notification SLAs, and incident response coordination reduce probability and impact slightly but cannot drive residual below current state. This is the realistic ceiling  -  **honest-call discipline requires keeping residual High** rather than artificially reducing it.
 
 **Treatment:** mitigate
 
@@ -112,7 +112,7 @@ AtlasPay uses a 5x5 ISO 27005-aligned risk matrix. Probability and impact are sc
 
 **Linked POA&M:** POA&M-03, POA&M-04, POA&M-05
 
-**Board narrative:** "AtlasPay depends on 7 critical SaaS vendors. Vendor compromise is the single highest residual risk because it cannot be fully controlled by AtlasPay — only managed through vendor due diligence, contractual protections, and incident coordination. The residual High rating reflects this structural reality, not a control failure."
+**Board narrative:** "AtlasPay depends on 7 critical SaaS vendors. Vendor compromise is the single highest residual risk because it cannot be fully controlled by AtlasPay  -  only managed through vendor due diligence, contractual protections, and incident coordination. The residual High rating reflects this structural reality, not a control failure."
 
 ---
 
@@ -128,7 +128,7 @@ AtlasPay uses a 5x5 ISO 27005-aligned risk matrix. Probability and impact are sc
 
 **Residual score:** Probability 2 (Rather Unlikely), Impact 4 (Critical) → Level 3 (Medium)
 
-**Rationale for residual:** Background checks, quarterly access reviews, separation of duties, and monitoring reduce probability. Impact remains critical because any insider with privileged access can cause significant harm. Medium is the realistic floor — humans are inherently unpredictable.
+**Rationale for residual:** Background checks, quarterly access reviews, separation of duties, and monitoring reduce probability. Impact remains critical because any insider with privileged access can cause significant harm. Medium is the realistic floor  -  humans are inherently unpredictable.
 
 **Treatment:** mitigate
 
@@ -150,7 +150,7 @@ AtlasPay uses a 5x5 ISO 27005-aligned risk matrix. Probability and impact are sc
 
 **Residual score:** Probability 2 (Rather Unlikely), Impact 2 (Significant) → Level 2 (Low)
 
-**Rationale for residual:** Audit log forwarder to Datadog with retention + alerting (operational since Phase 1) significantly reduced probability. Impact remains significant because loss of audit trail during an incident impairs response. New dependency: Datadog availability — documented as separate risk in BCP.
+**Rationale for residual:** Audit log forwarder to Datadog with retention + alerting (operational since Phase 1) significantly reduced probability. Impact remains significant because loss of audit trail during an incident impairs response. New dependency: Datadog availability  -  documented as separate risk in BCP.
 
 **Treatment:** mitigate
 
@@ -176,4 +176,4 @@ AtlasPay uses a 5x5 ISO 27005-aligned risk matrix. Probability and impact are sc
 
 **[LAB-SYNTHETIC]** This risk register is a portfolio demonstration artifact. AtlasPay is a fictional FinTech persona; all risk data is illustrative. For real client engagements, scoring reflects actual assessments, evidence sampling, and stakeholder interviews.
 
-**Ijezie Risk Advisory** — Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.
+**Ijezie Risk Advisory**  -  Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.

@@ -43,7 +43,7 @@ This packet simulates a SOC 2 Type 1 audit walkthrough. It contains 10 questions
 - Datadog retention: 90 days hot, 1 year cold archive.
 - Alert rules: 5+ failed logins in 5 minutes triggers PagerDuty.
 
-**Expected finding F-02 (Low):** Audit log integrity depends on Datadog availability — separate dependency not currently documented in BCP. Datadog failure would result in log loss.
+**Expected finding F-02 (Low):** Audit log integrity depends on Datadog availability  -  separate dependency not currently documented in BCP. Datadog failure would result in log loss.
 
 **Management response:** AtlasPay will document Datadog availability as a separate dependency in the BCP (POA&M-12) and consider secondary log forwarding to S3 Glacier for 7-year retention.
 
@@ -185,12 +185,12 @@ This packet simulates a SOC 2 Type 1 audit walkthrough. It contains 10 questions
 **AtlasPay is NOT audit-ready today.** A real SOC 2 Type 1 audit in Q3 2026 would surface F-01, F-05, F-06, F-07 as audit exceptions and likely result in a qualified opinion.
 
 **Path to audit-ready (Q2 2027):**
-1. Execute POA&M-02 (quarterly access attestation) — Q4 2026
-2. Codify vendor onboarding checklist and begin SOC 2 collection — Q4 2026
-3. Document data classification policy — Q1 2027
-4. Establish quarterly board security reporting — Q1 2027
-5. Collect Tier 1 vendor SOC 2 reports — Q1 2027
-6. Execute IRP tabletop exercise — Q1 2027
+1. Execute POA&M-02 (quarterly access attestation)  -  Q4 2026
+2. Codify vendor onboarding checklist and begin SOC 2 collection  -  Q4 2026
+3. Document data classification policy  -  Q1 2027
+4. Establish quarterly board security reporting  -  Q1 2027
+5. Collect Tier 1 vendor SOC 2 reports  -  Q1 2027
+6. Execute IRP tabletop exercise  -  Q1 2027
 
 After these 6 actions, AtlasPay reaches 95%+ readiness and can engage a SOC 2 audit firm for Q2 2027 audit window.
 
@@ -198,4 +198,4 @@ After these 6 actions, AtlasPay reaches 95%+ readiness and can engage a SOC 2 au
 
 **[LAB-SYNTHETIC]** This walkthrough simulation is a portfolio demonstration artifact for Ijezie Risk Advisory's vCISO capability. AtlasPay is a fictional FinTech persona; the questions and findings are illustrative patterns for SOC 2 audit preparation.
 
-**Ijezie Risk Advisory** — Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.
+**Ijezie Risk Advisory**  -  Solo vCISO consulting, NIST-first methodology, SOC 2 / ISO 27001 / HIPAA / FFIEC.

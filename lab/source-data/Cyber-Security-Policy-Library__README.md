@@ -37,12 +37,12 @@ Rather than focusing on technical procedures, these policies emphasize **account
 
 ## Key Features
 
-- ✅ **Plain Language**, Accessible to executive and non-technical stakeholders
-- ✅ **Framework-Aligned**, NIST CSF, NIST SP 800-53, ISO 27001 references
-- ✅ **Governance-Focused**, Accountability and decision-making, not just procedures
-- ✅ **Audit-Defensible**, Formal structure with control mappings
-- ✅ **Adaptable**, Templates designed for organizational customization
-- ✅ **Living Documents**, Review cycles and update mechanisms built in
+- - **Plain Language**, Accessible to executive and non-technical stakeholders
+- - **Framework-Aligned**, NIST CSF, NIST SP 800-53, ISO 27001 references
+- - **Governance-Focused**, Accountability and decision-making, not just procedures
+- - **Audit-Defensible**, Formal structure with control mappings
+- - **Adaptable**, Templates designed for organizational customization
+- - **Living Documents**, Review cycles and update mechanisms built in
 
 ---
 

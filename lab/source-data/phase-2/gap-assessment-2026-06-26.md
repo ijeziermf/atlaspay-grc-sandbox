@@ -13,7 +13,7 @@ status: active
 
 # AtlasPay SOC 2 Gap Assessment
 
-[LAB-SYNTHETIC] — Gap assessment demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; the gaps here are illustrative patterns for a SOC 2 readiness engagement, not real client findings.
+[LAB-SYNTHETIC]  -  Gap assessment demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; the gaps here are illustrative patterns for a SOC 2 readiness engagement, not real client findings.
 
 ## Bottom line
 
@@ -99,7 +99,7 @@ status: active
 **Linked CC:** CC3.4
 **Linked risk:** R-04
 
-**Current state:** Vendor onboarding is informal — driven by procurement + security review on a case-by-case basis.
+**Current state:** Vendor onboarding is informal  -  driven by procurement + security review on a case-by-case basis.
 
 **Gap:** Without a codified checklist, vendor onboarding is inconsistent. New vendors may skip security review steps. CC3.4 (change / onboarding) is Partial.
 
@@ -179,7 +179,7 @@ All 6 gaps are already in the POA&M (see [[risk-register-board-2026-06-26#POA&M|
 
 ## Evidence trail
 
-- `raw/clients/atlaspay/control-matrix-soc2-2026-06-26.md` — Phase 1C matrix that surfaced these gaps
-- `raw/clients/atlaspay/risk-register-board-2026-06-26.md` — Phase 1B POA&M
-- [[AtlasPay]] — entity page
-- [[SOC2-Type1-Readiness-Workflow]] — engagement pattern
+- `raw/clients/atlaspay/control-matrix-soc2-2026-06-26.md`  -  Phase 1C matrix that surfaced these gaps
+- `raw/clients/atlaspay/risk-register-board-2026-06-26.md`  -  Phase 1B POA&M
+- [[AtlasPay]]  -  entity page
+- [[SOC2-Type1-Readiness-Workflow]]  -  engagement pattern

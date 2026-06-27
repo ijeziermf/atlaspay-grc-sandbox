@@ -1,4 +1,4 @@
-# SOC 2 Type 1 Readiness — Risk Register
+# SOC 2 Type 1 Readiness  -  Risk Register
 
 **Engagement:** AtlasPay FinTech SOC 2 Type 1 Readiness
 **Period:** FY 2026 Q3 audit window (target)
@@ -86,7 +86,7 @@
 **Inherent risk:** Probability 4 (Very likely) × Impact 5 (Catastrophic) = Very High (5)
 
 **Existing controls:**
-- V-02 (Payment Gateway) provides tokenization — no raw card data stored
+- V-02 (Payment Gateway) provides tokenization  -  no raw card data stored
 - API gateway with mTLS for all internal service-to-service communication
 - WAF with rate limiting and behavioral analysis
 - DLP on egress traffic
@@ -183,7 +183,7 @@
 **Residual risk:** Probability 2 (Rather unlikely) × Impact 4 (Critical) = **Medium (3)**
 
 **Treatment:** Mitigate
-- Complete background check vendor onboarding (Q3 2026 target — see HF-02 in gap assessment)
+- Complete background check vendor onboarding (Q3 2026 target  -  see HF-02 in gap assessment)
 - Continue quarterly access reviews
 - Continue audit log retention and monitoring via V-05
 
@@ -235,7 +235,7 @@ If any of these conditions cannot be maintained, R-04 should be re-evaluated for
 ---
 
 **Last Updated:** 2026-06-25 01:10 EDT
-**Engagement:** Phase 1A — Risk Register Finalization
+**Engagement:** Phase 1A  -  Risk Register Finalization
 **Engagement Status:** Ready for Phase 1B (SOC 2 Control Mapping)
 
 **[LAB-SYNTHETIC] Disclosure:** Risk register values reflect consultant judgment for a portfolio demonstration engagement. Real engagement residual values would be derived from AtlasPay's actual control environment and validated through control testing. The risk acceptance narrative for R-04 is illustrative.

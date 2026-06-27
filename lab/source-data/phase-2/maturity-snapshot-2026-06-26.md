@@ -37,11 +37,11 @@ AtlasPay is a FinTech payments startup preparing for SOC 2 Type 1 audit. This sn
 
 ## Top 5 missing controls
 
-1. **Vendor SOC 2 Type 2 report collection** — 0 of 7 Tier 1 vendors have current reports on file
-2. **Board-level security KPI reporting** — ad-hoc, not formalized
-3. **Quarterly privileged access attestation** — process documented, not running
-4. **Vendor onboarding checklist** — informal, not codified
-5. **BEC tabletop exercise result** — IRP ready, tabletop scheduled but not executed
+1. **Vendor SOC 2 Type 2 report collection**  -  0 of 7 Tier 1 vendors have current reports on file
+2. **Board-level security KPI reporting**  -  ad-hoc, not formalized
+3. **Quarterly privileged access attestation**  -  process documented, not running
+4. **Vendor onboarding checklist**  -  informal, not codified
+5. **BEC tabletop exercise result**  -  IRP ready, tabletop scheduled but not executed
 
 ## Top 5 recommended actions (next 90 days)
 
@@ -53,7 +53,7 @@ AtlasPay is a FinTech payments startup preparing for SOC 2 Type 1 audit. This sn
 
 ## Bottom line
 
-AtlasPay is **84% mature** against SOC 2 Type 1 requirements. All gaps are administrative or documentation — no critical control failures. With disciplined execution of the 5 recommended actions over Q4 2026 and Q1 2027, AtlasPay will reach 95%+ readiness by Q1 2027 and be audit-ready by Q2 2027.
+AtlasPay is **84% mature** against SOC 2 Type 1 requirements. All gaps are administrative or documentation  -  no critical control failures. With disciplined execution of the 5 recommended actions over Q4 2026 and Q1 2027, AtlasPay will reach 95%+ readiness by Q1 2027 and be audit-ready by Q2 2027.
 
 ---
 

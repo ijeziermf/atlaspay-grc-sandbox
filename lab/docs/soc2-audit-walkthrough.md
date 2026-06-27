@@ -1,21 +1,21 @@
-# SOC 2 Type 1 Audit Walkthrough — Management Response
+# SOC 2 Type 1 Audit Walkthrough  -  Management Response
 
 **Engagement:** AtlasPay FinTech SOC 2 Type 1 Readiness
 **Walkthrough Date:** 2026-06-25
 **Auditor:** vCISO Engagement Team (synthetic walkthrough for portfolio demonstration)
-**Audit Type:** SOC 2 Type 1 — design of controls at a point in time
+**Audit Type:** SOC 2 Type 1  -  design of controls at a point in time
 
 ## Walkthrough Structure
 
 This document captures the audit walkthrough simulation performed during the SOC 2 Type 1 readiness engagement. The auditor walked the AtlasPay control environment using the risk register, policies, vendor list, and other artifacts in CISO Assistant. Findings represent what a real auditor would surface during a Type 1 walkthrough.
 
-**Note:** This is a **synthetic walkthrough** for portfolio demonstration. The findings reflect realistic gaps for an early-stage FinTech SOC 2 Type 1 engagement. The management responses are illustrative — in a real engagement, the client's actual responses would be documented here.
+**Note:** This is a **synthetic walkthrough** for portfolio demonstration. The findings reflect realistic gaps for an early-stage FinTech SOC 2 Type 1 engagement. The management responses are illustrative  -  in a real engagement, the client's actual responses would be documented here.
 
 ---
 
 ## Walkthrough Questions and AtlasPay Responses
 
-### Q1: Risk Register Walk — R-04 (Third-Party SaaS Breach) Residual Acceptance
+### Q1: Risk Register Walk  -  R-04 (Third-Party SaaS Breach) Residual Acceptance
 
 **Auditor Question:** R-04 has residual risk of High. Walk me through your risk acceptance. Who signed off?
 
@@ -287,10 +287,10 @@ AtlasPay's management response to each finding is documented below. Management h
 **Type 1 Audit Opinion (Anticipated):**
 
 Based on the walkthrough findings, the auditor would anticipate issuing a **qualified opinion** for the SOC 2 Type 1 report, with the qualification specifically addressing:
-- AW-02 (Background check program) — controls not yet operational
-- AW-03 (Penetration test reports) — no external attestation available
-- AW-04 (Change management documentation) — control design informal
-- AW-06 (Vulnerability scan reports) — scan cadence not yet established
+- AW-02 (Background check program)  -  controls not yet operational
+- AW-03 (Penetration test reports)  -  no external attestation available
+- AW-04 (Change management documentation)  -  control design informal
+- AW-06 (Vulnerability scan reports)  -  scan cadence not yet established
 
 The remaining 10 findings represent **design deficiencies** that, while material to control maturity, would be addressed in the management response and would not necessarily result in qualification if remediation is in progress.
 
@@ -315,5 +315,5 @@ For AtlasPay to obtain an **unqualified Type 1 opinion**, all High findings must
 ---
 
 **Last Updated:** 2026-06-25 01:30 EDT
-**Engagement:** Phase 3 — Audit Walkthrough Simulation
+**Engagement:** Phase 3  -  Audit Walkthrough Simulation
 **Engagement Status:** Ready for Phase 2 (PDF Generation)

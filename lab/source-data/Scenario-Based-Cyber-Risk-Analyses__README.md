@@ -43,12 +43,12 @@ Rather than focusing solely on control gaps, each analysis traces a **full threa
 
 ## Key Features
 
-- ✅ **Narrative-Driven Scenarios**, Realistic, relatable threat stories
-- ✅ **Threat Pathway Mapping**, From initial compromise to business impact
-- ✅ **Quantitative Inherent Risk**, 5×5 matrix scoring (Impact × Likelihood)
-- ✅ **Business-Focused Language**, Accessible to non-technical executives
-- ✅ **Treatment Recommendations**, Clear decision support, not just findings
-- ✅ **NIST-Aligned Structure**, Audit-defensible methodology
+- - **Narrative-Driven Scenarios**, Realistic, relatable threat stories
+- - **Threat Pathway Mapping**, From initial compromise to business impact
+- - **Quantitative Inherent Risk**, 5×5 matrix scoring (Impact × Likelihood)
+- - **Business-Focused Language**, Accessible to non-technical executives
+- - **Treatment Recommendations**, Clear decision support, not just findings
+- - **NIST-Aligned Structure**, Audit-defensible methodology
 
 ---
 
