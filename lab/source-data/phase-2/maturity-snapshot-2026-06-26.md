@@ -57,4 +57,4 @@ AtlasPay is **84% mature** against SOC 2 Type 1 requirements. All gaps are admin
 
 ---
 
-**[LAB-SYNTHETIC] This snapshot is a portfolio demonstration artifact.** AtlasPay is a fictional FinTech persona; the maturity scorecard and recommendations are illustrative patterns for IfeSec's vCISO methodology, not real client findings. For a real engagement, this template would be filled with actual control test results, evidence sampling, and stakeholder interviews.
+**[LAB-SYNTHETIC] This snapshot is a portfolio demonstration artifact.** AtlasPay is a fictional FinTech persona; the maturity scorecard and recommendations are illustrative patterns for Ijezie's vCISO methodology, not real client findings. For a real engagement, this template would be filled with actual control test results, evidence sampling, and stakeholder interviews.

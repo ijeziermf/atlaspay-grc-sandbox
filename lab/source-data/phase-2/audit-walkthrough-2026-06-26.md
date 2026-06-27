@@ -13,7 +13,7 @@
 
 ## Purpose
 
-This packet simulates a SOC 2 Type 1 audit walkthrough. It contains 10 questions a SOC 2 auditor would ask AtlasPay personnel during a real engagement, expected findings (14 total), and management response templates for each finding. Use this to train AtlasPay's team, identify documentation gaps before the real audit, and demonstrate IfeSec's audit-readiness methodology.
+This packet simulates a SOC 2 Type 1 audit walkthrough. It contains 10 questions a SOC 2 auditor would ask AtlasPay personnel during a real engagement, expected findings (14 total), and management response templates for each finding. Use this to train AtlasPay's team, identify documentation gaps before the real audit, and demonstrate Ijezie's audit-readiness methodology.
 
 ---
 

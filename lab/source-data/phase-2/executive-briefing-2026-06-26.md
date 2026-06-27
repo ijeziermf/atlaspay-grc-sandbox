@@ -113,7 +113,7 @@ AtlasPay has engaged Ijezie Risk Advisory to prepare the organization for SOC 2 
 | Total effort (Phase 1 + Phase 2) | ~9 hours focused |
 | Phase 3 effort estimate (POA&M execution) | ~120 hours over 2 quarters |
 | Phase 4 audit cost (separate engagement) | $25K-$50K (typical SOC 2 Type 1 audit) |
-| IfeSec engagement fee (this engagement) | $7,500 (SOC 2 readiness, mid-tier package) |
+| Ijezie Risk Advisory engagement fee (this engagement) | $7,500 (SOC 2 readiness, mid-tier package) |
 
 ## Engagement Outcome
 

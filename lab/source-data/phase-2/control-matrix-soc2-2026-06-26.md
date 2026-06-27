@@ -1,6 +1,6 @@
 # AtlasPay SOC 2 TSC Control Matrix
 
-[LAB-SYNTHETIC]  -  Control mapping demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; this matrix shows IfeSec's mapping methodology, not real client controls.
+[LAB-SYNTHETIC]  -  Control mapping demonstration for AtlasPay SOC 2 Type 1 readiness. AtlasPay is a fictional FinTech persona; this matrix shows Ijezie's mapping methodology, not real client controls.
 
 ## Trust Services Categories (5 selected)
 
