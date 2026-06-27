@@ -221,7 +221,7 @@ The following patterns came out of this engagement and should be applied to ever
 
 ### Evidence-Quality Visuals (3 charts)
 
-Generated for the v3 stakeholder-facing PDFs (no UI screenshots, no platform captures — these show the analyst's output, not the platform's UI):
+Generated for the v3 stakeholder-facing PDFs (no UI screenshots, no platform captures - these show the analyst's output, not the platform's UI):
 
 | Visual | Source PDF | What it shows |
 |---|---|---|
