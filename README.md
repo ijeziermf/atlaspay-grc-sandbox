@@ -6,7 +6,7 @@
 
 ## What this repo is
 
-A complete vCISO case study for a SOC 2 Type 1 readiness engagement, structured as a hiring-manager-ready portfolio artifact. The repo contains:
+A complete vCISO case study for a SOC 2 Type 1 readiness engagement, structured as a executive-ready portfolio artifact. The repo contains:
 
 - **Risk register** with inherent, current, and residual scoring across 6 risk scenarios
 - **SOC 2 Trust Services Criteria control matrix** mapping 33 Common Criteria + Availability + Confidentiality to AtlasPay policies, risks, and vendors
