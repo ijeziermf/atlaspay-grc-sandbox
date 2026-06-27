@@ -171,4 +171,4 @@ The Phase 2 source markdowns in `lab/source-data/phase-2/` document the engageme
 
 ## License
 
-This portfolio demonstration work is for educational and hiring-manager review purposes. Organizations may adapt the methodology for internal use. See `LICENSE` for full terms.
+This portfolio demonstration work is for educational purposes only. Organizations may adapt the methodology for internal use. See `LICENSE` for full terms.
